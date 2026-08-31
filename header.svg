@@ -1,67 +1,61 @@
-<svg viewBox="0 0 1000 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sanidhya Negi — software engineer in training, Java and C++">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="100%" height="100%">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap');
-      .title { font-family: 'IBM Plex Sans', -apple-system, 'Segoe UI', sans-serif; font-weight: 600; }
-      .mono  { font-family: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace; }
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
+      .title { font-family: 'Inter', sans-serif; font-size: 38px; font-weight: 700; fill: #ffffff; letter-spacing: -1px; }
+      .subtitle { font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 400; fill: #a0a0a0; letter-spacing: 1px; }
+      .accent { fill: #00ff66; }
+      .line { stroke: rgba(255, 255, 255, 0.1); stroke-width: 1px; fill: none; }
+      .orbit { stroke: rgba(0, 255, 102, 0.4); stroke-width: 1px; fill: none; stroke-dasharray: 3 6; }
+      .node { fill: #00ff66; }
+      .text-muted { fill: #555555; font-family: 'JetBrains Mono', monospace; font-size: 10px; }
     </style>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1B3A5C" stroke-width="0.6" opacity="0.45"/>
-    </pattern>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050505" />
+      <stop offset="100%" stop-color="#0a0a0a" />
+    </linearGradient>
   </defs>
 
-  <rect width="1000" height="260" fill="#0E1A2B"/>
-  <rect width="1000" height="260" fill="url(#grid)"/>
+  <rect width="100%" height="100%" fill="url(#bg)" rx="12" />
 
-  <rect x="20" y="20" width="960" height="220" fill="none" stroke="#3A5A7D" stroke-width="1"/>
+  <!-- Animated 3D Orbital Rings -->
+  <g transform="translate(620, 125)">
+    <!-- Ring 1 (Inner Spin) -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="15s" repeatCount="indefinite" />
+      <ellipse cx="0" cy="0" rx="80" ry="20" class="orbit" transform="rotate(30)" />
+      <circle cx="80" cy="0" r="3" class="node" transform="rotate(30)" />
+    </g>
 
-  <!-- ruler ticks along the top edge, echoing a drafting scale -->
-  <g stroke="#3A5A7D" stroke-width="0.6" opacity="0.6">
-    <line x1="60" y1="14" x2="60" y2="20"/>
-    <line x1="100" y1="14" x2="100" y2="20"/>
-    <line x1="140" y1="14" x2="140" y2="20"/>
-    <line x1="180" y1="14" x2="180" y2="20"/>
-    <line x1="220" y1="14" x2="220" y2="20"/>
-    <line x1="260" y1="14" x2="260" y2="20"/>
-    <line x1="300" y1="14" x2="300" y2="20"/>
-    <line x1="340" y1="14" x2="340" y2="20"/>
-    <line x1="380" y1="14" x2="380" y2="20"/>
-    <line x1="420" y1="14" x2="420" y2="20"/>
-    <line x1="460" y1="14" x2="460" y2="20"/>
-    <line x1="500" y1="14" x2="500" y2="20"/>
-    <line x1="540" y1="14" x2="540" y2="20"/>
-    <line x1="580" y1="14" x2="580" y2="20"/>
-    <line x1="620" y1="14" x2="620" y2="20"/>
-    <line x1="660" y1="14" x2="660" y2="20"/>
-    <line x1="700" y1="14" x2="700" y2="20"/>
-    <line x1="740" y1="14" x2="740" y2="20"/>
-    <line x1="780" y1="14" x2="780" y2="20"/>
-    <line x1="820" y1="14" x2="820" y2="20"/>
-    <line x1="860" y1="14" x2="860" y2="20"/>
-    <line x1="900" y1="14" x2="900" y2="20"/>
-    <line x1="940" y1="14" x2="940" y2="20"/>
+    <!-- Ring 2 (Outer Spin) -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="25s" repeatCount="indefinite" />
+      <ellipse cx="0" cy="0" rx="120" ry="35" class="line" transform="rotate(-45)" />
+      <circle cx="-120" cy="0" r="2" fill="#ffffff" transform="rotate(-45)" />
+    </g>
+
+    <!-- Ring 3 (Z-Axis Spin) -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="40s" repeatCount="indefinite" />
+      <ellipse cx="0" cy="0" rx="60" ry="60" class="line" stroke-dasharray="2 8" />
+      <circle cx="60" cy="0" r="1.5" fill="#ffffff" opacity="0.6" />
+      <circle cx="-60" cy="0" r="1.5" fill="#ffffff" opacity="0.6" />
+    </g>
+    
+    <!-- Center Core -->
+    <circle cx="0" cy="0" r="6" class="node">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+      <animate attributeName="r" values="6;7;6" dur="2s" repeatCount="indefinite" />
+    </circle>
   </g>
 
-  <g stroke="#E8A33D" stroke-width="1.5">
-    <path d="M12,20 H28 M20,12 V28"/>
-    <path d="M972,20 H988 M980,12 V28"/>
-    <path d="M12,240 H28 M20,232 V248"/>
-    <path d="M972,240 H988 M980,232 V248"/>
-  </g>
-
-  <text x="52" y="112" class="title" font-size="46" letter-spacing="0.5" fill="#EAF1F8">Sanidhya Negi</text>
-  <text x="54" y="142" class="mono" font-size="15" letter-spacing="0.3" fill="#8CA3BE">Software engineer in training — Java, C++, and the structure in between.</text>
-
-  <line x1="52" y1="164" x2="948" y2="164" stroke="#2A4B6D" stroke-width="1"/>
-
-  <g class="mono" font-size="13" letter-spacing="0.2">
-    <text x="52" y="200"><tspan fill="#5E7A98">Role: </tspan><tspan fill="#C7D6E6">B.Tech CSE student</tspan></text>
-    <line x1="330" y1="188" x2="330" y2="204" stroke="#2A4B6D" stroke-width="1"/>
-    <text x="352" y="200"><tspan fill="#5E7A98">Primary: </tspan><tspan fill="#C7D6E6">Java</tspan></text>
-    <line x1="470" y1="188" x2="470" y2="204" stroke="#2A4B6D" stroke-width="1"/>
-    <text x="492" y="200"><tspan fill="#5E7A98">Secondary: </tspan><tspan fill="#C7D6E6">C++</tspan></text>
-  </g>
-
-  <text x="52" y="228" class="mono" font-size="11" fill="#4A6684">1000 × 260</text>
-  <text x="940" y="228" text-anchor="end" class="mono" font-size="11" fill="#4A6684">Sheet 01</text>
+  <!-- Text -->
+  <text x="60" y="115" class="title">Sanidhya Negi</text>
+  <text x="60" y="145" class="subtitle">&gt; SYSTEMS ENGINEER <tspan class="accent">_</tspan></text>
+  <text x="60" y="200" class="text-muted">C++ • JAVA • QT • SYSTEM ARCHITECTURE</text>
+  
+  <!-- Decorative Grid / Tech UI -->
+  <line x1="60" y1="40" x2="80" y2="40" class="line" />
+  <line x1="60" y1="45" x2="70" y2="45" class="line" />
 </svg>
