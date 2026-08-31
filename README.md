@@ -1,62 +1,28 @@
-<div align="center">
-  <img src="header.svg" width="100%" alt="Sanidhya Negi — Systems Engineer"/>
-</div>
 
-<br/>
+ <div align="center"> <img src="assets/header.svg" width="100%" alt="Sanidhya Negi — software engineer in training, Java and C++"/> </div> <br>
 
-I'm a Computer Science student focused on building resilient systems from first principles. I care less about merely getting a program to compile than about what happens after — how the codebase is structured, where a piece of logic belongs, what happens when inputs are unhandled, and whether the system holds up under scrutiny weeks later.
+I'm a B.Tech Computer Science student writing mostly Java and C++. I care less about getting a program to compile than about what happens after — how the code is structured, where a piece of logic belongs, what happens when the input is wrong, and whether I can still make sense of it when I open it again a few weeks later.
 
-Most of my day-to-day involves writing **Java** and **C++**, building desktop UIs with **Qt**, managing builds with **CMake**, and navigating **Linux**. 
+Most of what's below is either a Qt desktop application or a running log of problems I've solved to get better at data structures, algorithms, and writing implementations that hold up once the logic gets complicated.
 
----
+Projects
 
-### / Operations & Projects
+ComplexCalc — C++, Qt Widgets A desktop calculator that grew past basic arithmetic — scientific operations, complex-number calculations, expression evaluation, a calculation history, and unit conversions, all inside one GUI. It was my first real attempt at keeping interface, logic, and input handling from tangling into each other.
 
-<table width="100%">
-  <tr>
-    <td width="50%" valign="top">
-      <strong>ComplexCalc</strong><br/>
-      <code>C++</code> <code>Qt Widgets</code><br/>
-      <br/>
-      A desktop calculator scaling beyond basic arithmetic. Supports scientific operations, complex-number calculations, expression evaluation, calculation history, and unit conversions. Built as an exercise in strictly decoupling interface, logic, and input handling.
-    </td>
-    <td width="50%" valign="top">
-      <strong>Attendance Management System</strong><br/>
-      <code>C++17</code> <code>Qt</code><br/>
-      <br/>
-      A role-based academic tool handling Admin, Teacher, and Student workflows. Engineered to enforce strict business rules underneath the GUI: access control, session validation, medical exemptions, eligibility logic, and consistent state management.
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <strong>NeetCode Telemetry Log</strong><br/>
-      <code>Java</code><br/>
-      <br/>
-      An ongoing repository of algorithmic problem-solving. A dedicated workspace to build intuition for optimal data structure selection, reasoning about time/space complexity, and ensuring implementations remain highly readable.
-    </td>
-    <td width="50%" valign="top">
-      <strong>Webathon / NIRVAN '26</strong><br/>
-      <code>React</code> <code>Vite</code> <code>JS</code><br/>
-      <br/>
-      A web architecture project built for a college technical event. A practical exploration into frontend modularity and what it takes to ship component-based UI under strict operational deadlines.
-    </td>
-  </tr>
-</table>
+Attendance Management System — C++17, Qt A role-based academic tool with separate Admin, Teacher, and Student workflows. The interesting part isn't the screens, it's the rules underneath them: access control, attendance sessions, medical exemptions, eligibility logic, and keeping stored state consistent. I built it to practice turning real requirements into rules a program can actually enforce.
 
-<br/>
+NeetCode Submissions — Java An ongoing log of problem-solving work. I use it to get faster at choosing the right data structure early, reasoning about complexity, and writing solutions that are still readable on a second read.
 
-### / Active Telemetry
+Webathon / NIRVAN '26 — React, Vite, JavaScript A web project built for a college technical event. Not my main focus, but a useful look at a different part of the stack, and what it takes to ship something under a deadline.
 
-- ⚡ **Current Focus:** Deepening understanding of **Java internals**, **Object-Oriented Design** patterns, and early-stage **System Architecture**.
-- ⚙️ **Routine:** Reviewing and auditing older codebases to evaluate structural integrity over time.
+Stack
 
-<br/>
+Java and C++ are what I reach for first. I've built desktop UIs with Qt, managed builds with CMake, and done most of my day-to-day work in Linux and VS Code with Git and GitHub for version control. The Webathon project is my one real excursion into React and Vite.
 
-### / Network Access
+Right now
 
-<a href="https://github.com/Sanidhyanegi07">
-  <img src="https://img.shields.io/badge/GitHub-0a0a0a?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-</a>
-<a href="https://linkedin.com/in/sanidhyanegi07">
-  <img src="https://img.shields.io/badge/LinkedIn-0a0a0a?style=for-the-badge&logo=linkedin&logoColor=00ff66" alt="LinkedIn"/>
-</a>
+Spending most of my time on deeper Java, stronger fundamentals in object-oriented design, and the early parts of system design — while trying to get better at reading code I wrote a while back and telling, honestly, whether it still holds up.
+
+You can find more of my work on GitHub, or reach me on LinkedIn.
+
+<br> <div align="center"> <img src="assets/cat.svg" width="240" alt="A small cat walking, drawn in the same palette as the header"/> </div>

@@ -1,15 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="100%" height="100%">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
-      .title { font-family: 'Inter', sans-serif; font-size: 38px; font-weight: 700; fill: #ffffff; letter-spacing: -1px; }
-      .subtitle { font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 400; fill: #a0a0a0; letter-spacing: 1px; }
+      .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 38px; font-weight: 700; fill: #ffffff; letter-spacing: -1px; }
+      .subtitle { font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; font-size: 14px; font-weight: 400; fill: #a0a0a0; letter-spacing: 1px; }
       .accent { fill: #00ff66; }
       .line { stroke: rgba(255, 255, 255, 0.1); stroke-width: 1px; fill: none; }
       .orbit { stroke: rgba(0, 255, 102, 0.4); stroke-width: 1px; fill: none; stroke-dasharray: 3 6; }
       .node { fill: #00ff66; }
-      .text-muted { fill: #555555; font-family: 'JetBrains Mono', monospace; font-size: 10px; }
+      .text-muted { fill: #555555; font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; font-size: 10px; }
     </style>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#050505" />
