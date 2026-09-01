@@ -51,7 +51,7 @@
   <!-- Text -->
   <text x="60" y="115" class="title">Sanidhya Negi</text>
   <text x="60" y="145" class="subtitle">&gt; SYSTEMS ENGINEER <tspan class="accent">_</tspan></text>
-  <text x="60" y="200" class="text-muted">C++ • JAVA • QT • SYSTEM ARCHITECTURE</text>
+  <text x="60" y="200" class="text-muted">C++ • JAVA • REACT • DSA • SYSTEM ARCHITECTURE</text>
   
   <!-- Decorative Grid / Tech UI -->
   <line x1="60" y1="40" x2="80" y2="40" class="line" />
