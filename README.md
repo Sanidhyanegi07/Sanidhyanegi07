@@ -6,7 +6,11 @@
 
 > **Building resilient systems, scalable architecture, and robust logic from first principles.**
 
-I am a Computer Science student who cares less about merely getting a program to compile, and more about what happens *after*. My focus is on structural integrity, deep algorithm analysis, and ensuring that architecture holds up under scale and scrutiny.
+I am a Computer Science student who cares less about merely getting a program to compile, and more about what happens *after*. For me, engineering is about structural integrity, rigorous algorithm analysis, and ensuring that an architecture holds up under scale and scrutiny. 
+
+My technical philosophy is rooted in writing clean, decoupled code. I spend my time drilling deep into **Data Structures and Algorithms**, understanding the internals of **Java and C++**, and applying Object-Oriented principles to solve complex problems. Whether I am architecting the core logic for a backend calculation engine or building responsive, state-driven frontends with **React JS**, my goal is always to deliver software that is both optimal and highly maintainable.
+
+I am constantly pushing myself to bridge the gap between theoretical computer science and practical, production-ready software development.
 
 ### 💻 / Tech Stack
 
