@@ -57,6 +57,6 @@ Most of my day-to-day involves writing **Java** and **C++**, building desktop UI
 <a href="https://github.com/Sanidhyanegi07">
   <img src="https://img.shields.io/badge/GitHub-0a0a0a?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
 </a>
-<a href="https://linkedin.com/in/sanidhyanegi07">
+<a href="https://www.linkedin.com/in/sanidhya-negi/">
   <img src="https://img.shields.io/badge/LinkedIn-0a0a0a?style=for-the-badge&logo=linkedin&logoColor=00ff66" alt="LinkedIn"/>
 </a>
