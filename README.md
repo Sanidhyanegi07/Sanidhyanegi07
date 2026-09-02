@@ -10,6 +10,12 @@
 
 <br/>
 
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=15&pause=1500&color=00FF66&center=true&vCenter=true&width=500&lines=System+Initialization...;Compiling+Algorithms...;Building+Scalable+Architecture...;SYS.STATUS+%2F%2F+ONLINE" alt="Typing SVG" />
+</div>
+
+<br/>
+
 > `> ./whoami`
 >
 > I'm a Computer Science student who actually enjoys figuring out how things work under the hood. For me, coding is a lot like solving complex puzzles—it's not just about getting something to compile, but writing clean, efficient logic that actually makes sense. I spend most of my time working in `C++` and `Java`, whether that's building core engines, structuring object-oriented systems, or grinding through data structures and algorithms. I'm always trying to bridge the gap between knowing the theory and actually building things that are fast and reliable. When I'm not writing code, you can probably find me breaking things just to learn how to put them back together better.
@@ -39,10 +45,10 @@
 
 | ARCHITECTURE | DESCRIPTION | TECH |
 | :--- | :--- | :--- |
-| [**Algorithmic Telemetry Log**](https://github.com/Sanidhyanegi07/neetcode-submissions) | Intensive algorithmic problem‑solving focused on optimal data structures and time/space complexity tradeoffs. | `Java` `DSA` |
-| [**ComplexCalc Core Engine**](https://github.com/Sanidhyanegi07/ComplexCalc) | Scientific calculator engine supporting dynamic expression parsing with cleanly decoupled business logic. | `C++` `Math` |
-| [**Academic Management System**](https://github.com/Sanidhyanegi07/Attendance-Management-System) | Enterprise-style application featuring strict role‑based access control and robust session management. | `C++17` `OOP` |
-| [**Webathon / NIRVAN '26**](https://github.com/Sanidhyanegi07/webathon) | Modular and highly responsive frontend architecture built for a high-traffic college technical event. | `React` `Vite` |
+| [**Algorithmic Telemetry Log**](https://github.com/Sanidhyanegi07/neetcode-submissions) | Intensive algorithmic problem‑solving focused on optimal data structures and time/space complexity tradeoffs. | <img src="https://img.shields.io/badge/-Java-0d1117?style=flat-square&logo=openjdk&logoColor=00ff66"/> <img src="https://img.shields.io/badge/-DSA-0d1117?style=flat-square&logo=leetcode&logoColor=00ff66"/> |
+| [**ComplexCalc Core Engine**](https://github.com/Sanidhyanegi07/ComplexCalc) | Scientific calculator engine supporting dynamic expression parsing with cleanly decoupled business logic. | <img src="https://img.shields.io/badge/-C++-0d1117?style=flat-square&logo=c%2B%2B&logoColor=00ff66"/> <img src="https://img.shields.io/badge/-Math-0d1117?style=flat-square&logo=wolframmathematica&logoColor=00ff66"/> |
+| [**Academic Management System**](https://github.com/Sanidhyanegi07/Attendance-Management-System) | Enterprise-style application featuring strict role‑based access control and robust session management. | <img src="https://img.shields.io/badge/-C++17-0d1117?style=flat-square&logo=c%2B%2B&logoColor=00ff66"/> <img src="https://img.shields.io/badge/-OOP-0d1117?style=flat-square&logo=codeforces&logoColor=00ff66"/> |
+| [**Webathon / NIRVAN '26**](https://github.com/Sanidhyanegi07/webathon) | Modular and highly responsive frontend architecture built for a high-traffic college technical event. | <img src="https://img.shields.io/badge/-React-0d1117?style=flat-square&logo=react&logoColor=00ff66"/> <img src="https://img.shields.io/badge/-Vite-0d1117?style=flat-square&logo=vite&logoColor=00ff66"/> |
 
 <br/>
 
