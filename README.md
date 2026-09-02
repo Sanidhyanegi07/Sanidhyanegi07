@@ -3,60 +3,39 @@
 </div>
 
 <div align="center" style="margin-top: 15px;">
-  <a href="https://github.com/Sanidhyanegi07?tab=followers"><img src="https://img.shields.io/github/followers/Sanidhyanegi07?style=flat&color=0d1117&labelColor=0d1117&logo=github&logoColor=666" alt="followers"/></a>
+  <a href="https://github.com/Sanidhyanegi07?tab=followers"><img src="https://img.shields.io/github/followers/Sanidhyanegi07?style=flat-square&color=0d1117&labelColor=0d1117&logo=github&logoColor=666" alt="followers"/></a>
   &nbsp;
-  <img src="https://komarev.com/ghpvc/?username=Sanidhyanegi07&label=views&style=flat&color=0d1117&labelColor=0d1117" alt="views"/>
+  <img src="https://komarev.com/ghpvc/?username=Sanidhyanegi07&label=views&style=flat-square&color=0d1117&labelColor=0d1117" alt="views"/>
 </div>
 
 <br/>
 
-> **`>_ WHOAMI`**
+> `> SYSTEM.OUT.PRINTLN("WHOAMI");`
 >
-> I am a Computer Science student who treats software like architecture—every component should be robust, elegant, and future‑proof. My work sits at the intersection of **rigorous algorithm design** and **clean system architecture**. I spend my time deep in `C++`, `Java`, and scalable frontend tools, writing code that is built to last and scale effortlessly under load.
+> I am a Computer Science student who treats software like architecture—every component should be robust, elegant, and future‑proof. My work sits at the intersection of rigorous algorithm design and clean system architecture. I write code that is built to last and scale effortlessly under load, operating primarily in `C++` and `Java`.
 
 <br/>
 
-## 🛠️ Tech Stack
+### `// CORE_STACK`
 
-<table border="0" align="center">
-  <tr>
-    <td align="center" width="33%">
-      <h3>Languages</h3>
-      <img src="https://img.shields.io/badge/-Java-0d1117?style=flat&logo=openjdk&logoColor=ED8B00" /> <br/>
-      <img src="https://img.shields.io/badge/-C++-0d1117?style=flat&logo=c%2B%2B&logoColor=00599C" /> <br/>
-      <img src="https://img.shields.io/badge/-C-0d1117?style=flat&logo=c&logoColor=00599C" /> <br/>
-      <img src="https://img.shields.io/badge/-JavaScript-0d1117?style=flat&logo=javascript&logoColor=F7DF1E" />
-    </td>
-    <td align="center" width="33%">
-      <h3>Frontend</h3>
-      <img src="https://img.shields.io/badge/-React-0d1117?style=flat&logo=react&logoColor=61DAFB" /> <br/>
-      <img src="https://img.shields.io/badge/-HTML5-0d1117?style=flat&logo=html5&logoColor=E34F26" /> <br/>
-      <img src="https://img.shields.io/badge/-CSS3-0d1117?style=flat&logo=css3&logoColor=1572B6" />
-    </td>
-    <td align="center" width="33%">
-      <h3>Tools</h3>
-      <img src="https://img.shields.io/badge/-Git-0d1117?style=flat&logo=git&logoColor=F05032" /> <br/>
-      <img src="https://img.shields.io/badge/-Linux-0d1117?style=flat&logo=linux&logoColor=FCC624" /> <br/>
-      <img src="https://img.shields.io/badge/-CMake-0d1117?style=flat&logo=cmake&logoColor=064F8C" /> <br/>
-      <img src="https://img.shields.io/badge/-Qt-0d1117?style=flat&logo=qt&logoColor=41CD52" />
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=cpp,c,java,js,react,html,css,git,linux,cmake,qt&theme=dark&perline=6" />
+</div>
 
 <br/>
 
-## 🚀 Featured Work
+### `// ENGINEERING_WORK`
 
-| Project | Description | Stack |
+| ARCHITECTURE | DESCRIPTION | TECH |
 | :--- | :--- | :--- |
 | **[Algorithmic Telemetry Log](https://github.com/Sanidhyanegi07)** | Intensive algorithmic problem‑solving focused on optimal data structures and time/space complexity tradeoffs. | `Java` `DSA` |
-| **[Webathon / NIRVAN '26](https://github.com/Sanidhyanegi07)** | Modular and highly responsive frontend architecture built for a high-traffic college technical event. | `React` `Vite` |
 | **[ComplexCalc Core Engine](https://github.com/Sanidhyanegi07)** | Scientific calculator engine supporting dynamic expression parsing with cleanly decoupled business logic. | `C++` `Math` |
 | **[Academic Management System](https://github.com/Sanidhyanegi07)** | Enterprise-style application featuring strict role‑based access control and robust session management. | `C++17` `OOP` |
+| **[Webathon / NIRVAN '26](https://github.com/Sanidhyanegi07)** | Modular and highly responsive frontend architecture built for a high-traffic college technical event. | `React` `Vite` |
 
 <br/>
 
-## 🔥 GitHub Streak
+### `// TELEMETRY`
 
 <div align="center">
   <a href="https://git.io/streak-stats">
