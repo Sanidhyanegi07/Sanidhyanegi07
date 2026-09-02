@@ -65,7 +65,7 @@
   <line x1="180" y1="195" x2="300" y2="195" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1"/>
 
   <!-- Tags -->
-  <text x="50" y="230" class="meta">C++ &nbsp;//&nbsp; JAVA &nbsp;//&nbsp; REACT &nbsp;//&nbsp; SYSTEM DESIGN &nbsp;//&nbsp; DSA</text>
+  <text x="50" y="230" class="meta" xml:space="preserve">C++   //   JAVA   //   REACT   //   SYSTEM DESIGN   //   DSA</text>
 
   <!-- Bottom-right Techy Details -->
   <text x="940" y="230" class="text-muted" text-anchor="end">MEMORY_ALLOC: SECURE</text>
