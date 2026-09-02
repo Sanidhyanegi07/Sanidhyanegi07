@@ -1,131 +1,82 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" width="100%" height="100%">
   <defs>
     <style>
-      .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 44px; font-weight: 700; fill: #ffffff; letter-spacing: -1.5px; }
-      .subtitle { font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; font-size: 14px; font-weight: 400; fill: #888888; letter-spacing: 3px; text-transform: uppercase; }
-      .role { font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; font-size: 16px; font-weight: 500; fill: #00ff66; letter-spacing: 1px; }
-      .accent { fill: #00ff66; }
-      .line { stroke: rgba(255, 255, 255, 0.06); stroke-width: 1px; fill: none; }
-      .orbit { stroke: rgba(0, 255, 102, 0.3); stroke-width: 1px; fill: none; stroke-dasharray: 3 6; }
-      .orbit-dim { stroke: rgba(255, 255, 255, 0.08); stroke-width: 0.5px; fill: none; stroke-dasharray: 2 8; }
-      .node { fill: #00ff66; }
-      .text-muted { fill: #333333; font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; font-size: 10px; letter-spacing: 1px; }
-      .status { fill: #00ff66; font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; font-size: 10px; letter-spacing: 2px; }
-      .tag { fill: #444444; font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; font-size: 11px; letter-spacing: 0.5px; }
+      .name { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 48px; font-weight: 700; fill: #ffffff; letter-spacing: -2px; }
+      .role { font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; font-size: 15px; font-weight: 400; fill: #00ff66; letter-spacing: 4px; text-transform: uppercase; }
+      .meta { font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; font-size: 11px; fill: #333; letter-spacing: 1px; }
+      .dot { fill: #00ff66; }
     </style>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#020202" />
-      <stop offset="40%" stop-color="#0a0a0a" />
-      <stop offset="100%" stop-color="#050505" />
+      <stop offset="0%" stop-color="#050505"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
     </linearGradient>
-    <linearGradient id="glow" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#00ff66" stop-opacity="0.08" />
-      <stop offset="100%" stop-color="#00ff66" stop-opacity="0" />
-    </linearGradient>
-    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
-      <circle cx="50" cy="50" r="0.6" fill="rgba(255,255,255,0.04)" />
-    </pattern>
-    <filter id="greenGlow">
-      <feGaussianBlur stdDeviation="3" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="15" cy="15" r="0.5" fill="rgba(255,255,255,0.03)"/>
+    </pattern>
   </defs>
 
   <!-- Background -->
-  <rect width="100%" height="100%" fill="url(#bg)" rx="14" />
-  <rect width="100%" height="100%" fill="url(#grid)" rx="14" />
+  <rect width="100%" height="100%" fill="url(#bg)" rx="12"/>
+  <rect width="100%" height="100%" fill="url(#dots)" rx="12"/>
 
-  <!-- Top glow accent -->
-  <rect width="100%" height="80" fill="url(#glow)" rx="14" />
+  <!-- Accent line top -->
+  <rect x="60" y="50" width="40" height="2" fill="#00ff66" opacity="0.6" rx="1"/>
 
-  <!-- Top-left status bar -->
-  <circle cx="30" cy="20" r="3" fill="#00ff66" opacity="0.8">
-    <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+  <!-- Status indicator -->
+  <circle cx="72" cy="72" r="3" class="dot" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
   </circle>
-  <text x="42" y="24" class="status">ONLINE</text>
+  <text x="84" y="76" class="meta" fill="#00ff66" letter-spacing="2px">AVAILABLE FOR WORK</text>
 
-  <!-- Top-right decorative text -->
-  <text x="880" y="24" class="text-muted" text-anchor="end">v2.0.26</text>
+  <!-- Name -->
+  <text x="60" y="135" class="name">Sanidhya Negi</text>
 
-  <!-- Decorative corner lines -->
-  <line x1="20" y1="40" x2="60" y2="40" class="line" />
-  <line x1="20" y1="40" x2="20" y2="60" class="line" />
-  <line x1="980" y1="40" x2="940" y2="40" class="line" />
-  <line x1="980" y1="40" x2="980" y2="60" class="line" />
-  <line x1="20" y1="280" x2="60" y2="280" class="line" />
-  <line x1="20" y1="280" x2="20" y2="260" class="line" />
-  <line x1="980" y1="280" x2="940" y2="280" class="line" />
-  <line x1="980" y1="280" x2="980" y2="260" class="line" />
+  <!-- Role -->
+  <text x="62" y="170" class="role">Systems Engineer</text>
 
-  <!-- Animated 3D Orbital System -->
-  <g transform="translate(780, 160)">
-    <!-- Ring 1 (Inner) -->
+  <!-- Bottom accent -->
+  <line x1="60" y1="200" x2="160" y2="200" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Tags -->
+  <text x="60" y="230" class="meta">C++  •  Java  •  React  •  System Design  •  DSA</text>
+
+  <!-- Floating orb system (right side) -->
+  <g transform="translate(820, 140)">
+    <!-- Outer ring -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite" />
-      <ellipse cx="0" cy="0" rx="70" ry="18" class="orbit" transform="rotate(25)" />
-      <circle cx="70" cy="0" r="3.5" class="node" filter="url(#greenGlow)" transform="rotate(25)" />
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="30s" repeatCount="indefinite"/>
+      <ellipse cx="0" cy="0" rx="100" ry="35" stroke="rgba(0,255,102,0.12)" stroke-width="0.5" fill="none" stroke-dasharray="4 8"/>
+      <circle cx="100" cy="0" r="2" fill="#00ff66" opacity="0.5"/>
     </g>
 
-    <!-- Ring 2 (Mid) -->
+    <!-- Mid ring -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="20s" repeatCount="indefinite" />
-      <ellipse cx="0" cy="0" rx="110" ry="30" class="orbit-dim" transform="rotate(-40)" />
-      <circle cx="-110" cy="0" r="2" fill="#ffffff" opacity="0.5" transform="rotate(-40)" />
-      <circle cx="110" cy="0" r="1.5" fill="#ffffff" opacity="0.3" transform="rotate(-40)" />
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="20s" repeatCount="indefinite"/>
+      <ellipse cx="0" cy="0" rx="65" ry="22" stroke="rgba(0,255,102,0.2)" stroke-width="0.8" fill="none" stroke-dasharray="3 6" transform="rotate(30)"/>
+      <circle cx="65" cy="0" r="3" fill="#00ff66" opacity="0.6" transform="rotate(30)" filter="url(#glow)"/>
     </g>
 
-    <!-- Ring 3 (Outer) -->
+    <!-- Inner ring -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="35s" repeatCount="indefinite" />
-      <ellipse cx="0" cy="0" rx="140" ry="50" class="orbit-dim" transform="rotate(15)" />
-      <circle cx="140" cy="0" r="1.5" fill="#00ff66" opacity="0.4" transform="rotate(15)" />
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/>
+      <ellipse cx="0" cy="0" rx="35" ry="35" stroke="rgba(255,255,255,0.06)" stroke-width="0.5" fill="none" stroke-dasharray="2 6"/>
+      <circle cx="35" cy="0" r="1.5" fill="white" opacity="0.4"/>
     </g>
 
-    <!-- Ring 4 (Vertical) -->
-    <g>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="18s" repeatCount="indefinite" />
-      <ellipse cx="0" cy="0" rx="50" ry="50" class="orbit" stroke-dasharray="2 10" />
-      <circle cx="50" cy="0" r="2" fill="#ffffff" opacity="0.4" />
-      <circle cx="-50" cy="0" r="1.5" fill="#ffffff" opacity="0.3" />
-    </g>
-
-    <!-- Center Core -->
-    <circle cx="0" cy="0" r="8" class="node" filter="url(#greenGlow)">
-      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite" />
-      <animate attributeName="r" values="7;9;7" dur="2.5s" repeatCount="indefinite" />
+    <!-- Core -->
+    <circle cx="0" cy="0" r="6" fill="#00ff66" filter="url(#glow)">
+      <animate attributeName="r" values="5;7;5" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="0" cy="0" r="3" fill="#ffffff" opacity="0.9">
-      <animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite" />
-    </circle>
+    <circle cx="0" cy="0" r="2.5" fill="white" opacity="0.9"/>
   </g>
 
-  <!-- Main Text -->
-  <text x="70" y="120" class="title">Sanidhya Negi</text>
-
-  <!-- Role with cursor -->
-  <text x="70" y="155" class="role">
-    &gt; Systems Engineer
-    <tspan class="accent">
-      _
-      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
-    </tspan>
-  </text>
-
-  <!-- Subtitle -->
-  <text x="70" y="190" class="subtitle">Computer Science • Software Architecture</text>
-
-  <!-- Tag line -->
-  <text x="70" y="240" class="tag">C++ • JAVA • REACT • DSA • SYSTEM DESIGN • OOP</text>
-
-  <!-- Bottom decorative lines -->
-  <line x1="70" y1="260" x2="200" y2="260" stroke="rgba(0,255,102,0.15)" stroke-width="1" />
-  <line x1="70" y1="265" x2="140" y2="265" stroke="rgba(0,255,102,0.08)" stroke-width="1" />
-
-  <!-- Scan line effect -->
-  <rect width="100%" height="2" fill="rgba(0,255,102,0.03)" rx="1">
-    <animate attributeName="y" values="0;320;0" dur="8s" repeatCount="indefinite" />
+  <!-- Scan line -->
+  <rect width="100%" height="1" fill="rgba(0,255,102,0.02)" rx="0.5">
+    <animate attributeName="y" values="0;280;0" dur="10s" repeatCount="indefinite"/>
   </rect>
 </svg>
