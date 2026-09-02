@@ -2,6 +2,12 @@
   <img src="header.svg" width="100%" alt="Sanidhya Negi"/>
 </div>
 
+<div align="center" style="margin-top: 20px;">
+  <a href="https://github.com/Sanidhyanegi07?tab=followers"><img src="https://img.shields.io/github/followers/Sanidhyanegi07?style=flat-square&color=0d1117&labelColor=0d1117&logo=github&logoColor=8b949e" alt="followers"/></a>
+  &nbsp;
+  <img src="https://komarev.com/ghpvc/?username=Sanidhyanegi07&label=SYS.VIEWS&style=flat-square&color=0d1117&labelColor=0d1117" alt="views"/>
+</div>
+
 <br/>
 
 > **`> ./whoami`**
