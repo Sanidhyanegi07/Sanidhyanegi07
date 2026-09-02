@@ -56,11 +56,11 @@ I am constantly pushing myself to bridge the gap between theoretical computer sc
 
 <div align="center">
   <a href="https://github.com/Sanidhyanegi07">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Sanidhyanegi07&show_icons=true&theme=dark&hide_border=true&bg_color=0a0a0a&title_color=00ff66&icon_color=00ff66&text_color=a0a0a0&ring_color=00ff66&include_all_commits=true&count_private=true" alt="Sanidhya's GitHub Stats"/>
+    <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api?username=Sanidhyanegi07&show_icons=true&theme=dark&hide_border=true&bg_color=0a0a0a&title_color=00ff66&icon_color=00ff66&text_color=a0a0a0&ring_color=00ff66&include_all_commits=true&count_private=true" alt="Sanidhya's GitHub Stats"/>
   </a>
   &nbsp;&nbsp;
   <a href="https://github.com/Sanidhyanegi07">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sanidhyanegi07&layout=compact&theme=dark&hide_border=true&bg_color=0a0a0a&title_color=00ff66&text_color=a0a0a0&langs_count=8" alt="Top Languages"/>
+    <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Sanidhyanegi07&layout=compact&theme=dark&hide_border=true&bg_color=0a0a0a&title_color=00ff66&text_color=a0a0a0&langs_count=8" alt="Top Languages"/>
   </a>
 </div>
 
@@ -68,7 +68,7 @@ I am constantly pushing myself to bridge the gap between theoretical computer sc
 
 <div align="center">
   <a href="https://github.com/Sanidhyanegi07">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=Sanidhyanegi07&bg_color=0a0a0a&color=a0a0a0&line=00ff66&point=ffffff&area=true&area_color=00ff6622&hide_border=true&custom_title=Contribution%20Activity" width="95%" alt="Activity Graph"/>
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=Sanidhyanegi07&bg_color=0a0a0a&color=a0a0a0&line=00ff66&point=ffffff&area=true&area_color=00ff6622&hide_border=true&custom_title=Contribution%20Activity&radius=8" width="95%" alt="Activity Graph"/>
   </a>
 </div>
 
@@ -166,7 +166,7 @@ I am constantly pushing myself to bridge the gap between theoretical computer sc
 
 <div align="center">
   <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=Sanidhyanegi07&theme=darkhub&no-frame=true&no-bg=true&column=7&margin-w=10" alt="GitHub Trophies" width="95%"/>
+    <img src="https://github-profile-trophy.vercel.app/?username=Sanidhyanegi07&theme=darkhub&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10" alt="GitHub Trophies" width="95%"/>
   </a>
 </div>
 
