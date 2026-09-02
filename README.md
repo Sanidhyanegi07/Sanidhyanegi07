@@ -12,10 +12,10 @@
 
 <br/>
 
-```
-CS student who writes code that lasts.
-Focused on systems, algorithms, and building things that scale.
-```
+> **`>_ WHOAMI`**
+>
+> CS student architecting resilient systems and pushing the boundaries of algorithmic performance.
+> Focused on writing clean, decoupled code that scales and outlasts the current hype cycle.
 
 <br/>
 
