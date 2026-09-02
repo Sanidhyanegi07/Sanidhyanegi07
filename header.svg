@@ -2,11 +2,11 @@
   <defs>
     <style>
       .name { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 48px; font-weight: 800; fill: #ffffff; letter-spacing: -2px; }
-      .role { font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; font-size: 14px; font-weight: 500; fill: #00ff66; letter-spacing: 4px; text-transform: uppercase; }
+      .role { font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; font-size: 14px; font-weight: 500; fill: #58a6ff; letter-spacing: 4px; text-transform: uppercase; }
       .meta { font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; font-size: 11px; fill: #555555; letter-spacing: 1.5px; }
       .text-muted { fill: #333333; font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; font-size: 10px; letter-spacing: 2px; }
-      .accent-text { fill: #00ff66; font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; font-size: 10px; letter-spacing: 1px; }
-      .dot { fill: #00ff66; }
+      .accent-text { fill: #58a6ff; font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; font-size: 10px; letter-spacing: 1px; }
+      .dot { fill: #58a6ff; }
       
       @keyframes glitch {
         0% { opacity: 1; }
@@ -39,7 +39,7 @@
   <rect width="100%" height="100%" fill="url(#grid)" rx="12"/>
 
   <!-- Top-left Status indicator -->
-  <rect x="50" y="45" width="2" height="12" fill="#00ff66" opacity="0.8"/>
+  <rect x="50" y="45" width="2" height="12" fill="#58a6ff" opacity="0.8"/>
   <circle cx="64" cy="51" r="2.5" class="dot" filter="url(#glow)">
     <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
   </circle>
@@ -52,14 +52,14 @@
   
   <text x="52" y="165" class="role">
     &gt; Systems Engineer
-    <tspan fill="#00ff66">
+    <tspan fill="#58a6ff">
       _
       <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
     </tspan>
   </text>
 
   <!-- Divider Line -->
-  <line x1="50" y1="195" x2="180" y2="195" stroke="rgba(0, 255, 102, 0.3)" stroke-width="1"/>
+  <line x1="50" y1="195" x2="180" y2="195" stroke="rgba(88, 166, 255, 0.3)" stroke-width="1"/>
   <line x1="180" y1="195" x2="300" y2="195" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1"/>
 
   <!-- Tags -->
@@ -73,8 +73,8 @@
     <!-- Outer dashed ring -->
     <g>
       <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="40s" repeatCount="indefinite"/>
-      <ellipse cx="0" cy="0" rx="110" ry="35" stroke="rgba(0,255,102,0.15)" stroke-width="0.5" fill="none" stroke-dasharray="2 10"/>
-      <circle cx="110" cy="0" r="1.5" fill="#00ff66" opacity="0.6" filter="url(#glow)"/>
+      <ellipse cx="0" cy="0" rx="110" ry="35" stroke="rgba(88,166,255,0.15)" stroke-width="0.5" fill="none" stroke-dasharray="2 10"/>
+      <circle cx="110" cy="0" r="1.5" fill="#58a6ff" opacity="0.6" filter="url(#glow)"/>
     </g>
 
     <!-- Mid solid ring -->
@@ -82,18 +82,18 @@
       <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="25s" repeatCount="indefinite"/>
       <ellipse cx="0" cy="0" rx="70" ry="20" stroke="rgba(255,255,255,0.05)" stroke-width="1" fill="none"/>
       <circle cx="70" cy="0" r="2" fill="#ffffff" opacity="0.4"/>
-      <circle cx="-70" cy="0" r="2" fill="#00ff66" opacity="0.3"/>
+      <circle cx="-70" cy="0" r="2" fill="#58a6ff" opacity="0.3"/>
     </g>
 
     <!-- Inner active ring -->
     <g>
       <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="15s" repeatCount="indefinite"/>
-      <ellipse cx="0" cy="0" rx="35" ry="35" stroke="rgba(0,255,102,0.3)" stroke-width="0.5" fill="none" stroke-dasharray="4 4" transform="rotate(25)"/>
-      <circle cx="35" cy="0" r="2.5" fill="#00ff66" transform="rotate(25)" filter="url(#glow)"/>
+      <ellipse cx="0" cy="0" rx="35" ry="35" stroke="rgba(88,166,255,0.3)" stroke-width="0.5" fill="none" stroke-dasharray="4 4" transform="rotate(25)"/>
+      <circle cx="35" cy="0" r="2.5" fill="#58a6ff" transform="rotate(25)" filter="url(#glow)"/>
     </g>
 
     <!-- Center Core -->
-    <circle cx="0" cy="0" r="7" fill="#00ff66" filter="url(#glow)">
+    <circle cx="0" cy="0" r="7" fill="#58a6ff" filter="url(#glow)">
       <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
       <animate attributeName="r" values="6;8;6" dur="2s" repeatCount="indefinite"/>
     </circle>
@@ -101,7 +101,7 @@
   </g>
 
   <!-- Ambient glowing horizontal scan line -->
-  <rect width="100%" height="2" fill="rgba(0,255,102,0.05)" rx="1">
+  <rect width="100%" height="2" fill="rgba(88,166,255,0.05)" rx="1">
     <animate attributeName="y" values="-10;290;-10" dur="6s" repeatCount="indefinite"/>
   </rect>
 </svg>
