@@ -48,11 +48,6 @@
 
 ### `// SYSTEM_TELEMETRY`
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Sanidhyanegi07&show_icons=true&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=8b949e&border_color=0d1117&hide_border=true" alt="GitHub Stats" width="48%"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sanidhyanegi07&layout=compact&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=8b949e&border_color=0d1117&hide_border=true" alt="Top Languages" width="48%"/>
-</div>
-
 <div align="center" style="margin-top: 10px;">
   <a href="https://github.com/Sanidhyanegi07">
     <img src="https://streak-stats.demolab.com?user=Sanidhyanegi07&theme=dark&hide_border=true&background=0d1117&stroke=0d1117&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&sideLabels=8b949e&currStreakNum=ffffff&sideNums=ffffff&dates=8b949e" alt="streak" width="97%"/>
