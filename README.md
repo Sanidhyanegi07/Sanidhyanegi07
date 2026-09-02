@@ -2,7 +2,7 @@
   <img src="header.svg" width="100%" alt="Sanidhya Negi"/>
 </div>
 
-<div align="center" style="margin-top: 15px;">
+<div align="center" style="margin-top: 20px;">
   <a href="https://github.com/Sanidhyanegi07?tab=followers"><img src="https://img.shields.io/github/followers/Sanidhyanegi07?style=flat-square&color=0d1117&labelColor=0d1117&logo=github&logoColor=666" alt="followers"/></a>
   &nbsp;
   <img src="https://komarev.com/ghpvc/?username=Sanidhyanegi07&label=views&style=flat-square&color=0d1117&labelColor=0d1117" alt="views"/>
@@ -10,7 +10,7 @@
 
 <br/>
 
-> `> SYSTEM.OUT.PRINTLN("WHOAMI");`
+> `> ./whoami`
 >
 > I am a Computer Science student who treats software like architecture—every component should be robust, elegant, and future‑proof. My work sits at the intersection of rigorous algorithm design and clean system architecture. I write code that is built to last and scale effortlessly under load, operating primarily in `C++` and `Java`.
 
@@ -26,12 +26,12 @@
 
 ### `// ENGINEERING_WORK`
 
-| ARCHITECTURE | DESCRIPTION | TECH |
-| :--- | :--- | :--- |
-| **[Algorithmic Telemetry Log](https://github.com/Sanidhyanegi07)** | Intensive algorithmic problem‑solving focused on optimal data structures and time/space complexity tradeoffs. | `Java` `DSA` |
-| **[ComplexCalc Core Engine](https://github.com/Sanidhyanegi07)** | Scientific calculator engine supporting dynamic expression parsing with cleanly decoupled business logic. | `C++` `Math` |
-| **[Academic Management System](https://github.com/Sanidhyanegi07)** | Enterprise-style application featuring strict role‑based access control and robust session management. | `C++17` `OOP` |
-| **[Webathon / NIRVAN '26](https://github.com/Sanidhyanegi07)** | Modular and highly responsive frontend architecture built for a high-traffic college technical event. | `React` `Vite` |
+| ARCHITECTURE | DESCRIPTION | TECH | LINK |
+| :--- | :--- | :--- | :---: |
+| **Algorithmic Telemetry Log** | Intensive algorithmic problem‑solving focused on optimal data structures and time/space complexity tradeoffs. | `Java` `DSA` | [SRC ↗](https://github.com/Sanidhyanegi07) |
+| **ComplexCalc Core Engine** | Scientific calculator engine supporting dynamic expression parsing with cleanly decoupled business logic. | `C++` `Math` | [SRC ↗](https://github.com/Sanidhyanegi07) |
+| **Academic Management System** | Enterprise-style application featuring strict role‑based access control and robust session management. | `C++17` `OOP` | [SRC ↗](https://github.com/Sanidhyanegi07) |
+| **Webathon / NIRVAN '26** | Modular and highly responsive frontend architecture built for a high-traffic college technical event. | `React` `Vite` | [SRC ↗](https://github.com/Sanidhyanegi07) |
 
 <br/>
 
