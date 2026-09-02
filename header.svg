@@ -1,66 +1,87 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" width="100%" height="100%">
   <defs>
     <style>
-      .name { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 48px; font-weight: 800; fill: #ffffff; letter-spacing: -1px; }
-      .role { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 15px; font-weight: 500; fill: #8b949e; letter-spacing: 3px; text-transform: uppercase; }
-      .meta { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 12px; fill: #666666; letter-spacing: 2px; }
+      .name { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 52px; font-weight: 800; fill: #ffffff; letter-spacing: -1.5px; }
+      .role { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 16px; font-weight: 500; fill: #00f2fe; letter-spacing: 4px; text-transform: uppercase; }
+      .meta { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 13px; fill: #8b949e; letter-spacing: 2.5px; }
       
       @keyframes blink {
         0%, 100% { opacity: 1; }
         50% { opacity: 0; }
       }
-      .cursor { animation: blink 1s step-end infinite; }
+      .cursor { animation: blink 1s step-end infinite; fill: #4facfe; }
+
+      @keyframes float1 {
+        0% { transform: translate(0, 0); }
+        50% { transform: translate(-30px, 20px); }
+        100% { transform: translate(0, 0); }
+      }
+      @keyframes float2 {
+        0% { transform: translate(0, 0); }
+        50% { transform: translate(30px, -20px); }
+        100% { transform: translate(0, 0); }
+      }
+      .orb1 { animation: float1 10s ease-in-out infinite; }
+      .orb2 { animation: float2 12s ease-in-out infinite; }
     </style>
+    
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#090a0f"/>
+      <stop offset="0%" stop-color="#05070a"/>
       <stop offset="100%" stop-color="#0d1117"/>
     </linearGradient>
-    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="0.5"/>
+
+    <!-- Heavy blur for glassmorphism / aurora effect -->
+    <filter id="aurora" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="45" result="blur" />
+    </filter>
+    
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
     </pattern>
   </defs>
 
-  <!-- Background -->
+  <!-- Base Background -->
   <rect width="100%" height="100%" fill="url(#bg)" rx="12"/>
+
+  <!-- Glowing Orbs (Aurora Effect) -->
+  <g filter="url(#aurora)" opacity="0.45">
+    <circle cx="850" cy="140" r="120" fill="#4facfe" class="orb1" />
+    <circle cx="700" cy="200" r="100" fill="#00f2fe" class="orb2" />
+    <circle cx="150" cy="250" r="80" fill="#4facfe" class="orb2" opacity="0.5"/>
+  </g>
+
+  <!-- Overlay Grid for Texture -->
   <rect width="100%" height="100%" fill="url(#grid)" rx="12"/>
 
   <!-- Top-left Status indicator -->
-  <rect x="50" y="45" width="2" height="12" fill="#8b949e"/>
-  <text x="65" y="55" font-family="ui-monospace, Consolas, monospace" font-size="10" fill="#8b949e" letter-spacing="1px">SYS.STATUS // ONLINE</text>
+  <rect x="50" y="45" width="2" height="12" fill="#00f2fe"/>
+  <text x="65" y="55" font-family="ui-monospace, Consolas, monospace" font-size="11" fill="#4facfe" letter-spacing="2px">SYS.STATUS // ONLINE</text>
 
   <!-- Name & Role -->
   <text x="50" y="130" class="name">Sanidhya Negi</text>
   
   <text x="52" y="165" class="role">
-    &gt; Systems Engineer<tspan class="cursor" fill="#8b949e">_</tspan>
+    &gt; Systems Engineer<tspan class="cursor">_</tspan>
   </text>
 
   <!-- Divider Line -->
-  <line x1="50" y1="195" x2="250" y2="195" stroke="rgba(139, 148, 158, 0.4)" stroke-width="1"/>
+  <line x1="50" y1="195" x2="300" y2="195" stroke="rgba(0, 242, 254, 0.4)" stroke-width="1"/>
 
   <!-- Tags -->
   <text x="50" y="230" class="meta" xml:space="preserve">C++   //   JAVA   //   SYSTEM ARCHITECTURE</text>
 
-  <!-- Abstract Aesthetic Element (Right side) -->
+  <!-- Foreground Abstract Geometry (Right side) -->
   <g transform="translate(800, 140)">
-    <!-- Outer dashed ring -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="60s" repeatCount="indefinite"/>
-      <ellipse cx="0" cy="0" rx="90" ry="90" stroke="rgba(139, 148, 158, 0.1)" stroke-width="1" fill="none" stroke-dasharray="4 8"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="40s" repeatCount="indefinite"/>
+      <ellipse cx="0" cy="0" rx="90" ry="90" stroke="rgba(0, 242, 254, 0.3)" stroke-width="1" fill="none" stroke-dasharray="2 12"/>
     </g>
-    <!-- Mid solid ring -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="40s" repeatCount="indefinite"/>
-      <ellipse cx="0" cy="0" rx="60" ry="60" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1" fill="none"/>
-      <circle cx="60" cy="0" r="2" fill="#8b949e"/>
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="30s" repeatCount="indefinite"/>
+      <ellipse cx="0" cy="0" rx="60" ry="60" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1" fill="none"/>
+      <circle cx="60" cy="0" r="3" fill="#00f2fe"/>
+      <circle cx="-60" cy="0" r="1.5" fill="#4facfe"/>
     </g>
-    <!-- Inner active ring -->
-    <g>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
-      <ellipse cx="0" cy="0" rx="30" ry="30" stroke="rgba(139, 148, 158, 0.2)" stroke-width="1" fill="none" stroke-dasharray="2 4"/>
-      <circle cx="-30" cy="0" r="1.5" fill="#ffffff"/>
-    </g>
-    <!-- Center Core -->
-    <circle cx="0" cy="0" r="4" fill="#8b949e"/>
+    <circle cx="0" cy="0" r="5" fill="#ffffff" opacity="0.8"/>
   </g>
 </svg>
