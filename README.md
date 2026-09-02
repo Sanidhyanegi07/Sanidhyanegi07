@@ -39,9 +39,9 @@
 
 | ARCHITECTURE | DESCRIPTION | TECH |
 | :--- | :--- | :--- |
-| [**Algorithmic Telemetry Log**](https://github.com/Sanidhyanegi07/DSA) | Intensive algorithmic problem‑solving focused on optimal data structures and time/space complexity tradeoffs. | `Java` `DSA` |
-| [**ComplexCalc Core Engine**](https://github.com/Sanidhyanegi07/GUICAL) | Scientific calculator engine supporting dynamic expression parsing with cleanly decoupled business logic. | `C++` `Math` |
-| [**Academic Management System**](https://github.com/Sanidhyanegi07/GEHU_ATTENDANCE) | Enterprise-style application featuring strict role‑based access control and robust session management. | `C++17` `OOP` |
+| [**Algorithmic Telemetry Log**](https://github.com/Sanidhyanegi07/neetcode-submissions) | Intensive algorithmic problem‑solving focused on optimal data structures and time/space complexity tradeoffs. | `Java` `DSA` |
+| [**ComplexCalc Core Engine**](https://github.com/Sanidhyanegi07/ComplexCalc) | Scientific calculator engine supporting dynamic expression parsing with cleanly decoupled business logic. | `C++` `Math` |
+| [**Academic Management System**](https://github.com/Sanidhyanegi07/Attendance-Management-System) | Enterprise-style application featuring strict role‑based access control and robust session management. | `C++17` `OOP` |
 | [**Webathon / NIRVAN '26**](https://github.com/Sanidhyanegi07/webathon) | Modular and highly responsive frontend architecture built for a high-traffic college technical event. | `React` `Vite` |
 
 <br/>
