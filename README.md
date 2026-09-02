@@ -12,7 +12,7 @@
 
 > `> ./whoami`
 >
-> I am a Computer Science student who treats software like architecture—every component should be robust, elegant, and future‑proof. My work sits at the intersection of rigorous algorithm design and clean system architecture. I write code that is built to last and scale effortlessly under load, operating primarily in `C++` and `Java`.
+> I'm a Computer Science student who actually enjoys figuring out how things work under the hood. For me, coding is a lot like solving complex puzzles—it's not just about getting something to compile, but writing clean, efficient logic that actually makes sense. I spend most of my time working in `C++` and `Java`, whether that's building core engines, structuring object-oriented systems, or grinding through data structures and algorithms. I'm always trying to bridge the gap between knowing the theory and actually building things that are fast and reliable. When I'm not writing code, you can probably find me breaking things just to learn how to put them back together better.
 
 <br/>
 
