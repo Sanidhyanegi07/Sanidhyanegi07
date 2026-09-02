@@ -45,9 +45,7 @@
   </circle>
   <text x="76" y="54" class="accent-text" letter-spacing="2px">SYS.STATUS // ONLINE</text>
 
-  <!-- Top-right Techy Details -->
-  <text x="940" y="45" class="text-muted" text-anchor="end">BUILD_VER: v2.0.42_STABLE</text>
-  <text x="940" y="60" class="text-muted" text-anchor="end">UPTIME: 99.99%</text>
+  <!-- Top-right Techy Details Removed -->
 
   <!-- Name & Role -->
   <text x="50" y="130" class="name glitch">Sanidhya Negi</text>
@@ -67,8 +65,7 @@
   <!-- Tags -->
   <text x="50" y="230" class="meta" xml:space="preserve">C++   //   JAVA   //   REACT   //   SYSTEM DESIGN   //   DSA</text>
 
-  <!-- Bottom-right Techy Details -->
-  <text x="940" y="230" class="text-muted" text-anchor="end">MEMORY_ALLOC: SECURE</text>
+  <!-- Bottom-right Techy Details Removed -->
 
   <!-- Floating Orbital Core (right side) -->
   <g transform="translate(780, 140)">
