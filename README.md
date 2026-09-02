@@ -2,25 +2,27 @@
   <img src="header.svg" width="100%" alt="Sanidhya Negi — Systems Engineer"/>
 </div>
 
-<div align="center">
+<div align="center" style="margin-top:1rem;">
   <img src="https://komarev.com/ghpvc/?username=Sanidhyanegi07&label=Profile+Views&style=flat-square&color=00ff66&labelColor=0a0a0a" alt="Profile Views"/>
+  <img src="https://img.shields.io/github/followers/Sanidhyanegi07?style=flat-square&logo=github&color=00ff66" alt="Followers"/>
+  <img src="https://img.shields.io/github/stars/Sanidhyanegi07?style=flat-square&logo=github&color=00ff66" alt="Stars"/>
 </div>
-
-<br/>
-
-## About Me
-
-I’m a Computer Science student who treats software like architecture – every component should be **robust**, **elegant**, and **future‑proof**. I spend my time wrestling with **C++**, **Java**, and **React**, not because they’re trendy, but because each forces me to think differently about performance, type safety, and user experience.
-
-My passion lies at the intersection of **algorithmic rigor** and **clean system design**. I aim to write code that lasts, is easy to read, and scales when the load grows. Currently I’m deepening my knowledge of **system design patterns**, **distributed systems**, and sharpening my **DSA** problem‑solving skills.
 
 ---
 
-## Tech Stack
+## 👨‍💻 About Me
+
+I’m a **Computer Science student** who treats software like architecture – every component should be **robust**, **elegant**, and **future‑proof**. I spend my time wrestling with **C++**, **Java**, and **React**, not because they’re trendy, but because each forces me to think differently about performance, type safety, and user experience.
+
+My passion lives at the intersection of **algorithmic rigor** and **clean system design**. I write code that **lasts**, is easy to read, and scales when the load grows. Right now I’m deepening my knowledge of **system‑design patterns**, **distributed systems**, and sharpening my **DSA** problem‑solving skills.
+
+---
+
+## 🛠️ Skills
 
 ### Languages
 <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
-<img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" />
+<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" />
 <img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white" />
 
 ### Frameworks & Libraries
@@ -37,23 +39,42 @@ My passion lies at the intersection of **algorithmic rigor** and **clean system 
 
 ---
 
-## Featured Projects
+## 🚀 Featured Projects
 
-**🧠 Algorithmic Telemetry Log** (`Java`, `DSA`)
-> A personal repository of algorithmic challenges focusing on optimal data‑structure selection and complexity analysis.
-
-**🌐 Webathon / NIRVAN ‘26** (`React`, `Vite`)
-> Front‑end architecture for a college technical event – modular components, state management, and responsive UI under tight deadlines.
-
-**⚙️ ComplexCalc Core Engine** (`C++`, `Algorithms`)
-> A scientific calculator engine supporting complex numbers, expression parsing, and a clean decoupled architecture.
-
-**🔒 Academic Management System** (`C++17`, `OOP`)
-> Role‑based access control, session validation, and eligibility logic built on solid object‑oriented principles.
+<table>
+<tr>
+<td width="50%" valign="top">
+<h3>🧠 Algorithmic Telemetry Log</h3>
+<code>Java • DSA</code>
+<p>Personal repository of algorithmic challenges focusing on optimal data‑structure selection and complexity analysis.</p>
+<a href="https://github.com/Sanidhyanegi07/algorithmic-telemetry"><img src="https://img.shields.io/badge/View_Project-00ff66?style=flat-square&logo=github&logoColor=black"/></a>
+</td>
+<td width="50%" valign="top">
+<h3>🌐 Webathon / NIRVAN ‘26</h3>
+<code>React • Vite</code>
+<p>Frontend architecture for a college technical event – modular components, state management, and responsive UI under tight deadlines.</p>
+<a href="https://github.com/Sanidhyanegi07/webathon"><img src="https://img.shields.io/badge/View_Project-00ff66?style=flat-square&logo=github&logoColor=black"/></a>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<h3>⚙️ ComplexCalc Core Engine</h3>
+<code>C++ • Algorithms</code>
+<p>Scientific calculator engine supporting complex numbers, expression parsing, and a clean decoupled architecture.</p>
+<a href="https://github.com/Sanidhyanegi07/complexcalc"><img src="https://img.shields.io/badge/View_Project-00ff66?style=flat-square&logo=github&logoColor=black"/></a>
+</td>
+<td width="50%" valign="top">
+<h3>🔒 Academic Management System</h3>
+<code>C++17 • OOP</code>
+<p>Role‑based access control, session validation, eligibility logic, and consistent application state built on solid OOP principles.</p>
+<a href="https://github.com/Sanidhyanegi07/academic-mgmt"><img src="https://img.shields.io/badge/View_Project-00ff66?style=flat-square&logo=github&logoColor=black"/></a>
+</td>
+</tr>
+</table>
 
 ---
 
-## GitHub Streak
+## 🔥 GitHub Streak
 
 <div align="center">
   <a href="https://git.io/streak-stats">
@@ -63,16 +84,15 @@ My passion lies at the intersection of **algorithmic rigor** and **clean system 
 
 ---
 
+## 📡 Let’s Connect
+
 <div align="center">
+  <a href="https://github.com/Sanidhyanegi07"><img src="https://img.shields.io/badge/GitHub-0a0a0a?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>
+  <a href="https://www.linkedin.com/in/sanidhya-negi-49aa8a35a/"><img src="https://img.shields.io/badge/LinkedIn-0a0a0a?style=flat-square&logo=linkedin&logoColor=00ff66" alt="LinkedIn"/></a>
+</div>
 
-<a href="https://github.com/Sanidhyanegi07">
-  <img src="https://img.shields.io/badge/GitHub-0a0a0a?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
-</a>
-&nbsp;
-<a href="https://www.linkedin.com/in/sanidhya-negi-49aa8a35a/">
-  <img src="https://img.shields.io/badge/LinkedIn-0a0a0a?style=flat-square&logo=linkedin&logoColor=00ff66" alt="LinkedIn"/>
-</a>
+---
 
-*Open to collaborations, open‑source contributions, and challenging engineering problems.*
-
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0a,100:00ff66&height=100&section=footer" width="100%"/>
 </div>
