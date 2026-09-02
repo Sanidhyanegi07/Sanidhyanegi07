@@ -3,9 +3,8 @@
 </div>
 
 <div align="center" style="margin-top: 20px;">
-  <a href="https://github.com/Sanidhyanegi07?tab=followers"><img src="https://img.shields.io/github/followers/Sanidhyanegi07?style=flat-square&color=0d1117&labelColor=0d1117&logo=github&logoColor=666" alt="followers"/></a>
+  <a href="https://github.com/Sanidhyanegi07?tab=followers"><img src="https://img.shields.io/github/followers/Sanidhyanegi07?style=flat-square&color=0d1117&labelColor=0d1117&logo=github&logoColor=00ff66" alt="followers"/></a>
   &nbsp;
-  <img src="https://komarev.com/ghpvc/?username=Sanidhyanegi07&label=views&style=flat-square&color=0d1117&labelColor=0d1117" alt="views"/>
   <img src="https://komarev.com/ghpvc/?username=Sanidhyanegi07&label=SYS.VIEWS&style=flat-square&color=0d1117&labelColor=0d1117" alt="views"/>
 </div>
 
