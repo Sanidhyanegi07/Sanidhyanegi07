@@ -1,36 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" width="100%" height="100%">
   <defs>
     <style>
-      .name { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 48px; font-weight: 800; fill: #ffffff; letter-spacing: -2px; }
-      .role { font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; font-size: 14px; font-weight: 500; fill: #58a6ff; letter-spacing: 4px; text-transform: uppercase; }
-      .meta { font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; font-size: 11px; fill: #555555; letter-spacing: 1.5px; }
-      .text-muted { fill: #333333; font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; font-size: 10px; letter-spacing: 2px; }
-      .accent-text { fill: #58a6ff; font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; font-size: 10px; letter-spacing: 1px; }
-      .dot { fill: #58a6ff; }
+      .name { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 48px; font-weight: 800; fill: #ffffff; letter-spacing: -1px; }
+      .role { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 15px; font-weight: 500; fill: #8b949e; letter-spacing: 3px; text-transform: uppercase; }
+      .meta { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 12px; fill: #666666; letter-spacing: 2px; }
       
-      @keyframes glitch {
-        0% { opacity: 1; }
-        95% { opacity: 1; }
-        96% { opacity: 0.8; }
-        97% { opacity: 0.4; }
-        98% { opacity: 1; }
-        99% { opacity: 0.2; }
-        100% { opacity: 1; }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
       }
-      .glitch { animation: glitch 4s infinite; }
+      .cursor { animation: blink 1s step-end infinite; }
     </style>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#020202"/>
-      <stop offset="50%" stop-color="#080808"/>
-      <stop offset="100%" stop-color="#050505"/>
+      <stop offset="0%" stop-color="#090a0f"/>
+      <stop offset="100%" stop-color="#0d1117"/>
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.02)" stroke-width="0.5"/>
-      <circle cx="40" cy="40" r="1" fill="rgba(255,255,255,0.05)"/>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="0.5"/>
     </pattern>
   </defs>
 
@@ -39,69 +25,42 @@
   <rect width="100%" height="100%" fill="url(#grid)" rx="12"/>
 
   <!-- Top-left Status indicator -->
-  <rect x="50" y="45" width="2" height="12" fill="#58a6ff" opacity="0.8"/>
-  <circle cx="64" cy="51" r="2.5" class="dot" filter="url(#glow)">
-    <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
-  </circle>
-  <text x="76" y="54" class="accent-text" letter-spacing="2px">SYS.STATUS // ONLINE</text>
-
-  <!-- Top-right Techy Details Removed -->
+  <rect x="50" y="45" width="2" height="12" fill="#8b949e"/>
+  <text x="65" y="55" font-family="ui-monospace, Consolas, monospace" font-size="10" fill="#8b949e" letter-spacing="1px">SYS.STATUS // ONLINE</text>
 
   <!-- Name & Role -->
-  <text x="50" y="130" class="name glitch">Sanidhya Negi</text>
+  <text x="50" y="130" class="name">Sanidhya Negi</text>
   
   <text x="52" y="165" class="role">
-    &gt; Systems Engineer
-    <tspan fill="#58a6ff">
-      _
-      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
-    </tspan>
+    &gt; Systems Engineer<tspan class="cursor" fill="#8b949e">_</tspan>
   </text>
 
   <!-- Divider Line -->
-  <line x1="50" y1="195" x2="180" y2="195" stroke="rgba(88, 166, 255, 0.3)" stroke-width="1"/>
-  <line x1="180" y1="195" x2="300" y2="195" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1"/>
+  <line x1="50" y1="195" x2="250" y2="195" stroke="rgba(139, 148, 158, 0.4)" stroke-width="1"/>
 
   <!-- Tags -->
-  <text x="50" y="230" class="meta" xml:space="preserve">C++   //   JAVA   //   REACT   //   SYSTEM DESIGN   //   DSA</text>
+  <text x="50" y="230" class="meta" xml:space="preserve">C++   //   JAVA   //   SYSTEM ARCHITECTURE</text>
 
-  <!-- Bottom-right Techy Details Removed -->
-
-  <!-- Floating Orbital Core (right side) -->
-  <g transform="translate(780, 140)">
-    
+  <!-- Abstract Aesthetic Element (Right side) -->
+  <g transform="translate(800, 140)">
     <!-- Outer dashed ring -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="40s" repeatCount="indefinite"/>
-      <ellipse cx="0" cy="0" rx="110" ry="35" stroke="rgba(88,166,255,0.15)" stroke-width="0.5" fill="none" stroke-dasharray="2 10"/>
-      <circle cx="110" cy="0" r="1.5" fill="#58a6ff" opacity="0.6" filter="url(#glow)"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="60s" repeatCount="indefinite"/>
+      <ellipse cx="0" cy="0" rx="90" ry="90" stroke="rgba(139, 148, 158, 0.1)" stroke-width="1" fill="none" stroke-dasharray="4 8"/>
     </g>
-
     <!-- Mid solid ring -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="25s" repeatCount="indefinite"/>
-      <ellipse cx="0" cy="0" rx="70" ry="20" stroke="rgba(255,255,255,0.05)" stroke-width="1" fill="none"/>
-      <circle cx="70" cy="0" r="2" fill="#ffffff" opacity="0.4"/>
-      <circle cx="-70" cy="0" r="2" fill="#58a6ff" opacity="0.3"/>
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="40s" repeatCount="indefinite"/>
+      <ellipse cx="0" cy="0" rx="60" ry="60" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1" fill="none"/>
+      <circle cx="60" cy="0" r="2" fill="#8b949e"/>
     </g>
-
     <!-- Inner active ring -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="15s" repeatCount="indefinite"/>
-      <ellipse cx="0" cy="0" rx="35" ry="35" stroke="rgba(88,166,255,0.3)" stroke-width="0.5" fill="none" stroke-dasharray="4 4" transform="rotate(25)"/>
-      <circle cx="35" cy="0" r="2.5" fill="#58a6ff" transform="rotate(25)" filter="url(#glow)"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
+      <ellipse cx="0" cy="0" rx="30" ry="30" stroke="rgba(139, 148, 158, 0.2)" stroke-width="1" fill="none" stroke-dasharray="2 4"/>
+      <circle cx="-30" cy="0" r="1.5" fill="#ffffff"/>
     </g>
-
     <!-- Center Core -->
-    <circle cx="0" cy="0" r="7" fill="#58a6ff" filter="url(#glow)">
-      <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
-      <animate attributeName="r" values="6;8;6" dur="2s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="0" cy="0" r="3" fill="#ffffff" opacity="0.9"/>
+    <circle cx="0" cy="0" r="4" fill="#8b949e"/>
   </g>
-
-  <!-- Ambient glowing horizontal scan line -->
-  <rect width="100%" height="2" fill="rgba(88,166,255,0.05)" rx="1">
-    <animate attributeName="y" values="-10;290;-10" dur="6s" repeatCount="indefinite"/>
-  </rect>
 </svg>
