@@ -37,7 +37,7 @@
 
 ### `// ENGINEERING_WORK`
 
-| ARCHITECTURE | DESCRIPTION | TECH |
+| `ARCHITECTURE` | `DESCRIPTION` | `TECH` |
 | :--- | :--- | :--- |
 | [**Algorithmic Telemetry Log**](https://github.com/Sanidhyanegi07/neetcode-submissions) | Intensive algorithmic problem‑solving focused on optimal data structures and time/space complexity tradeoffs. | <img src="https://img.shields.io/badge/-Java-0d1117?style=flat-square&logo=openjdk&logoColor=58a6ff"/> <img src="https://img.shields.io/badge/-DSA-0d1117?style=flat-square&logo=leetcode&logoColor=58a6ff"/> |
 | [**ComplexCalc Core Engine**](https://github.com/Sanidhyanegi07/ComplexCalc) | Scientific calculator engine supporting dynamic expression parsing with cleanly decoupled business logic. | <img src="https://img.shields.io/badge/-C++-0d1117?style=flat-square&logo=c%2B%2B&logoColor=58a6ff"/> <img src="https://img.shields.io/badge/-Math-0d1117?style=flat-square&logo=wolframmathematica&logoColor=58a6ff"/> |
@@ -61,4 +61,10 @@
   <a href="https://github.com/Sanidhyanegi07"><img src="https://img.shields.io/badge/GitHub-0d1117?style=for-the-badge&logo=github&logoColor=58a6ff" alt="GitHub"/></a>
   &nbsp;
   <a href="https://www.linkedin.com/in/sanidhya-negi-49aa8a35a/"><img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=58a6ff" alt="LinkedIn"/></a>
+</div>
+
+<br/>
+
+<div align="center">
+  <sub><i>"Simplicity is prerequisite for reliability." — Edsger W. Dijkstra</i></sub>
 </div>
