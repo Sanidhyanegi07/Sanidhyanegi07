@@ -10,48 +10,46 @@
 
 ## About Me
 
-I don't just write code that works — I write code that *lasts*.
+I’m a Computer Science student who treats software like architecture – every component should be **robust**, **elegant**, and **future‑proof**. I spend my time wrestling with **C++**, **Java**, and **React**, not because they’re trendy, but because each forces me to think differently about performance, type safety, and user experience.
 
-As a Computer Science student, I'm drawn to the deeper side of software: understanding why an algorithm behaves the way it does under load, why one architecture outlives another, and what separates code that ships from code that *scales*. I spend my time in **C++**, **Java**, and **React JS** — not because they're popular, but because each one teaches a fundamentally different way of thinking about systems.
-
-My work sits at the intersection of **rigorous algorithm design** and **clean software architecture**. I believe every function should justify its existence, every abstraction should earn its complexity, and every system should be built to be read, not just run.
-
-Currently deep into **system design patterns**, **distributed computing fundamentals**, and pushing my **DSA** problem-solving to the next level.
+My passion lies at the intersection of **algorithmic rigor** and **clean system design**. I aim to write code that lasts, is easy to read, and scales when the load grows. Currently I’m deepening my knowledge of **system design patterns**, **distributed systems**, and sharpening my **DSA** problem‑solving skills.
 
 ---
 
 ## Tech Stack
 
-<div align="center">
-
+### Languages
 <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
 <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" />
 <img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white" />
+
+### Frameworks & Libraries
 <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
 <img src="https://img.shields.io/badge/JavaScript-323330?style=flat-square&logo=javascript&logoColor=F7DF1E" />
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
+
+### Tools & Platforms
 <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" />
 <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" />
+<img src="https://img.shields.io/badge/CMake-064F8C?style=flat-square&logo=cmake&logoColor=white" />
 <img src="https://img.shields.io/badge/Qt-41CD52?style=flat-square&logo=qt&logoColor=white" />
-
-</div>
 
 ---
 
 ## Featured Projects
 
-**🧠 Algorithmic Telemetry Log** — `Java` `DSA`
-> Intensive algorithmic problem-solving — building intuition for optimal data structure selection and reasoning about time/space complexity tradeoffs.
+**🧠 Algorithmic Telemetry Log** (`Java`, `DSA`)
+> A personal repository of algorithmic challenges focusing on optimal data‑structure selection and complexity analysis.
 
-**🌐 Webathon / NIRVAN '26** — `React` `Vite`
-> Frontend architecture for a college technical event — component modularity, state management, and shipping responsive UI under strict deadlines.
+**🌐 Webathon / NIRVAN ‘26** (`React`, `Vite`)
+> Front‑end architecture for a college technical event – modular components, state management, and responsive UI under tight deadlines.
 
-**⚙️ ComplexCalc Core Engine** — `C++` `Algorithms`
-> Scientific operations, complex-number math, and dynamic expression evaluation with strictly decoupled business logic from interface layers.
+**⚙️ ComplexCalc Core Engine** (`C++`, `Algorithms`)
+> A scientific calculator engine supporting complex numbers, expression parsing, and a clean decoupled architecture.
 
-**🔒 Academic Management System** — `C++17` `OOP`
-> Role-based access control, session validation, eligibility logic, and consistent application state — all built on solid Object-Oriented principles.
+**🔒 Academic Management System** (`C++17`, `OOP`)
+> Role‑based access control, session validation, and eligibility logic built on solid object‑oriented principles.
 
 ---
 
@@ -75,6 +73,6 @@ Currently deep into **system design patterns**, **distributed computing fundamen
   <img src="https://img.shields.io/badge/LinkedIn-0a0a0a?style=flat-square&logo=linkedin&logoColor=00ff66" alt="LinkedIn"/>
 </a>
 
-*Open to collaborations and interesting engineering problems.*
+*Open to collaborations, open‑source contributions, and challenging engineering problems.*
 
 </div>
