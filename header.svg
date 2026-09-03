@@ -22,7 +22,7 @@
         font-family: 'JetBrains Mono', ui-monospace, monospace;
         font-size: 11px;
         font-weight: 500;
-        fill: #6e7681;
+        fill: #8b949e;
         letter-spacing: 2px;
       }
       .accent-text {
@@ -37,70 +37,68 @@
       .cursor { animation: blink 1s step-end infinite; }
     </style>
 
-    <!-- Strict Card Boundary: NOTHING goes outside rounded border -->
+    <!-- Strict Card Perimeter: NOTHING goes outside rounded boundary -->
     <clipPath id="card-bounds">
       <rect x="0" y="0" width="1000" height="280" rx="12"/>
     </clipPath>
 
-    <!-- Deep Space Gradient from Beginning -->
+    <!-- Deep Space Obsidian Background -->
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#020204"/>
-      <stop offset="50%" stop-color="#060913"/>
-      <stop offset="100%" stop-color="#030408"/>
+      <stop offset="0%" stop-color="#020307"/>
+      <stop offset="50%" stop-color="#050814"/>
+      <stop offset="100%" stop-color="#03040a"/>
     </linearGradient>
 
-    <!-- Precision Grid Pattern -->
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(88,166,255,0.03)" stroke-width="0.5"/>
-      <circle cx="40" cy="40" r="0.8" fill="rgba(88,166,255,0.07)"/>
-    </pattern>
-
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2.5" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <!-- Glowing Core Filters for High Visibility -->
+    <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
 
-    <filter id="core-glow">
-      <feGaussianBlur stdDeviation="5" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <filter id="wide-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
   </defs>
 
-  <!-- ═══════════════ STRICTLY CLIPPED CANVAS ═══════════════ -->
+  <!-- ═══════════════ STRICTLY CLIPPED CANVAS CONTAINER ═══════════════ -->
   <g clip-path="url(#card-bounds)">
-    <!-- Background -->
+    <!-- Base Deep Space Background -->
     <rect width="100%" height="100%" fill="url(#bg)"/>
-    <rect width="100%" height="100%" fill="url(#grid)"/>
 
     <!-- Subtle Astrometric Starfield -->
-    <circle cx="85" cy="80" r="0.5" fill="#ffffff" opacity="0.3"/>
-    <circle cx="140" cy="220" r="0.5" fill="#58a6ff" opacity="0.35"/>
-    <circle cx="260" cy="55" r="0.6" fill="#ffffff" opacity="0.35"/>
-    <circle cx="340" cy="180" r="0.5" fill="#58a6ff" opacity="0.25"/>
-    <circle cx="440" cy="35" r="0.75" fill="#ffffff">
-      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="4s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="500" cy="240" r="0.5" fill="#58a6ff" opacity="0.3"/>
-    <circle cx="640" cy="230" r="0.7" fill="#ffffff">
-      <animate attributeName="opacity" values="0.25;0.85;0.25" dur="5s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="910" cy="45" r="0.75" fill="#ffffff">
-      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="4.2s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="945" cy="235" r="0.55" fill="#58a6ff" opacity="0.35"/>
+    <g opacity="0.6">
+      <circle cx="85" cy="80" r="0.6" fill="#ffffff" opacity="0.4"/>
+      <circle cx="140" cy="220" r="0.5" fill="#58a6ff" opacity="0.5"/>
+      <circle cx="260" cy="55" r="0.6" fill="#ffffff" opacity="0.4"/>
+      <circle cx="340" cy="180" r="0.5" fill="#58a6ff" opacity="0.4"/>
+      <circle cx="440" cy="35" r="0.8" fill="#ffffff">
+        <animate attributeName="opacity" values="0.3;0.9;0.3" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="500" cy="240" r="0.6" fill="#58a6ff" opacity="0.4"/>
+      <circle cx="640" cy="230" r="0.75" fill="#ffffff">
+        <animate attributeName="opacity" values="0.3;0.95;0.3" dur="5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="920" cy="45" r="0.8" fill="#ffffff">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="4.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="955" cy="235" r="0.6" fill="#58a6ff" opacity="0.45"/>
+    </g>
 
-    <!-- Ambient glowing horizontal scanline (Strictly clipped) -->
-    <rect width="100%" height="1.5" fill="rgba(88,166,255,0.06)">
-      <animate attributeName="y" values="-10;290;-10" dur="6s" repeatCount="indefinite"/>
-    </rect>
-
-    <!-- ═══════════════ LEFT: SLEEK PERSONAL IDENTITY ═══════════════ -->
+    <!-- ═══════════════ LEFT: SLEEK PERSONAL DEVELOPER IDENTITY ═══════════════ -->
+    <!-- Strictly confined to x=50..x=380: ZERO overlap, NO fake movie text -->
 
     <!-- Top-left Status Indicator -->
     <g transform="translate(50, 44)">
       <rect x="0" y="0" width="2" height="12" fill="#58a6ff" opacity="0.9"/>
-      <circle cx="12" cy="6" r="2.5" class="dot" filter="url(#glow)">
-        <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+      <circle cx="12" cy="6" r="2.5" class="dot" filter="url(#neon-glow)">
+        <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
       </circle>
       <text x="22" y="9.5" class="accent-text">SYS.STATUS // ONLINE</text>
     </g>
@@ -113,111 +111,154 @@
     </text>
 
     <!-- Precision Divider Line (Ends cleanly at x=280) -->
-    <line x1="50" y1="192" x2="190" y2="192" stroke="rgba(88, 166, 255, 0.4)" stroke-width="1"/>
-    <line x1="190" y1="192" x2="310" y2="192" stroke="rgba(88, 166, 255, 0.1)" stroke-width="0.75"/>
+    <line x1="50" y1="192" x2="190" y2="192" stroke="#58a6ff" stroke-width="1" opacity="0.45"/>
+    <line x1="190" y1="192" x2="310" y2="192" stroke="#58a6ff" stroke-width="0.6" opacity="0.15"/>
 
     <!-- Tags -->
     <text x="50" y="226" class="meta" xml:space="preserve">C++   <tspan fill="#58a6ff" opacity="0.8">//</tspan>   JAVA   <tspan fill="#58a6ff" opacity="0.8">//</tspan>   SYSTEM DESIGN   <tspan fill="#58a6ff" opacity="0.8">//</tspan>   DSA</text>
 
-    <!-- ═══════════════ RIGHT: ENHANCED 3D ORBITAL CONSTRUCT (FROM THE BEGINNING) ═══════════════ -->
-    <!-- Positioned cleanly at (780, 140) with 60px margin on all sides -->
-    <g transform="translate(780, 140)">
-      
-      <!-- ── 7 SPACETIME GRAVITATIONAL LENSING LINES (60% Background / 40% Theme Blend) ── -->
-      <!-- Curvature lines with sharp terminal dots, strictly proportional -->
+    <!-- ═══════════════ RIGHT: 3D CONE & CIRCLE ACCRETION CONSTRUCT (PROPERLY VISIBLE) ═══════════════ -->
+    <!-- Positioned cleanly at (770, 140) with high contrast, vibrant luminous vectors -->
+    <g transform="translate(770, 140)">
+
+      <!-- Ambient Core Nebula Glow -->
+      <circle cx="0" cy="0" r="110" fill="#58a6ff" opacity="0.08" filter="url(#wide-glow)"/>
+
+      <!-- ── 7 SPACETIME GEODESIC CURVATURE LINES (60% Background / 40% Theme Blend) ── -->
+      <!-- Clearly visible graduated lines with glowing terminal tracking dots -->
       <!-- Line 1: Inner (Shortest) -->
       <g>
-        <path d="M -26,14 Q 0,9 26,14" fill="none" stroke="#263a54" stroke-width="0.75" opacity="0.85"/>
-        <circle cx="-26" cy="14" r="1.1" fill="#58a6ff" opacity="0.9"/>
-        <circle cx="26" cy="14" r="1.1" fill="#58a6ff" opacity="0.9"/>
+        <path d="M -30,16 Q 0,11 30,16" fill="none" stroke="#2a3f5c" stroke-width="1.0" opacity="0.9"/>
+        <circle cx="-30" cy="16" r="1.3" fill="#58a6ff"/>
+        <circle cx="30" cy="16" r="1.3" fill="#58a6ff"/>
       </g>
 
       <!-- Line 2 -->
       <g>
-        <path d="M -38,-17 Q 0,-11 38,-17" fill="none" stroke="#1f2f45" stroke-width="0.7" opacity="0.8"/>
-        <circle cx="-38" cy="-17" r="1.0" fill="#ffffff" opacity="0.85"/>
-        <circle cx="38" cy="-17" r="1.0" fill="#58a6ff" opacity="0.85"/>
+        <path d="M -44,-20 Q 0,-13 44,-20" fill="none" stroke="#243750" stroke-width="0.9" opacity="0.85"/>
+        <circle cx="-44" cy="-20" r="1.2" fill="#ffffff"/>
+        <circle cx="44" cy="-20" r="1.2" fill="#58a6ff"/>
       </g>
 
       <!-- Line 3 -->
       <g>
-        <path d="M -50,22 Q 0,14 50,22" fill="none" stroke="#29405e" stroke-width="0.75" opacity="0.8"/>
-        <circle cx="-50" cy="22" r="1.1" fill="#58a6ff" opacity="0.9"/>
-        <circle cx="50" cy="22" r="1.1" fill="#ffffff" opacity="0.85"/>
+        <path d="M -58,26 Q 0,17 58,26" fill="none" stroke="#2d4464" stroke-width="0.9" opacity="0.85"/>
+        <circle cx="-58" cy="26" r="1.3" fill="#58a6ff"/>
+        <circle cx="58" cy="26" r="1.3" fill="#ffffff"/>
       </g>
 
       <!-- Line 4 -->
       <g>
-        <path d="M -62,-26 Q 0,-17 62,-26" fill="none" stroke="#1d2c40" stroke-width="0.65" opacity="0.75"/>
-        <circle cx="-62" cy="-26" r="1.0" fill="#58a6ff" opacity="0.8"/>
-        <circle cx="62" cy="-26" r="1.0" fill="#ffffff" opacity="0.8"/>
+        <path d="M -72,-30 Q 0,-20 72,-30" fill="none" stroke="#22334c" stroke-width="0.8" opacity="0.8"/>
+        <circle cx="-72" cy="-30" r="1.2" fill="#58a6ff"/>
+        <circle cx="72" cy="-30" r="1.2" fill="#ffffff"/>
       </g>
 
       <!-- Line 5 -->
       <g>
-        <path d="M -74,31 Q 0,20 74,31" fill="none" stroke="#253a54" stroke-width="0.65" opacity="0.75"/>
-        <circle cx="-74" cy="31" r="1.1" fill="#ffffff" opacity="0.85"/>
-        <circle cx="74" cy="31" r="1.1" fill="#58a6ff" opacity="0.85"/>
+        <path d="M -86,36 Q 0,24 86,36" fill="none" stroke="#283e5a" stroke-width="0.8" opacity="0.8"/>
+        <circle cx="-86" cy="36" r="1.3" fill="#ffffff"/>
+        <circle cx="86" cy="36" r="1.3" fill="#58a6ff"/>
       </g>
 
       <!-- Line 6 -->
       <g>
-        <path d="M -86,-36 Q 0,-24 86,-36" fill="none" stroke="#1a2738" stroke-width="0.6" opacity="0.7"/>
-        <circle cx="-86" cy="-36" r="1.0" fill="#58a6ff" opacity="0.75"/>
-        <circle cx="86" cy="-36" r="1.0" fill="#58a6ff" opacity="0.75"/>
+        <path d="M -100,-42 Q 0,-29 100,-42" fill="none" stroke="#1e2c42" stroke-width="0.75" opacity="0.75"/>
+        <circle cx="-100" cy="-42" r="1.2" fill="#58a6ff"/>
+        <circle cx="100" cy="-42" r="1.2" fill="#58a6ff"/>
       </g>
 
       <!-- Line 7: Outermost (Longest) -->
       <g>
-        <path d="M -98,41 Q 0,26 98,41" fill="none" stroke="#22354c" stroke-width="0.6" opacity="0.65"/>
-        <circle cx="-98" cy="41" r="1.1" fill="#58a6ff" opacity="0.85"/>
-        <circle cx="98" cy="41" r="1.1" fill="#ffffff" opacity="0.85"/>
+        <path d="M -114,48 Q 0,33 114,48" fill="none" stroke="#263b56" stroke-width="0.75" opacity="0.75"/>
+        <circle cx="-114" cy="48" r="1.3" fill="#58a6ff"/>
+        <circle cx="114" cy="48" r="1.3" fill="#ffffff"/>
       </g>
 
-      <!-- ── THE 4 ROTATING 3D ORBITAL RINGS (From Beloved Beginning Version) ── -->
+      <!-- ── 3D GRAVITATIONAL CONE FUNNEL (CONCENTRIC CIRCLES WITH DEPTH) ── -->
 
-      <!-- Ring 1: Outer dashed ring (40s spin) -->
+      <!-- Tapered Cone Funnel Guide Struts (Connecting Outer Rim to Throat) -->
+      <g opacity="0.35">
+        <line x1="-115" y1="0" x2="-22" y2="0" stroke="#58a6ff" stroke-width="0.8"/>
+        <line x1="115" y1="0" x2="22" y2="0" stroke="#58a6ff" stroke-width="0.8"/>
+        <line x1="0" y1="-44" x2="0" y2="-8" stroke="#58a6ff" stroke-width="0.8"/>
+        <line x1="0" y1="44" x2="0" y2="8" stroke="#58a6ff" stroke-width="0.8"/>
+        <line x1="-80" y1="-30" x2="-15" y2="-5" stroke="#58a6ff" stroke-width="0.6"/>
+        <line x1="80" y1="-30" x2="15" y2="-5" stroke="#58a6ff" stroke-width="0.6"/>
+        <line x1="-80" y1="30" x2="-15" y2="5" stroke="#58a6ff" stroke-width="0.6"/>
+        <line x1="80" y1="30" x2="15" y2="5" stroke="#58a6ff" stroke-width="0.6"/>
+      </g>
+
+      <!-- Cone Circle Layer 1: Outer Rim (Clearly Visible) -->
+      <ellipse cx="0" cy="0" rx="115" ry="44" fill="none" stroke="#58a6ff" stroke-width="1.2" opacity="0.65" stroke-dasharray="6 8"/>
+
+      <!-- Cone Circle Layer 2: Mid-Outer -->
+      <ellipse cx="0" cy="0" rx="92" ry="34" fill="none" stroke="#38bdf8" stroke-width="1.3" opacity="0.75"/>
+
+      <!-- Cone Circle Layer 3: Mid Step -->
+      <ellipse cx="0" cy="0" rx="70" ry="25" fill="none" stroke="#58a6ff" stroke-width="1.4" opacity="0.85"/>
+
+      <!-- Cone Circle Layer 4: Inner Sloping Neck -->
+      <ellipse cx="0" cy="0" rx="48" ry="17" fill="none" stroke="#79c0ff" stroke-width="1.5" opacity="0.9" filter="url(#neon-glow)"/>
+
+      <!-- Cone Circle Layer 5: Deep Throat Ring -->
+      <ellipse cx="0" cy="0" rx="28" ry="10" fill="none" stroke="#ffffff" stroke-width="1.6" opacity="0.95" filter="url(#neon-glow)"/>
+
+      <!-- Cone Circle Layer 6: Singularity Horizon Rim -->
+      <ellipse cx="0" cy="0" rx="14" ry="5" fill="none" stroke="#ffffff" stroke-width="1.8" opacity="1"/>
+
+      <!-- ── ACTIVE ROTATING 3D ORBITING SATELLITE PARTICLES ON THE CONE ── -->
+
+      <!-- Outer Orbiting Particle Stream (32s) -->
       <g>
-        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="40s" repeatCount="indefinite"/>
-        <ellipse cx="0" cy="0" rx="112" ry="34" stroke="rgba(88,166,255,0.2)" stroke-width="0.6" fill="none" stroke-dasharray="3 9"/>
-        <circle cx="112" cy="0" r="1.8" fill="#58a6ff" filter="url(#glow)"/>
-        <circle cx="-112" cy="0" r="1.2" fill="#ffffff" opacity="0.6"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="32s" repeatCount="indefinite"/>
+        <circle cx="115" cy="0" r="2.2" fill="#58a6ff" filter="url(#neon-glow)"/>
+        <circle cx="-115" cy="0" r="1.6" fill="#ffffff" opacity="0.9"/>
       </g>
 
-      <!-- Ring 2: Mid solid inclined ring (25s counter-spin) -->
+      <!-- Mid-Outer Counter-Orbiting Particle Stream (22s) -->
       <g>
-        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="25s" repeatCount="indefinite"/>
-        <ellipse cx="0" cy="0" rx="74" ry="22" stroke="rgba(255,255,255,0.1)" stroke-width="0.8" fill="none"/>
-        <circle cx="74" cy="0" r="2" fill="#ffffff" opacity="0.85"/>
-        <circle cx="-74" cy="0" r="1.8" fill="#58a6ff" opacity="0.75" filter="url(#glow)"/>
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="22s" repeatCount="indefinite"/>
+        <circle cx="92" cy="0" r="2.0" fill="#38bdf8" filter="url(#neon-glow)"/>
+        <circle cx="-92" cy="0" r="1.8" fill="#58a6ff"/>
       </g>
 
-      <!-- Ring 3: Inner active 3D inclined ring (15s spin, 25° tilt) -->
+      <!-- Mid Orbiting Particle (16s) -->
       <g>
-        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="15s" repeatCount="indefinite"/>
-        <ellipse cx="0" cy="0" rx="42" ry="42" stroke="rgba(88,166,255,0.35)" stroke-width="0.6" fill="none" stroke-dasharray="4 4" transform="rotate(25)"/>
-        <circle cx="42" cy="0" r="2.2" fill="#58a6ff" transform="rotate(25)" filter="url(#glow)"/>
-        <circle cx="-42" cy="0" r="1.4" fill="#ffffff" transform="rotate(25)" opacity="0.8"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="16s" repeatCount="indefinite"/>
+        <circle cx="70" cy="0" r="2.2" fill="#ffffff" filter="url(#neon-glow)"/>
+        <circle cx="-70" cy="0" r="1.6" fill="#79c0ff"/>
       </g>
 
-      <!-- Ring 4: Rapid core orbit (10s counter-spin, -30° tilt) -->
+      <!-- Inner Fast Throat Orbiting Particle (10s) -->
       <g>
         <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="10s" repeatCount="indefinite"/>
-        <ellipse cx="0" cy="0" rx="22" ry="14" stroke="rgba(88,166,255,0.4)" stroke-width="0.5" fill="none" transform="rotate(-30)"/>
-        <circle cx="22" cy="0" r="1.4" fill="#ffffff" transform="rotate(-30)"/>
+        <circle cx="48" cy="0" r="2.4" fill="#ffffff" filter="url(#neon-glow)"/>
+        <circle cx="-48" cy="0" r="1.8" fill="#58a6ff"/>
       </g>
 
-      <!-- Center Singularity Core (From Beginning, Enhanced) -->
-      <circle cx="0" cy="0" r="7" fill="#58a6ff" filter="url(#core-glow)">
-        <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
-        <animate attributeName="r" values="6.5;8;6.5" dur="2s" repeatCount="indefinite"/>
+      <!-- Deep Throat Rapid Spin (6s) -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6s" repeatCount="indefinite"/>
+        <circle cx="28" cy="0" r="2.0" fill="#ffffff" filter="url(#neon-glow)"/>
+      </g>
+
+      <!-- ── CENTRAL CORE SINGULARITY ── -->
+      <!-- Black Void Center -->
+      <circle cx="0" cy="0" r="7" fill="#010204"/>
+
+      <!-- Pulsing Brilliant Core -->
+      <circle cx="0" cy="0" r="4.5" fill="#58a6ff" filter="url(#neon-glow)">
+        <animate attributeName="opacity" values="0.75;1;0.75" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="r" values="4;5.5;4" dur="2s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="0" cy="0" r="3" fill="#ffffff" opacity="0.95"/>
-    </g>
+      <circle cx="0" cy="0" r="2" fill="#ffffff" opacity="1"/>
+
+    </g> <!-- End of Right Construct -->
 
   </g> <!-- End of clipped container -->
 
   <!-- ═══════════════ CRISP CARD PERIMETER BORDER ═══════════════ -->
   <!-- 1px hairline container border with rounded corners: ZERO overflow -->
-  <rect x="0.5" y="0.5" width="999" height="279" rx="12" fill="none" stroke="rgba(88, 166, 255, 0.2)" stroke-width="1"/>
+  <rect x="0.5" y="0.5" width="999" height="279" rx="12" fill="none" stroke="rgba(88, 166, 255, 0.25)" stroke-width="1"/>
 </svg>
