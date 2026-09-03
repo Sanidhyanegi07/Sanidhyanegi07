@@ -68,19 +68,19 @@
 
 ### `// SYSTEM_TELEMETRY`
 
-<div align="center" style="margin-top: 10px;">
+<div align="center" style="margin-top: 15px;">
   <a href="https://github.com/Sanidhyanegi07">
-    <img height="180" src="https://github-readme-stats-anuraghazra1.vercel.app/api?username=Sanidhyanegi07&show_icons=true&bg_color=020306&title_color=58a6ff&icon_color=58a6ff&text_color=ffffff&hide_border=true" alt="GitHub Stats"/>
+    <img height="165" src="https://github-readme-stats-anuraghazra1.vercel.app/api?username=Sanidhyanegi07&show_icons=true&bg_color=020306&title_color=58a6ff&icon_color=58a6ff&text_color=8b949e&hide_border=true&custom_title=SYS.METRICS" alt="GitHub Stats"/>
   </a>
   &nbsp;
   <a href="https://github.com/Sanidhyanegi07">
-    <img height="180" src="https://github-readme-stats-anuraghazra1.vercel.app/api/top-langs?username=Sanidhyanegi07&layout=compact&bg_color=020306&title_color=58a6ff&text_color=ffffff&hide_border=true" alt="Top Languages"/>
+    <img height="165" src="https://streak-stats.demolab.com?user=Sanidhyanegi07&theme=dark&hide_border=true&background=020306&stroke=020306&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&sideLabels=8b949e&currStreakNum=ffffff&sideNums=ffffff&dates=8b949e" alt="Streak Stats"/>
   </a>
 </div>
 
 <div align="center" style="margin-top: 10px;">
   <a href="https://github.com/Sanidhyanegi07">
-    <img width="97%" src="https://streak-stats.demolab.com?user=Sanidhyanegi07&theme=dark&hide_border=true&background=020306&stroke=020306&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&sideLabels=8b949e&currStreakNum=ffffff&sideNums=ffffff&dates=8b949e" alt="streak"/>
+    <img height="145" src="https://github-readme-stats-anuraghazra1.vercel.app/api/top-langs?username=Sanidhyanegi07&layout=compact&bg_color=020306&title_color=58a6ff&text_color=8b949e&hide_border=true&custom_title=SYS.LANGUAGES" alt="Top Languages"/>
   </a>
 </div>
 
