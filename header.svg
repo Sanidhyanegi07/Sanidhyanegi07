@@ -74,19 +74,7 @@
   <g clip-path="url(#card-bounds)">
     <rect width="100%" height="100%" fill="url(#bg)"/>
 
-    <!-- Subtle Ambient Astrometric Stars -->
-    <g>
-      <circle cx="120" cy="60" r="1.5" fill="#00f2fe" opacity="0.4" filter="url(#neon-glow)"/>
-      <circle cx="280" cy="230" r="1.0" fill="#4facfe" opacity="0.5"/>
-      <circle cx="480" cy="40" r="2.0" fill="#ffffff" opacity="0.8" filter="url(#neon-glow)">
-        <animate attributeName="opacity" values="0.2;1;0.2" dur="4s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="620" cy="240" r="1.5" fill="#00f2fe" opacity="0.6"/>
-      <circle cx="880" cy="50" r="2.0" fill="#ffffff" opacity="0.9" filter="url(#neon-glow)">
-        <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="950" cy="210" r="1.2" fill="#4facfe" opacity="0.5"/>
-    </g>
+    <!-- Deep Space Void -->
 
     <!-- ═══════════════ LEFT: PREMIUM HUD IDENTITY ═══════════════ -->
     <g transform="translate(50, 45)">
@@ -240,22 +228,32 @@
 
       </g> <!-- End Global Tumble Group -->
 
-      <!-- ════════ THE CENTRAL SUPERMASSIVE SINGULARITY ════════ -->
-      <!-- Fixed in the center, pulsing brilliantly -->
+      <!-- ════════ THE CENTRAL SINGULARITY ════════ -->
+      <!-- A dark void surrounded by intricate pulsing energy rings -->
       <g>
-        <!-- Singularity Core -->
-        <circle cx="0" cy="0" r="8" fill="#ffffff" filter="url(#neon-glow)">
-          <animate attributeName="r" values="7;10;7" dur="1.5s" repeatCount="indefinite"/>
+        <!-- Outer Energy Halo -->
+        <circle cx="0" cy="0" r="24" fill="url(#sun-glow)">
+          <animate attributeName="r" values="22;26;22" dur="3s" repeatCount="indefinite"/>
         </circle>
-        
-        <!-- Rotating Energy Flares -->
+
+        <!-- Intense Starburst Rays (Behind the void) -->
         <g>
-          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/>
-          <path d="M 0,-18 Q 0,0 18,0 Q 0,0 0,18 Q 0,0 -18,0 Q 0,0 0,-18" fill="#ffffff" opacity="0.95" filter="url(#neon-glow)"/>
-          <path d="M 0,-12 Q 0,0 12,0 Q 0,0 0,12 Q 0,0 -12,0 Q 0,0 0,-12" fill="#00f2fe" opacity="0.85" transform="rotate(45)" filter="url(#neon-glow)"/>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="16s" repeatCount="indefinite"/>
+          <path d="M 0,-30 Q 0,0 30,0 Q 0,0 0,30 Q 0,0 -30,0 Q 0,0 0,-30" fill="#ffffff" opacity="0.6" filter="url(#neon-glow)"/>
+          <path d="M 0,-20 Q 0,0 20,0 Q 0,0 0,20 Q 0,0 -20,0 Q 0,0 0,-20" fill="#00f2fe" opacity="0.8" transform="rotate(45)" filter="url(#neon-glow)"/>
         </g>
         
-        <circle cx="0" cy="0" r="3.5" fill="#ffffff"/>
+        <!-- High-Speed Inner Core Tracks -->
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="5s" repeatCount="indefinite"/>
+          <circle cx="0" cy="0" r="12" fill="none" stroke="#00f2fe" stroke-width="2" stroke-dasharray="6 3 2 4" filter="url(#neon-glow)"/>
+          <circle cx="0" cy="0" r="8" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="2 3"/>
+        </g>
+
+        <!-- The Dark Void (Event Horizon) -->
+        <circle cx="0" cy="0" r="5.5" fill="#020306" stroke="#ffffff" stroke-width="1.5" filter="url(#neon-glow)"/>
+        <!-- Absolute pitch black center -->
+        <circle cx="0" cy="0" r="4" fill="#020306"/>
       </g>
 
     </g> <!-- End Right Construct -->
