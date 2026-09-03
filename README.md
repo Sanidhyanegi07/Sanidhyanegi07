@@ -12,14 +12,26 @@
 
 <table>
   <tr>
-    <td width="260" align="center">
+    <td width="280" align="center">
       <a href="https://github.com/Sanidhyanegi07">
-        <img src="whoami.png" width="220" alt="whoami"/>
+        <img src="whoami.png" width="240" alt="whoami"/>
       </a>
+      <br/>
+      <sub><b>Sanidhya Negi</b></sub>
+      <br/>
+      <sub>📍 India</sub>
     </td>
     <td>
       <h3><code>&gt; ./whoami</code></h3>
-      <p>I'm a Computer Science student focused on building robust systems from the ground up. Whether optimizing algorithms in <code>C++</code> or structuring scalable backends in <code>Java</code>, I treat coding as the ultimate puzzle—relying on clean logic and resilient architecture.</p>
+      <blockquote>
+        <p>I'm a Computer Science student focused on building robust systems from the ground up. Whether optimizing algorithms in <code>C++</code> or structuring scalable backends in <code>Java</code>, I treat coding as the ultimate puzzle—relying on clean logic and resilient architecture.</p>
+      </blockquote>
+      <br/>
+      <p>
+        <code>🎯 Focus   →  Systems Programming · Algorithm Design · Full-Stack</code><br/>
+        <code>🔧 Primary →  C++ · Java · Python</code><br/>
+        <code>📡 Status  →  Building & Learning</code>
+      </p>
     </td>
   </tr>
 </table>
