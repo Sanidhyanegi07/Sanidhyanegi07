@@ -46,26 +46,26 @@
 
 #### `LANGUAGES`
 <p>
-  <img src="https://img.shields.io/badge/Java-020306?style=for-the-badge&logo=openjdk&logoColor=58a6ff" alt="Java"/>
-  <img src="https://img.shields.io/badge/C++-020306?style=for-the-badge&logo=c%2B%2B&logoColor=58a6ff" alt="C++"/>
-  <img src="https://img.shields.io/badge/Python-020306?style=for-the-badge&logo=python&logoColor=58a6ff" alt="Python"/>
-  <img src="https://img.shields.io/badge/C-020306?style=for-the-badge&logo=c&logoColor=58a6ff" alt="C"/>
+  <img src="https://img.shields.io/badge/Java-020306?style=for-the-badge&logo=openjdk" alt="Java"/>
+  <img src="https://img.shields.io/badge/C++-020306?style=for-the-badge&logo=c%2B%2B" alt="C++"/>
+  <img src="https://img.shields.io/badge/Python-020306?style=for-the-badge&logo=python" alt="Python"/>
+  <img src="https://img.shields.io/badge/C-020306?style=for-the-badge&logo=c" alt="C"/>
 </p>
 
 #### `FRONTEND`
 <p>
-  <img src="https://img.shields.io/badge/React-020306?style=for-the-badge&logo=react&logoColor=58a6ff" alt="React"/>
-  <img src="https://img.shields.io/badge/JavaScript-020306?style=for-the-badge&logo=javascript&logoColor=58a6ff" alt="JavaScript"/>
-  <img src="https://img.shields.io/badge/HTML5-020306?style=for-the-badge&logo=html5&logoColor=58a6ff" alt="HTML5"/>
-  <img src="https://img.shields.io/badge/CSS3-020306?style=for-the-badge&logo=css3&logoColor=58a6ff" alt="CSS3"/>
-  <img src="https://img.shields.io/badge/Vite-020306?style=for-the-badge&logo=vite&logoColor=58a6ff" alt="Vite"/>
+  <img src="https://img.shields.io/badge/React-020306?style=for-the-badge&logo=react" alt="React"/>
+  <img src="https://img.shields.io/badge/JavaScript-020306?style=for-the-badge&logo=javascript" alt="JavaScript"/>
+  <img src="https://img.shields.io/badge/HTML5-020306?style=for-the-badge&logo=html5" alt="HTML5"/>
+  <img src="https://img.shields.io/badge/CSS3-020306?style=for-the-badge&logo=css3" alt="CSS3"/>
+  <img src="https://img.shields.io/badge/Vite-020306?style=for-the-badge&logo=vite" alt="Vite"/>
 </p>
 
 #### `SYSTEMS`
 <p>
-  <img src="https://img.shields.io/badge/Git-020306?style=for-the-badge&logo=git&logoColor=58a6ff" alt="Git"/>
-  <img src="https://img.shields.io/badge/CMake-020306?style=for-the-badge&logo=cmake&logoColor=58a6ff" alt="CMake"/>
-  <img src="https://img.shields.io/badge/Qt-020306?style=for-the-badge&logo=Qt&logoColor=58a6ff" alt="Qt"/>
+  <img src="https://img.shields.io/badge/Git-020306?style=for-the-badge&logo=git" alt="Git"/>
+  <img src="https://img.shields.io/badge/CMake-020306?style=for-the-badge&logo=cmake" alt="CMake"/>
+  <img src="https://img.shields.io/badge/Qt-020306?style=for-the-badge&logo=Qt" alt="Qt"/>
 </p>
 
 <br/>
@@ -74,10 +74,10 @@
 
 | `ARCHITECTURE` | `DESCRIPTION` | `TECH` |
 | :--- | :--- | :--- |
-| [**Algorithmic Telemetry Log**](https://github.com/Sanidhyanegi07/neetcode-submissions) | Intensive algorithmic problem‑solving focused on optimal data structures and time/space complexity tradeoffs. | <img src="https://img.shields.io/badge/-Java-020306?style=flat-square&logo=openjdk&logoColor=58a6ff"/> <img src="https://img.shields.io/badge/-DSA-020306?style=flat-square&logo=leetcode&logoColor=58a6ff"/> |
-| [**ComplexCalc Core Engine**](https://github.com/Sanidhyanegi07/ComplexCalc) | Scientific calculator engine supporting dynamic expression parsing with cleanly decoupled business logic. | <img src="https://img.shields.io/badge/-C++-020306?style=flat-square&logo=c%2B%2B&logoColor=58a6ff"/> <img src="https://img.shields.io/badge/-Math-020306?style=flat-square&logo=wolframmathematica&logoColor=58a6ff"/> |
-| [**Academic Management System**](https://github.com/Sanidhyanegi07/Attendance-Management-System) | Enterprise-style application featuring strict role‑based access control and robust session management. | <img src="https://img.shields.io/badge/-C++-020306?style=flat-square&logo=c%2B%2B&logoColor=58a6ff"/> <img src="https://img.shields.io/badge/-OOP-020306?style=flat-square&logo=c%2B%2B&logoColor=58a6ff"/> |
-| [**Webathon / NIRVAN '26**](https://github.com/Sanidhyanegi07/webathon) | Modular and highly responsive frontend architecture built for a high-traffic college technical event. | <img src="https://img.shields.io/badge/-React-020306?style=flat-square&logo=react&logoColor=58a6ff"/> <img src="https://img.shields.io/badge/-Vite-020306?style=flat-square&logo=vite&logoColor=58a6ff"/> |
+| [**Algorithmic Telemetry Log**](https://github.com/Sanidhyanegi07/neetcode-submissions) | Intensive algorithmic problem‑solving focused on optimal data structures and time/space complexity tradeoffs. | <img src="https://img.shields.io/badge/-Java-020306?style=flat-square&logo=openjdk"/> <img src="https://img.shields.io/badge/-DSA-020306?style=flat-square&logo=leetcode"/> |
+| [**ComplexCalc Core Engine**](https://github.com/Sanidhyanegi07/ComplexCalc) | Scientific calculator engine supporting dynamic expression parsing with cleanly decoupled business logic. | <img src="https://img.shields.io/badge/-C++-020306?style=flat-square&logo=c%2B%2B"/> <img src="https://img.shields.io/badge/-Math-020306?style=flat-square&logo=wolframmathematica"/> |
+| [**Academic Management System**](https://github.com/Sanidhyanegi07/Attendance-Management-System) | Enterprise-style application featuring strict role‑based access control and robust session management. | <img src="https://img.shields.io/badge/-C++-020306?style=flat-square&logo=c%2B%2B"/> <img src="https://img.shields.io/badge/-OOP-020306?style=flat-square&logo=c%2B%2B"/> |
+| [**Webathon / NIRVAN '26**](https://github.com/Sanidhyanegi07/webathon) | Modular and highly responsive frontend architecture built for a high-traffic college technical event. | <img src="https://img.shields.io/badge/-React-020306?style=flat-square&logo=react"/> <img src="https://img.shields.io/badge/-Vite-020306?style=flat-square&logo=vite"/> |
 
 <br/>
 
