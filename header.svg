@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" width="100%" height="100%">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap');
 
       .name {
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -30,8 +30,8 @@
         font-family: 'JetBrains Mono', ui-monospace, monospace;
         font-size: 10px;
         letter-spacing: 2px;
+        font-weight: 700;
       }
-      .dot { fill: #58a6ff; }
       
       @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
       .cursor { animation: blink 1s step-end infinite; }
@@ -52,19 +52,24 @@
     <!-- Glowing Sun Corona Gradient -->
     <radialGradient id="sun-core-glow" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
-      <stop offset="35%" stop-color="#79c0ff" stop-opacity="0.95"/>
-      <stop offset="70%" stop-color="#388bfd" stop-opacity="0.6"/>
+      <stop offset="30%" stop-color="#a5d6ff" stop-opacity="0.9"/>
+      <stop offset="65%" stop-color="#38bdf8" stop-opacity="0.5"/>
       <stop offset="100%" stop-color="#1f6feb" stop-opacity="0"/>
     </radialGradient>
 
     <!-- Glowing Core Filter -->
     <filter id="neon-glow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+
+    <!-- Subtle Technical Dot Grid for Left Panel -->
+    <pattern id="dot-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.8" fill="#58a6ff" opacity="0.12"/>
+    </pattern>
   </defs>
 
   <!-- ═══════════════ STRICTLY CLIPPED CANVAS CONTAINER ═══════════════ -->
@@ -72,18 +77,20 @@
     <!-- Base Deep Space Background (Zero Background Circles) -->
     <rect width="100%" height="100%" fill="url(#bg)"/>
 
+    <!-- Technical Grid on Left -->
+    <rect x="0" y="0" width="400" height="280" fill="url(#dot-grid)"/>
+
     <!-- Astrometric Stars -->
     <g>
       <circle cx="85" cy="80" r="0.6" fill="#ffffff" opacity="0.5"/>
       <circle cx="140" cy="220" r="0.6" fill="#58a6ff" opacity="0.6"/>
-      <circle cx="260" cy="55" r="0.6" fill="#ffffff" opacity="0.5"/>
       <circle cx="340" cy="180" r="0.5" fill="#58a6ff" opacity="0.5"/>
       <circle cx="440" cy="35" r="0.8" fill="#ffffff">
-        <animate attributeName="opacity" values="0.4;1;0.4" dur="4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="4s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="500" cy="240" r="0.6" fill="#58a6ff" opacity="0.5"/>
-      <circle cx="640" cy="230" r="0.75" fill="#ffffff">
-        <animate attributeName="opacity" values="0.4;1;0.4" dur="5s" repeatCount="indefinite"/>
+      <circle cx="520" cy="240" r="0.6" fill="#58a6ff" opacity="0.5"/>
+      <circle cx="680" cy="40" r="0.75" fill="#ffffff">
+        <animate attributeName="opacity" values="0.2;1;0.2" dur="5s" repeatCount="indefinite"/>
       </circle>
       <circle cx="920" cy="45" r="0.8" fill="#ffffff">
         <animate attributeName="opacity" values="0.4;1;0.4" dur="4.2s" repeatCount="indefinite"/>
@@ -93,14 +100,14 @@
 
     <!-- ═══════════════ LEFT: SLEEK PERSONAL DEVELOPER IDENTITY ═══════════════ -->
     <!-- Confined strictly to x=50..x=380: ZERO overlap, ZERO clutter -->
-
+    
     <!-- Top-left Status Indicator -->
     <g transform="translate(50, 44)">
       <rect x="0" y="0" width="2" height="12" fill="#58a6ff"/>
-      <circle cx="12" cy="6" r="2.5" class="dot" filter="url(#neon-glow)">
-        <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+      <circle cx="12" cy="6" r="2.5" fill="#58a6ff" filter="url(#neon-glow)">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
       </circle>
-      <text x="22" y="9.5" class="accent-text">SYS.STATUS // ONLINE</text>
+      <text x="24" y="9.5" class="accent-text">SYS.STATUS // ONLINE</text>
     </g>
 
     <!-- Name & Role -->
@@ -112,116 +119,154 @@
 
     <!-- Precision Divider Line (Solid, ends cleanly at x=280) -->
     <line x1="50" y1="192" x2="190" y2="192" stroke="#58a6ff" stroke-width="1.2"/>
-    <line x1="190" y1="192" x2="310" y2="192" stroke="#58a6ff" stroke-width="0.8" opacity="0.3"/>
+    <line x1="190" y1="192" x2="330" y2="192" stroke="#58a6ff" stroke-width="0.8" opacity="0.25"/>
 
     <!-- Tags -->
     <text x="50" y="226" class="meta" xml:space="preserve">C++   <tspan fill="#58a6ff">//</tspan>   JAVA   <tspan fill="#58a6ff">//</tspan>   SYSTEM DESIGN   <tspan fill="#58a6ff">//</tspan>   DSA</text>
 
-    <!-- ═══════════════ RIGHT: 100% IN-MOTION 3D ORBITAL SYSTEM ═══════════════ -->
-    <!-- ZERO STATIC ELEMENTS: Every ring, every axis, and every particle is in continuous motion -->
+
+    <!-- ═══════════════ RIGHT: 100/100 TRUE 3D GRAVITY WELL / CONE ═══════════════ -->
     <g transform="translate(770, 140)">
+      
+      <!-- Ambient depth glow at the bottom of the well -->
+      <ellipse cx="0" cy="64" rx="70" ry="28" fill="url(#sun-core-glow)" opacity="0.25"/>
 
-      <!-- ── LEVEL 1: OUTER SYSTEM (Diameter = 220px, 32s Clockwise Rotation) ── -->
-      <g>
-        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="32s" repeatCount="indefinite"/>
-        <!-- Ring Track In Motion -->
-        <ellipse cx="0" cy="0" rx="110" ry="38" fill="none" stroke="#58a6ff" stroke-width="1.4"/>
-        <!-- Axis Line In Motion -->
-        <line x1="-110" y1="0" x2="110" y2="0" stroke="#ffffff" stroke-width="1.5" filter="url(#neon-glow)"/>
-        <!-- Terminal Particles In Motion -->
-        <circle cx="110" cy="0" r="3.0" fill="#ffffff" filter="url(#neon-glow)"/>
-        <circle cx="-110" cy="0" r="2.2" fill="#58a6ff"/>
-        <!-- Axis Terminal Ticks -->
-        <line x1="110" y1="-4" x2="110" y2="4" stroke="#ffffff" stroke-width="1.5"/>
-        <line x1="-110" y1="-4" x2="-110" y2="4" stroke="#58a6ff" stroke-width="1.5"/>
+      <!-- ── 3D WIREFRAME STRUTS (Background grid connecting the cone levels) ── -->
+      <g stroke="#2b4060" stroke-width="1.2" fill="none" opacity="0.4">
+        <!-- Left & Right -->
+        <path d="M -180,-44 L -145,-26 L -115,-8 L -85,10 L -60,28 L -35,46 L -15,64"/>
+        <path d="M 180,-44 L 145,-26 L 115,-8 L 85,10 L 60,28 L 35,46 L 15,64"/>
+        <!-- Top & Bottom (Perspective shifted) -->
+        <path d="M 0,-116 L 0,-84 L 0,-54 L 0,-24 L 0,4 L 0,32 L 0,58"/>
+        <path d="M 0,28 L 0,32 L 0,38 L 0,44 L 0,52 L 0,60 L 0,70"/>
       </g>
 
-      <!-- ── LEVEL 2: MID-OUTER SYSTEM (Diameter = 180px, 24s Counter-Clockwise Rotation) ── -->
-      <g>
-        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="24s" repeatCount="indefinite"/>
-        <!-- Ring Track In Motion -->
-        <ellipse cx="0" cy="0" rx="90" ry="30" fill="none" stroke="#38bdf8" stroke-width="1.4"/>
-        <!-- Axis Line In Motion -->
-        <line x1="-90" y1="0" x2="90" y2="0" stroke="#38bdf8" stroke-width="1.5"/>
-        <!-- Terminal Particles In Motion -->
-        <circle cx="-90" cy="0" r="2.8" fill="#ffffff" filter="url(#neon-glow)"/>
-        <circle cx="90" cy="0" r="2.2" fill="#38bdf8"/>
-        <!-- Axis Terminal Ticks -->
-        <line x1="-90" y1="-3.5" x2="-90" y2="3.5" stroke="#ffffff" stroke-width="1.5"/>
-        <line x1="90" y1="-3.5" x2="90" y2="3.5" stroke="#38bdf8" stroke-width="1.5"/>
+
+      <!-- ── LEVEL 7: DEEPEST CORE (Drawn first/back) ── -->
+      <g transform="translate(0, 64)">
+        <ellipse cx="0" cy="0" rx="15" ry="6" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+        <g transform="scale(1, 0.4)">
+          <g>
+            <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4s" repeatCount="indefinite"/>
+            <line x1="-15" y1="0" x2="15" y2="0" stroke="#ffffff" stroke-width="4.0"/>
+            <circle cx="15" cy="0" r="7" fill="#ffffff" filter="url(#neon-glow)"/>
+            <circle cx="-15" cy="0" r="5" fill="#ffffff"/>
+          </g>
+        </g>
       </g>
 
-      <!-- ── LEVEL 3: MID SYSTEM (Diameter = 144px, 17s Clockwise Rotation) ── -->
-      <g>
-        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="17s" repeatCount="indefinite"/>
-        <!-- Ring Track In Motion -->
-        <ellipse cx="0" cy="0" rx="72" ry="24" fill="none" stroke="#79c0ff" stroke-width="1.5"/>
-        <!-- Axis Line In Motion -->
-        <line x1="-72" y1="0" x2="72" y2="0" stroke="#ffffff" stroke-width="1.5"/>
-        <!-- Terminal Particles In Motion -->
-        <circle cx="72" cy="0" r="2.8" fill="#ffffff" filter="url(#neon-glow)"/>
-        <circle cx="-72" cy="0" r="2.2" fill="#79c0ff"/>
-        <!-- Axis Terminal Ticks -->
-        <line x1="72" y1="-3.5" x2="72" y2="3.5" stroke="#ffffff" stroke-width="1.5"/>
-        <line x1="-72" y1="-3.5" x2="-72" y2="3.5" stroke="#79c0ff" stroke-width="1.5"/>
+      <!-- ── LEVEL 6: INNER THROAT ── -->
+      <g transform="translate(0, 46)">
+        <ellipse cx="0" cy="0" rx="35" ry="14" fill="none" stroke="#a5d6ff" stroke-width="1.6"/>
+        <g transform="scale(1, 0.4)">
+          <g>
+            <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="8s" repeatCount="indefinite"/>
+            <line x1="-35" y1="0" x2="35" y2="0" stroke="#ffffff" stroke-width="3.5" filter="url(#neon-glow)"/>
+            <circle cx="-35" cy="0" r="7.5" fill="#ffffff" filter="url(#neon-glow)"/>
+            <circle cx="35" cy="0" r="5.5" fill="#a5d6ff"/>
+            <line x1="-35" y1="-8" x2="-35" y2="8" stroke="#ffffff" stroke-width="3.5"/>
+            <line x1="35" y1="-8" x2="35" y2="8" stroke="#a5d6ff" stroke-width="3.5"/>
+          </g>
+        </g>
       </g>
 
-      <!-- ── LEVEL 4: INNER SYSTEM (Diameter = 108px, 11s Counter-Clockwise Rotation) ── -->
-      <g>
-        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="11s" repeatCount="indefinite"/>
-        <!-- Ring Track In Motion -->
-        <ellipse cx="0" cy="0" rx="54" ry="18" fill="none" stroke="#a5d6ff" stroke-width="1.6"/>
-        <!-- Axis Line In Motion -->
-        <line x1="-54" y1="0" x2="54" y2="0" stroke="#a5d6ff" stroke-width="1.6"/>
-        <!-- Terminal Particles In Motion -->
-        <circle cx="-54" cy="0" r="2.6" fill="#ffffff" filter="url(#neon-glow)"/>
-        <circle cx="54" cy="0" r="2.0" fill="#58a6ff"/>
-        <!-- Axis Terminal Ticks -->
-        <line x1="-54" y1="-3" x2="-54" y2="3" stroke="#ffffff" stroke-width="1.5"/>
-        <line x1="54" y1="-3" x2="54" y2="3" stroke="#a5d6ff" stroke-width="1.5"/>
+      <!-- ── LEVEL 5: MID-INNER RING ── -->
+      <g transform="translate(0, 28)">
+        <ellipse cx="0" cy="0" rx="60" ry="24" fill="none" stroke="#79c0ff" stroke-width="1.5"/>
+        <g transform="scale(1, 0.4)">
+          <g>
+            <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/>
+            <line x1="-60" y1="0" x2="60" y2="0" stroke="#a5d6ff" stroke-width="3.0"/>
+            <circle cx="60" cy="0" r="6.5" fill="#ffffff" filter="url(#neon-glow)"/>
+            <circle cx="-60" cy="0" r="5" fill="#79c0ff"/>
+            <line x1="60" y1="-8" x2="60" y2="8" stroke="#ffffff" stroke-width="3.0"/>
+            <line x1="-60" y1="-8" x2="-60" y2="8" stroke="#79c0ff" stroke-width="3.0"/>
+          </g>
+        </g>
       </g>
 
-      <!-- ── LEVEL 5: THROAT SYSTEM (Diameter = 72px, 7s Clockwise Rotation) ── -->
-      <g>
-        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="7s" repeatCount="indefinite"/>
-        <!-- Ring Track In Motion -->
-        <ellipse cx="0" cy="0" rx="36" ry="12" fill="none" stroke="#ffffff" stroke-width="1.8"/>
-        <!-- Axis Line In Motion -->
-        <line x1="-36" y1="0" x2="36" y2="0" stroke="#ffffff" stroke-width="1.8"/>
-        <!-- Terminal Particles In Motion -->
-        <circle cx="36" cy="0" r="2.5" fill="#ffffff" filter="url(#neon-glow)"/>
-        <circle cx="-36" cy="0" r="2.0" fill="#58a6ff"/>
+      <!-- ── LEVEL 4: MID RING ── -->
+      <g transform="translate(0, 10)">
+        <ellipse cx="0" cy="0" rx="85" ry="34" fill="none" stroke="#58a6ff" stroke-width="1.4"/>
+        <g transform="scale(1, 0.4)">
+          <g>
+            <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="16s" repeatCount="indefinite"/>
+            <line x1="-85" y1="0" x2="85" y2="0" stroke="#79c0ff" stroke-width="3.0"/>
+            <circle cx="-85" cy="0" r="6.5" fill="#a5d6ff" filter="url(#neon-glow)"/>
+            <circle cx="85" cy="0" r="4.5" fill="#58a6ff"/>
+            <line x1="-85" y1="-9" x2="-85" y2="9" stroke="#a5d6ff" stroke-width="3.0"/>
+            <line x1="85" y1="-9" x2="85" y2="9" stroke="#58a6ff" stroke-width="3.0"/>
+          </g>
+        </g>
       </g>
 
-      <!-- ── LEVEL 6: RAPID CORE AXIS (Diameter = 44px, 4s Counter-Clockwise Rotation) ── -->
-      <g>
-        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="4s" repeatCount="indefinite"/>
-        <line x1="-22" y1="0" x2="22" y2="0" stroke="#ffffff" stroke-width="2.0"/>
-        <circle cx="22" cy="0" r="2.2" fill="#ffffff" filter="url(#neon-glow)"/>
-        <circle cx="-22" cy="0" r="1.8" fill="#ffffff"/>
+      <!-- ── LEVEL 3: EQUATORIAL RING ── -->
+      <g transform="translate(0, -8)">
+        <ellipse cx="0" cy="0" rx="115" ry="46" fill="none" stroke="#385278" stroke-width="1.2"/>
+        <g transform="scale(1, 0.4)">
+          <g>
+            <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="22s" repeatCount="indefinite"/>
+            <line x1="-115" y1="0" x2="115" y2="0" stroke="#58a6ff" stroke-width="2.5"/>
+            <circle cx="115" cy="0" r="6" fill="#79c0ff" filter="url(#neon-glow)"/>
+            <circle cx="-115" cy="0" r="4" fill="#385278"/>
+            <line x1="115" y1="-10" x2="115" y2="10" stroke="#79c0ff" stroke-width="2.5"/>
+            <line x1="-115" y1="-10" x2="-115" y2="10" stroke="#385278" stroke-width="2.5"/>
+          </g>
+        </g>
       </g>
 
-      <!-- ═══════════════ THE CENTRAL GLOWING SUN / STAR ═══════════════ -->
-      <g>
-        <!-- Rotating 8-Point Solar Flare Rays In Continuous Motion (20s) -->
+      <!-- ── LEVEL 2: OUTER ACCRETION DISK ── -->
+      <g transform="translate(0, -26)">
+        <ellipse cx="0" cy="0" rx="145" ry="58" fill="none" stroke="#2b4060" stroke-width="1.2"/>
+        <g transform="scale(1, 0.4)">
+          <g>
+            <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="28s" repeatCount="indefinite"/>
+            <line x1="-145" y1="0" x2="145" y2="0" stroke="#385278" stroke-width="2.5"/>
+            <circle cx="-145" cy="0" r="5.5" fill="#58a6ff" filter="url(#neon-glow)"/>
+            <circle cx="145" cy="0" r="4" fill="#2b4060"/>
+            <line x1="-145" y1="-10" x2="-145" y2="10" stroke="#58a6ff" stroke-width="2.5"/>
+            <line x1="145" y1="-10" x2="145" y2="10" stroke="#2b4060" stroke-width="2.5"/>
+          </g>
+        </g>
+      </g>
+
+      <!-- ── LEVEL 1: EDGE OF THE WELL (Highest & Widest) ── -->
+      <g transform="translate(0, -44)">
+        <ellipse cx="0" cy="0" rx="180" ry="72" fill="none" stroke="#1e2d45" stroke-width="1.2"/>
+        <g transform="scale(1, 0.4)">
+          <g>
+            <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="36s" repeatCount="indefinite"/>
+            <line x1="-180" y1="0" x2="180" y2="0" stroke="#253752" stroke-width="2.0"/>
+            <circle cx="180" cy="0" r="5" fill="#2b4060"/>
+            <circle cx="-180" cy="0" r="4" fill="#1e2d45"/>
+            <line x1="180" y1="-12" x2="180" y2="12" stroke="#2b4060" stroke-width="2.0"/>
+            <line x1="-180" y1="-12" x2="-180" y2="12" stroke="#1e2d45" stroke-width="2.0"/>
+          </g>
+        </g>
+      </g>
+
+
+      <!-- ════════ THE CENTRAL GLOWING SUN / STAR (Positioned exactly at L7's core) ════════ -->
+      <g transform="translate(0, 64)">
+        <!-- Rotating 8-Point Solar Flare Rays (Unscaled, maintaining perfect 3D spherical bloom) -->
         <g>
           <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
           <!-- 4-Point Primary Solar Rays -->
-          <path d="M 0,-15 Q 0,0 15,0 Q 0,0 0,15 Q 0,0 -15,0 Q 0,0 0,-15" fill="#ffffff" opacity="0.9" filter="url(#neon-glow)"/>
+          <path d="M 0,-20 Q 0,0 20,0 Q 0,0 0,20 Q 0,0 -20,0 Q 0,0 0,-20" fill="#ffffff" opacity="0.9" filter="url(#neon-glow)"/>
           <!-- 4-Point Secondary Solar Rays (45° offset) -->
-          <path d="M 0,-10 Q 0,0 10,0 Q 0,0 0,10 Q 0,0 -10,0 Q 0,0 0,-10" fill="#79c0ff" opacity="0.8" transform="rotate(45)" filter="url(#neon-glow)"/>
+          <path d="M 0,-14 Q 0,0 14,0 Q 0,0 0,14 Q 0,0 -14,0 Q 0,0 0,-14" fill="#79c0ff" opacity="0.8" transform="rotate(45)" filter="url(#neon-glow)"/>
         </g>
 
         <!-- Pulsing Solar Corona -->
-        <circle cx="0" cy="0" r="8.5" fill="url(#sun-core-glow)">
-          <animate attributeName="r" values="7.5;10;7.5" dur="2.4s" repeatCount="indefinite"/>
+        <circle cx="0" cy="0" r="11" fill="url(#sun-core-glow)">
+          <animate attributeName="r" values="9.5;13;9.5" dur="2.4s" repeatCount="indefinite"/>
         </circle>
 
         <!-- Incandescent White-Hot Stellar Core -->
-        <circle cx="0" cy="0" r="4.5" fill="#ffffff" filter="url(#neon-glow)">
-          <animate attributeName="r" values="4;5.2;4" dur="2.4s" repeatCount="indefinite"/>
+        <circle cx="0" cy="0" r="4.8" fill="#ffffff" filter="url(#neon-glow)">
+          <animate attributeName="r" values="4;5.5;4" dur="2.4s" repeatCount="indefinite"/>
         </circle>
-        <circle cx="0" cy="0" r="2.4" fill="#ffffff"/>
+        <circle cx="0" cy="0" r="2.5" fill="#ffffff"/>
       </g>
 
     </g> <!-- End of Right Construct -->
