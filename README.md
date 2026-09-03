@@ -11,11 +11,11 @@
 
 <table>
   <tr>
-    <td width="250" align="center" valign="top">
+    <td width="250" align="center" valign="middle">
       <a href="https://github.com/Sanidhyanegi07"><img src="whoami.png" width="230" alt="whoami"/></a>
     </td>
-    <td valign="top">
-      <b><code style="color: #00f2fe;">&gt; ./whoami</code></b><br/>
+    <td valign="middle">
+      <div style="padding-bottom: 12px;"><b><code style="color: #00f2fe;">&gt; ./whoami</code></b></div>
       Computer Science undergraduate who thinks in systems, not scripts. From low-level memory management in <code>C++</code> to fault-tolerant backends in <code>Java</code>, every line I write is deliberate. I obsess over algorithmic efficiency, clean abstractions, and building things that don't break under pressure—because understanding the full stack means owning the full problem.
     </td>
   </tr>
