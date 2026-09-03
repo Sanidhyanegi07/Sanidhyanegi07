@@ -68,6 +68,19 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+
+    <!-- Chaotic Random Fluid Filter for the Core -->
+    <filter id="random-core" x="-50%" y="-50%" width="200%" height="200%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise">
+        <animate attributeName="baseFrequency" values="0.03; 0.08; 0.03" dur="8s" repeatCount="indefinite" />
+      </feTurbulence>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="25" xChannelSelector="R" yChannelSelector="G" result="warped"/>
+      <feGaussianBlur in="warped" stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="warped"/>
+      </feMerge>
+    </filter>
   </defs>
 
   <!-- ═══════════════ CANVAS CONTAINER ═══════════════ -->
