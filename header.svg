@@ -51,7 +51,7 @@
       <stop offset="100%" stop-color="#010204"/>
     </linearGradient>
 
-    <!-- Cosmic Gas Glow for the Airborne Swarm -->
+    <!-- Cosmic Gas Glow for the Galaxy Background -->
     <radialGradient id="galaxy-glow" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
       <stop offset="10%" stop-color="#89c3ff" stop-opacity="0.9"/>
@@ -65,12 +65,8 @@
   <g clip-path="url(#card-bounds)">
     <rect width="100%" height="100%" fill="url(#bg)"/>
 
-    <!-- Deep Space Void -->
-
     <!-- ═══════════════ LEFT: PREMIUM HUD IDENTITY ═══════════════ -->
     <g transform="translate(50, 45)">
-      <!-- Left side animated slider has been completely removed -->
-
       <!-- Content Block -->
       <g transform="translate(0, 0)">
         
@@ -106,7 +102,7 @@
       <!-- Cosmic Gas Glow -->
       <circle cx="0" cy="0" r="135" fill="url(#galaxy-glow)" opacity="0.3"/>
 
-      <!-- Global Tumble: The entire geometric galaxy slowly rotates on the Z axis -->
+      <!-- Global Tumble: The outer geometric galaxy slowly rotates -->
       <g>
         <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="180s" repeatCount="indefinite"/>
 
@@ -116,6 +112,7 @@
             <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="32s" repeatCount="indefinite"/>
             <circle cx="0" cy="0" r="135" fill="none" stroke="#1f6feb" stroke-width="1.5" opacity="0.5" stroke-dasharray="1 12 2 25 1 8" class="noscale"/>
             <circle cx="0" cy="0" r="105" fill="none" stroke="#58a6ff" stroke-width="1.8" opacity="0.7" stroke-dasharray="2 15 3 10 1 5" class="noscale"/>
+            <!-- Fake Glow -->
             <circle cx="105" cy="0" r="6" fill="#58a6ff" opacity="0.4" class="noscale"/>
             <circle cx="105" cy="0" r="3.5" fill="#58a6ff" class="noscale"/>
           </g>
@@ -192,16 +189,9 @@
 
       </g> <!-- End Global Tumble Group -->
 
-      <!-- ════════ TRANSLUCENT WHITE GLOWING CORE ════════ -->
-      <g>
-        <!-- Soft Outer Translucent Halo -->
-        <circle cx="0" cy="0" r="26" fill="#ffffff" opacity="0.15">
-          <animate attributeName="r" values="24;28;24" dur="3s" repeatCount="indefinite"/>
-        </circle>
-        
-        <!-- ════════ RANDOM VIRAL CORE (GITHUB SAFE) ════════ -->
+      <!-- ════════ RANDOM VIRAL CORE (GITHUB SAFE) ════════ -->
       <!-- A chaotic, randomly shifting organic center using pure layered geometry -->
-      <!-- We achieve the "random organic disease" look by tumbling complex biological curves, avoiding buggy SVG filters -->
+      <!-- We achieve the "random organic disease" look by tumbling complex biological curves, avoiding buggy SVG filters entirely to prevent rendering issues on GitHub proxy -->
       <g>
         
         <!-- Pulsing uneven biological fluid shape -->
