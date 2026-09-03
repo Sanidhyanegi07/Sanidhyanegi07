@@ -1,20 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" width="100%" height="100%">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap');
 
       .name {
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         font-size: 52px;
         font-weight: 800;
         fill: #ffffff;
-        letter-spacing: -2px;
+        letter-spacing: -1.5px;
       }
       .role {
         font-family: 'JetBrains Mono', ui-monospace, monospace;
         font-size: 15px;
         font-weight: 500;
-        fill: #58a6ff;
+        fill: #00f2fe;
         letter-spacing: 4px;
         text-transform: uppercase;
       }
@@ -26,9 +26,9 @@
         letter-spacing: 2px;
       }
       .accent-text {
-        fill: #58a6ff;
+        fill: #00f2fe;
         font-family: 'JetBrains Mono', ui-monospace, monospace;
-        font-size: 10px;
+        font-size: 11px;
         letter-spacing: 2px;
         font-weight: 700;
       }
@@ -44,24 +44,24 @@
       <rect x="0" y="0" width="1000" height="280" rx="16"/>
     </clipPath>
 
-    <!-- Deep Space Background -->
+    <!-- Deep Space Obsidian Background -->
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#020306"/>
-      <stop offset="50%" stop-color="#050710"/>
+      <stop offset="50%" stop-color="#070a14"/>
       <stop offset="100%" stop-color="#020306"/>
     </linearGradient>
 
-    <!-- Sun / Core Glow -->
-    <radialGradient id="sun-core-glow" cx="50%" cy="50%" r="50%">
+    <!-- Premium Holographic Cyan Glow -->
+    <radialGradient id="sun-glow" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
-      <stop offset="25%" stop-color="#79c0ff" stop-opacity="0.8"/>
-      <stop offset="60%" stop-color="#38bdf8" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#1f6feb" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#00f2fe" stop-opacity="0.8"/>
+      <stop offset="45%" stop-color="#007399" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#020306" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Neon Glow Filter -->
+    <!-- Intense Neon Filter -->
     <filter id="neon-glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -73,181 +73,192 @@
   <g clip-path="url(#card-bounds)">
     <rect width="100%" height="100%" fill="url(#bg)"/>
 
-    <!-- Minimal Astrometric Stars -->
+    <!-- Subtle Ambient Astrometric Stars -->
     <g>
-      <circle cx="95" cy="70" r="1.0" fill="#ffffff" opacity="0.3"/>
-      <circle cx="160" cy="230" r="1.2" fill="#58a6ff" opacity="0.4"/>
-      <circle cx="380" cy="190" r="0.8" fill="#58a6ff" opacity="0.5"/>
-      <circle cx="480" cy="45" r="1.5" fill="#ffffff">
-        <animate attributeName="opacity" values="0.2;0.8;0.2" dur="4s" repeatCount="indefinite"/>
+      <circle cx="120" cy="60" r="1.5" fill="#00f2fe" opacity="0.4" filter="url(#neon-glow)"/>
+      <circle cx="280" cy="230" r="1.0" fill="#4facfe" opacity="0.5"/>
+      <circle cx="480" cy="40" r="2.0" fill="#ffffff" opacity="0.8" filter="url(#neon-glow)">
+        <animate attributeName="opacity" values="0.2;1;0.2" dur="4s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="560" cy="250" r="1.0" fill="#58a6ff" opacity="0.4"/>
-      <circle cx="680" cy="30" r="1.2" fill="#ffffff">
-        <animate attributeName="opacity" values="0.1;0.7;0.1" dur="5s" repeatCount="indefinite"/>
+      <circle cx="620" cy="240" r="1.5" fill="#00f2fe" opacity="0.6"/>
+      <circle cx="880" cy="50" r="2.0" fill="#ffffff" opacity="0.9" filter="url(#neon-glow)">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="940" cy="55" r="1.5" fill="#ffffff">
-        <animate attributeName="opacity" values="0.3;0.9;0.3" dur="3.5s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="920" cy="245" r="1.0" fill="#58a6ff" opacity="0.3"/>
+      <circle cx="950" cy="210" r="1.2" fill="#4facfe" opacity="0.5"/>
     </g>
 
-    <!-- ═══════════════ LEFT: DEVELOPER IDENTITY ═══════════════ -->
-    <g transform="translate(60, 48)">
-      <rect x="0" y="0" width="3" height="14" fill="#58a6ff" rx="1"/>
-      <circle cx="14" cy="7" r="3" fill="#58a6ff" filter="url(#neon-glow)">
-        <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite"/>
-      </circle>
-      <text x="28" y="11" class="accent-text">SYS.STATUS // ONLINE</text>
+    <!-- ═══════════════ LEFT: PREMIUM HUD IDENTITY ═══════════════ -->
+    <g transform="translate(50, 45)">
+      <!-- Futuristic Vertical Scanline Accent -->
+      <rect x="0" y="0" width="2" height="190" fill="#007399" opacity="0.3" rx="1"/>
+      <rect x="0" y="0" width="2" height="40" fill="#00f2fe" rx="1">
+        <animate attributeName="y" values="0;150;0" dur="6s" repeatCount="indefinite"/>
+      </rect>
+
+      <!-- Content Block -->
+      <g transform="translate(20, 0)">
+        
+        <!-- Status Indicator -->
+        <g transform="translate(0, 10)">
+          <circle cx="4" cy="4" r="4" fill="#00f2fe" filter="url(#neon-glow)">
+            <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+          </circle>
+          <text x="18" y="8" class="accent-text">SYS.STATUS // ONLINE_</text>
+        </g>
+
+        <!-- Identity -->
+        <text x="0" y="85" class="name">Sanidhya Negi</text>
+        <text x="2" y="125" class="role">
+          &gt; Systems Engineer<tspan class="cursor" fill="#00f2fe">_</tspan>
+        </text>
+
+        <!-- Precision Divider -->
+        <line x1="0" y1="155" x2="160" y2="155" stroke="#00f2fe" stroke-width="1.5"/>
+        <line x1="160" y1="155" x2="300" y2="155" stroke="#00f2fe" stroke-width="1" opacity="0.2"/>
+
+        <!-- Tech Stack Tags -->
+        <text x="0" y="185" class="meta" xml:space="preserve">C++   <tspan fill="#00f2fe">//</tspan>   JAVA   <tspan fill="#00f2fe">//</tspan>   SYSTEM DESIGN   <tspan fill="#00f2fe">//</tspan>   DSA</text>
+      </g>
     </g>
-    <text x="60" y="132" class="name">Sanidhya Negi</text>
-    <text x="62" y="172" class="role">
-      &gt; Systems Engineer<tspan class="cursor" fill="#58a6ff">_</tspan>
-    </text>
-    <line x1="60" y1="202" x2="220" y2="202" stroke="#58a6ff" stroke-width="1.5"/>
-    <line x1="220" y1="202" x2="380" y2="202" stroke="#58a6ff" stroke-width="1" opacity="0.2"/>
-    <text x="60" y="240" class="meta" xml:space="preserve">C++   <tspan fill="#58a6ff">//</tspan>   JAVA   <tspan fill="#58a6ff">//</tspan>   SYSTEM DESIGN   <tspan fill="#58a6ff">//</tspan>   DSA</text>
 
 
-    <!-- ═══════════════ RIGHT: 3D SPHERICAL ATOM MODEL ═══════════════ -->
-    <!-- Perfect 3D symmetry from all directions. 10 intersecting orbital planes. -->
+    <!-- ═══════════════ RIGHT: MASTERCLASS 3D SPHERICAL ATOM ═══════════════ -->
+    <!-- Perfect true 3D projection via symmetrical scale(). 8 interlocking orbital planes. -->
     <g transform="translate(770, 140)">
       
-      <!-- Core Ambient Glow -->
-      <circle cx="0" cy="0" r="140" fill="url(#sun-core-glow)" opacity="0.1"/>
+      <!-- Massive Background Holographic Glow -->
+      <circle cx="0" cy="0" r="180" fill="url(#sun-glow)" opacity="0.12"/>
 
-      <!-- ── SPHERE 1: OUTER (Radius = 150) ── -->
-      <!-- Plane 1: 0 Degrees -->
+      <!-- ── SPHERE 1: OUTER BOUNDARY (Radius = 160) ── -->
+      <!-- Plane 0° -->
       <g transform="rotate(0) scale(1, 0.35)">
-        <circle cx="0" cy="0" r="150" fill="none" stroke="#2b4060" stroke-width="1.5" stroke-dasharray="4 8" class="noscale"/>
+        <circle cx="0" cy="0" r="160" fill="none" stroke="#007399" stroke-width="4" opacity="0.15" class="noscale"/>
+        <circle cx="0" cy="0" r="160" fill="none" stroke="#00f2fe" stroke-width="1.2" stroke-dasharray="12 6 2 6" class="noscale"/>
         <g>
           <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite"/>
-          <line x1="-150" y1="0" x2="150" y2="0" stroke="#385278" stroke-width="1.5" class="noscale"/>
-          <circle cx="150" cy="0" r="4.5" fill="#58a6ff" filter="url(#neon-glow)" class="noscale"/>
-          <circle cx="-150" cy="0" r="3" fill="#2b4060" class="noscale"/>
+          <line x1="-160" y1="0" x2="160" y2="0" stroke="#007399" stroke-width="1.5" class="noscale" opacity="0.8"/>
+          <circle cx="160" cy="0" r="9" fill="none" stroke="#00f2fe" stroke-width="1.5" class="noscale"/>
+          <circle cx="160" cy="0" r="4.5" fill="#ffffff" filter="url(#neon-glow)" class="noscale"/>
+          <circle cx="-160" cy="0" r="3" fill="#00f2fe" class="noscale"/>
         </g>
       </g>
-      <!-- Plane 2: 45 Degrees -->
-      <g transform="rotate(45) scale(1, 0.35)">
-        <circle cx="0" cy="0" r="150" fill="none" stroke="#2b4060" stroke-width="1.5" stroke-dasharray="4 8" class="noscale"/>
+
+      <!-- Plane 60° -->
+      <g transform="rotate(60) scale(1, 0.35)">
+        <circle cx="0" cy="0" r="160" fill="none" stroke="#007399" stroke-width="4" opacity="0.15" class="noscale"/>
+        <circle cx="0" cy="0" r="160" fill="none" stroke="#4facfe" stroke-width="1.2" stroke-dasharray="12 6 2 6" class="noscale"/>
         <g>
-          <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="24s" repeatCount="indefinite"/>
-          <line x1="-150" y1="0" x2="150" y2="0" stroke="#385278" stroke-width="1.5" class="noscale"/>
-          <circle cx="-150" cy="0" r="4.5" fill="#58a6ff" filter="url(#neon-glow)" class="noscale"/>
-          <circle cx="150" cy="0" r="3" fill="#2b4060" class="noscale"/>
+          <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="20s" repeatCount="indefinite"/>
+          <line x1="-160" y1="0" x2="160" y2="0" stroke="#007399" stroke-width="1.5" class="noscale" opacity="0.8"/>
+          <circle cx="-160" cy="0" r="9" fill="none" stroke="#4facfe" stroke-width="1.5" class="noscale"/>
+          <circle cx="-160" cy="0" r="4.5" fill="#ffffff" filter="url(#neon-glow)" class="noscale"/>
+          <circle cx="160" cy="0" r="3" fill="#4facfe" class="noscale"/>
         </g>
       </g>
-      <!-- Plane 3: 90 Degrees -->
+
+      <!-- Plane 120° -->
+      <g transform="rotate(120) scale(1, 0.35)">
+        <circle cx="0" cy="0" r="160" fill="none" stroke="#007399" stroke-width="4" opacity="0.15" class="noscale"/>
+        <circle cx="0" cy="0" r="160" fill="none" stroke="#00f2fe" stroke-width="1.2" stroke-dasharray="12 6 2 6" class="noscale"/>
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="28s" repeatCount="indefinite"/>
+          <line x1="-160" y1="0" x2="160" y2="0" stroke="#007399" stroke-width="1.5" class="noscale" opacity="0.8"/>
+          <circle cx="160" cy="0" r="9" fill="none" stroke="#00f2fe" stroke-width="1.5" class="noscale"/>
+          <circle cx="160" cy="0" r="4.5" fill="#ffffff" filter="url(#neon-glow)" class="noscale"/>
+          <circle cx="-160" cy="0" r="3" fill="#00f2fe" class="noscale"/>
+        </g>
+      </g>
+
+
+      <!-- ── SPHERE 2: MID ACCRETION (Radius = 90) ── -->
+      <!-- Plane 30° -->
+      <g transform="rotate(30) scale(1, 0.35)">
+        <circle cx="0" cy="0" r="90" fill="none" stroke="#007399" stroke-width="3" opacity="0.2" class="noscale"/>
+        <circle cx="0" cy="0" r="90" fill="none" stroke="#4facfe" stroke-width="1.5" stroke-dasharray="8 4 2 4" class="noscale"/>
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="16s" repeatCount="indefinite"/>
+          <line x1="-90" y1="0" x2="90" y2="0" stroke="#00f2fe" stroke-width="1.5" class="noscale" opacity="0.6"/>
+          <circle cx="-90" cy="0" r="7" fill="none" stroke="#4facfe" stroke-width="1.5" class="noscale"/>
+          <circle cx="-90" cy="0" r="4" fill="#ffffff" filter="url(#neon-glow)" class="noscale"/>
+          <circle cx="90" cy="0" r="2.5" fill="#4facfe" class="noscale"/>
+        </g>
+      </g>
+
+      <!-- Plane 90° -->
       <g transform="rotate(90) scale(1, 0.35)">
-        <circle cx="0" cy="0" r="150" fill="none" stroke="#2b4060" stroke-width="1.5" stroke-dasharray="4 8" class="noscale"/>
+        <circle cx="0" cy="0" r="90" fill="none" stroke="#007399" stroke-width="3" opacity="0.2" class="noscale"/>
+        <circle cx="0" cy="0" r="90" fill="none" stroke="#00f2fe" stroke-width="1.5" stroke-dasharray="8 4 2 4" class="noscale"/>
         <g>
-          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite"/>
-          <line x1="-150" y1="0" x2="150" y2="0" stroke="#385278" stroke-width="1.5" class="noscale"/>
-          <circle cx="150" cy="0" r="4.5" fill="#58a6ff" filter="url(#neon-glow)" class="noscale"/>
-          <circle cx="-150" cy="0" r="3" fill="#2b4060" class="noscale"/>
-        </g>
-      </g>
-      <!-- Plane 4: 135 Degrees -->
-      <g transform="rotate(135) scale(1, 0.35)">
-        <circle cx="0" cy="0" r="150" fill="none" stroke="#2b4060" stroke-width="1.5" stroke-dasharray="4 8" class="noscale"/>
-        <g>
-          <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="24s" repeatCount="indefinite"/>
-          <line x1="-150" y1="0" x2="150" y2="0" stroke="#385278" stroke-width="1.5" class="noscale"/>
-          <circle cx="-150" cy="0" r="4.5" fill="#58a6ff" filter="url(#neon-glow)" class="noscale"/>
-          <circle cx="150" cy="0" r="3" fill="#2b4060" class="noscale"/>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="14s" repeatCount="indefinite"/>
+          <line x1="-90" y1="0" x2="90" y2="0" stroke="#00f2fe" stroke-width="1.5" class="noscale" opacity="0.6"/>
+          <circle cx="90" cy="0" r="7" fill="none" stroke="#00f2fe" stroke-width="1.5" class="noscale"/>
+          <circle cx="90" cy="0" r="4" fill="#ffffff" filter="url(#neon-glow)" class="noscale"/>
+          <circle cx="-90" cy="0" r="2.5" fill="#00f2fe" class="noscale"/>
         </g>
       </g>
 
-
-      <!-- ── SPHERE 2: MID (Radius = 110) ── -->
-      <!-- Plane 5: 22.5 Degrees -->
-      <g transform="rotate(22.5) scale(1, 0.35)">
-        <circle cx="0" cy="0" r="110" fill="none" stroke="#385278" stroke-width="1.8" stroke-dasharray="3 6" class="noscale"/>
+      <!-- Plane 150° -->
+      <g transform="rotate(150) scale(1, 0.35)">
+        <circle cx="0" cy="0" r="90" fill="none" stroke="#007399" stroke-width="3" opacity="0.2" class="noscale"/>
+        <circle cx="0" cy="0" r="90" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="8 4 2 4" class="noscale"/>
         <g>
           <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="18s" repeatCount="indefinite"/>
-          <line x1="-110" y1="0" x2="110" y2="0" stroke="#58a6ff" stroke-width="2.0" class="noscale"/>
-          <circle cx="-110" cy="0" r="5.5" fill="#79c0ff" filter="url(#neon-glow)" class="noscale"/>
-          <circle cx="110" cy="0" r="4" fill="#385278" class="noscale"/>
-        </g>
-      </g>
-      <!-- Plane 6: 67.5 Degrees -->
-      <g transform="rotate(67.5) scale(1, 0.35)">
-        <circle cx="0" cy="0" r="110" fill="none" stroke="#385278" stroke-width="1.8" stroke-dasharray="3 6" class="noscale"/>
-        <g>
-          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="18s" repeatCount="indefinite"/>
-          <line x1="-110" y1="0" x2="110" y2="0" stroke="#58a6ff" stroke-width="2.0" class="noscale"/>
-          <circle cx="110" cy="0" r="5.5" fill="#79c0ff" filter="url(#neon-glow)" class="noscale"/>
-          <circle cx="-110" cy="0" r="4" fill="#385278" class="noscale"/>
-        </g>
-      </g>
-      <!-- Plane 7: 112.5 Degrees -->
-      <g transform="rotate(112.5) scale(1, 0.35)">
-        <circle cx="0" cy="0" r="110" fill="none" stroke="#385278" stroke-width="1.8" stroke-dasharray="3 6" class="noscale"/>
-        <g>
-          <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="18s" repeatCount="indefinite"/>
-          <line x1="-110" y1="0" x2="110" y2="0" stroke="#58a6ff" stroke-width="2.0" class="noscale"/>
-          <circle cx="-110" cy="0" r="5.5" fill="#79c0ff" filter="url(#neon-glow)" class="noscale"/>
-          <circle cx="110" cy="0" r="4" fill="#385278" class="noscale"/>
-        </g>
-      </g>
-      <!-- Plane 8: 157.5 Degrees -->
-      <g transform="rotate(157.5) scale(1, 0.35)">
-        <circle cx="0" cy="0" r="110" fill="none" stroke="#385278" stroke-width="1.8" stroke-dasharray="3 6" class="noscale"/>
-        <g>
-          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="18s" repeatCount="indefinite"/>
-          <line x1="-110" y1="0" x2="110" y2="0" stroke="#58a6ff" stroke-width="2.0" class="noscale"/>
-          <circle cx="110" cy="0" r="5.5" fill="#79c0ff" filter="url(#neon-glow)" class="noscale"/>
-          <circle cx="-110" cy="0" r="4" fill="#385278" class="noscale"/>
+          <line x1="-90" y1="0" x2="90" y2="0" stroke="#ffffff" stroke-width="1.5" class="noscale" opacity="0.6"/>
+          <circle cx="-90" cy="0" r="7" fill="none" stroke="#ffffff" stroke-width="1.5" class="noscale"/>
+          <circle cx="-90" cy="0" r="4" fill="#00f2fe" filter="url(#neon-glow)" class="noscale"/>
+          <circle cx="90" cy="0" r="2.5" fill="#ffffff" class="noscale"/>
         </g>
       </g>
 
 
-      <!-- ── SPHERE 3: INNER CORE VORTEX (Radius = 65) ── -->
-      <!-- Plane 9: 0 Degrees -->
+      <!-- ── SPHERE 3: CORE VORTEX (Radius = 40) ── -->
+      <!-- Plane 0° -->
       <g transform="rotate(0) scale(1, 0.35)">
-        <circle cx="0" cy="0" r="65" fill="none" stroke="#58a6ff" stroke-width="2.0" stroke-dasharray="2 4" class="noscale"/>
+        <circle cx="0" cy="0" r="40" fill="none" stroke="#00f2fe" stroke-width="2" stroke-dasharray="4 4" class="noscale"/>
         <g>
-          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="10s" repeatCount="indefinite"/>
-          <line x1="-65" y1="0" x2="65" y2="0" stroke="#79c0ff" stroke-width="2.5" class="noscale"/>
-          <circle cx="65" cy="0" r="6.5" fill="#ffffff" filter="url(#neon-glow)" class="noscale"/>
-          <circle cx="-65" cy="0" r="5" fill="#58a6ff" class="noscale"/>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/>
+          <line x1="-40" y1="0" x2="40" y2="0" stroke="#ffffff" stroke-width="2.5" class="noscale"/>
+          <circle cx="40" cy="0" r="3.5" fill="#ffffff" filter="url(#neon-glow)" class="noscale"/>
         </g>
       </g>
-      <!-- Plane 10: 90 Degrees -->
+
+      <!-- Plane 90° -->
       <g transform="rotate(90) scale(1, 0.35)">
-        <circle cx="0" cy="0" r="65" fill="none" stroke="#58a6ff" stroke-width="2.0" stroke-dasharray="2 4" class="noscale"/>
+        <circle cx="0" cy="0" r="40" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="4 4" class="noscale"/>
         <g>
-          <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="10s" repeatCount="indefinite"/>
-          <line x1="-65" y1="0" x2="65" y2="0" stroke="#79c0ff" stroke-width="2.5" class="noscale"/>
-          <circle cx="-65" cy="0" r="6.5" fill="#ffffff" filter="url(#neon-glow)" class="noscale"/>
-          <circle cx="65" cy="0" r="5" fill="#58a6ff" class="noscale"/>
+          <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="6s" repeatCount="indefinite"/>
+          <line x1="-40" y1="0" x2="40" y2="0" stroke="#00f2fe" stroke-width="2.5" class="noscale"/>
+          <circle cx="-40" cy="0" r="3.5" fill="#ffffff" filter="url(#neon-glow)" class="noscale"/>
         </g>
       </g>
 
 
-      <!-- ════════ THE CENTRAL GLOWING SUN / STAR ════════ -->
-      <!-- Unscaled, preserving perfect spherical bloom and sharp rays -->
+      <!-- ════════ THE CENTRAL STAR ════════ -->
+      <!-- Perfectly round, unscaled, intensely glowing -->
       <g>
-        <!-- Rotating 8-Point Solar Rays -->
+        <!-- Intense Starburst Rays -->
         <g>
-          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
-          <path d="M 0,-20 Q 0,0 20,0 Q 0,0 0,20 Q 0,0 -20,0 Q 0,0 0,-20" fill="#ffffff" opacity="0.9" filter="url(#neon-glow)"/>
-          <path d="M 0,-14 Q 0,0 14,0 Q 0,0 0,14 Q 0,0 -14,0 Q 0,0 0,-14" fill="#79c0ff" opacity="0.8" transform="rotate(45)" filter="url(#neon-glow)"/>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/>
+          <path d="M 0,-24 Q 0,0 24,0 Q 0,0 0,24 Q 0,0 -24,0 Q 0,0 0,-24" fill="#ffffff" opacity="0.9" filter="url(#neon-glow)"/>
+          <path d="M 0,-15 Q 0,0 15,0 Q 0,0 0,15 Q 0,0 -15,0 Q 0,0 0,-15" fill="#00f2fe" opacity="0.8" transform="rotate(45)" filter="url(#neon-glow)"/>
         </g>
-        <!-- Pulsing Solar Corona -->
+        
+        <!-- Pulsing Corona -->
         <circle cx="0" cy="0" r="14" fill="url(#sun-core-glow)">
-          <animate attributeName="r" values="12;16;12" dur="2.5s" repeatCount="indefinite"/>
+          <animate attributeName="r" values="12;16;12" dur="2s" repeatCount="indefinite"/>
         </circle>
-        <!-- Incandescent White-Hot Stellar Core -->
+        
+        <!-- Blazing Singularity Core -->
         <circle cx="0" cy="0" r="6" fill="#ffffff" filter="url(#neon-glow)">
-          <animate attributeName="r" values="5;7;5" dur="2.5s" repeatCount="indefinite"/>
+          <animate attributeName="r" values="5;7.5;5" dur="2s" repeatCount="indefinite"/>
         </circle>
-        <circle cx="0" cy="0" r="3" fill="#ffffff"/>
+        <circle cx="0" cy="0" r="2.5" fill="#ffffff"/>
       </g>
 
-    </g> <!-- End of Right Construct -->
+    </g> <!-- End Right Construct -->
 
-  </g> <!-- End of clipped container -->
+  </g> <!-- End Clipped Container -->
 
-  <!-- ═══════════════ CRISP CARD PERIMETER BORDER ═══════════════ -->
-  <rect x="0.5" y="0.5" width="999" height="279" rx="16" fill="none" stroke="#58a6ff" stroke-width="1.5" opacity="0.2"/>
+  <!-- ═══════════════ GLASS BORDER ═══════════════ -->
+  <rect x="0.5" y="0.5" width="999" height="279" rx="16" fill="none" stroke="#00f2fe" stroke-width="1.5" opacity="0.15"/>
 </svg>
