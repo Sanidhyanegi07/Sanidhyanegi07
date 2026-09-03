@@ -12,25 +12,18 @@
 
 <table>
   <tr>
-    <td width="280" align="center">
+    <td width="260" align="center" valign="top">
       <a href="https://github.com/Sanidhyanegi07">
-        <img src="whoami.png" width="240" alt="whoami"/>
+        <img src="whoami.png" width="230" alt="whoami"/>
       </a>
-      <br/>
-      <sub><b>Sanidhya Negi</b></sub>
-      <br/>
-      <sub>📍 India</sub>
     </td>
-    <td>
+    <td valign="top">
       <h3><code>&gt; ./whoami</code></h3>
-      <blockquote>
-        <p>I'm a Computer Science student focused on building robust systems from the ground up. Whether optimizing algorithms in <code>C++</code> or structuring scalable backends in <code>Java</code>, I treat coding as the ultimate puzzle—relying on clean logic and resilient architecture.</p>
-      </blockquote>
-      <br/>
       <p>
-        <code>🎯 Focus   →  Systems Programming · Algorithm Design · Full-Stack</code><br/>
-        <code>🔧 Primary →  C++ · Java · Python</code><br/>
-        <code>📡 Status  →  Building & Learning</code>
+        Computer Science undergraduate who thinks in systems, not scripts. I don't just write code—I architect solutions. From low-level memory management in <code>C++</code> to designing fault-tolerant backends in <code>Java</code>, every line I write is deliberate.
+      </p>
+      <p>
+        I obsess over algorithmic efficiency, clean abstractions, and building things that don't break under pressure. Currently deep into data structures, system design, and frontend engineering—because understanding the full stack means owning the full problem.
       </p>
     </td>
   </tr>
