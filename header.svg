@@ -12,111 +12,165 @@
       }
       .cursor { animation: blink 1s step-end infinite; }
 
-      @keyframes pulse-glow {
-        0%, 100% { opacity: 0.15; }
-        50% { opacity: 0.3; }
-      }
+      @keyframes twinkle1 { 0%,100%{opacity:0.03} 50%{opacity:0.15} }
+      @keyframes twinkle2 { 0%,100%{opacity:0.05} 50%{opacity:0.2} }
+      @keyframes twinkle3 { 0%,100%{opacity:0.02} 50%{opacity:0.12} }
     </style>
+
+    <!-- Background gradient -->
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#020202"/>
-      <stop offset="50%" stop-color="#080808"/>
-      <stop offset="100%" stop-color="#050505"/>
+      <stop offset="0%" stop-color="#010409"/>
+      <stop offset="35%" stop-color="#060a10"/>
+      <stop offset="65%" stop-color="#080c14"/>
+      <stop offset="100%" stop-color="#040608"/>
     </linearGradient>
+
+    <!-- Grid pattern -->
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.02)" stroke-width="0.5"/>
-      <circle cx="40" cy="40" r="0.6" fill="rgba(255,255,255,0.04)"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.015)" stroke-width="0.5"/>
+      <circle cx="40" cy="40" r="0.4" fill="rgba(88,166,255,0.04)"/>
     </pattern>
+
+    <!-- Core radial glow -->
     <radialGradient id="core-glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.4"/>
-      <stop offset="60%" stop-color="#58a6ff" stop-opacity="0.08"/>
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.5"/>
+      <stop offset="40%" stop-color="#58a6ff" stop-opacity="0.12"/>
       <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
     </radialGradient>
+
+    <!-- Wide ambient glow -->
     <radialGradient id="ambient-glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.06"/>
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.07"/>
+      <stop offset="70%" stop-color="#58a6ff" stop-opacity="0.02"/>
       <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
     </radialGradient>
+
+    <!-- Accent line glow on the left side -->
+    <linearGradient id="line-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Name subtle glow -->
+    <filter id="text-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
 
   <!-- Background -->
   <rect width="100%" height="100%" fill="url(#bg)" rx="12"/>
   <rect width="100%" height="100%" fill="url(#grid)" rx="12"/>
 
-  <!-- Top-left Status indicator -->
+  <!-- Scattered stars / floating particles -->
+  <circle cx="120" cy="38" r="0.6" fill="#ffffff"><animate attributeName="opacity" values="0.03;0.15;0.03" dur="4s" repeatCount="indefinite"/></circle>
+  <circle cx="310" cy="22" r="0.5" fill="#58a6ff"><animate attributeName="opacity" values="0.05;0.2;0.05" dur="5.5s" repeatCount="indefinite"/></circle>
+  <circle cx="450" cy="60" r="0.4" fill="#ffffff"><animate attributeName="opacity" values="0.02;0.12;0.02" dur="7s" repeatCount="indefinite"/></circle>
+  <circle cx="550" cy="245" r="0.5" fill="#58a6ff"><animate attributeName="opacity" values="0.04;0.18;0.04" dur="6s" repeatCount="indefinite"/></circle>
+  <circle cx="200" cy="260" r="0.4" fill="#ffffff"><animate attributeName="opacity" values="0.03;0.1;0.03" dur="8s" repeatCount="indefinite"/></circle>
+  <circle cx="680" cy="30" r="0.6" fill="#ffffff"><animate attributeName="opacity" values="0.02;0.14;0.02" dur="5s" repeatCount="indefinite"/></circle>
+  <circle cx="920" cy="260" r="0.5" fill="#58a6ff"><animate attributeName="opacity" values="0.04;0.16;0.04" dur="4.5s" repeatCount="indefinite"/></circle>
+  <circle cx="400" cy="250" r="0.3" fill="#ffffff"><animate attributeName="opacity" values="0.02;0.1;0.02" dur="9s" repeatCount="indefinite"/></circle>
+  <circle cx="850" cy="40" r="0.4" fill="#58a6ff"><animate attributeName="opacity" values="0.03;0.12;0.03" dur="6.5s" repeatCount="indefinite"/></circle>
+  <circle cx="50" cy="140" r="0.3" fill="#ffffff"><animate attributeName="opacity" values="0.02;0.08;0.02" dur="7.5s" repeatCount="indefinite"/></circle>
+
+  <!-- Left accent bar with glow -->
   <rect x="50" y="45" width="2" height="12" fill="#58a6ff" opacity="0.8"/>
+  <rect x="50" y="45" width="60" height="12" fill="url(#line-glow)" opacity="0.15"/>
   <text x="65" y="55" class="accent-text" letter-spacing="2px">SYS.STATUS // ONLINE</text>
 
-  <!-- Name & Role -->
+  <!-- Name with subtle glow -->
+  <text x="50" y="130" class="name" opacity="0.06" filter="url(#text-glow)" fill="#58a6ff">Sanidhya Negi</text>
   <text x="50" y="130" class="name">Sanidhya Negi</text>
 
+  <!-- Role -->
   <text x="52" y="165" class="role">
     &gt; Systems Engineer<tspan class="cursor" fill="#58a6ff">_</tspan>
   </text>
 
-  <!-- Divider Line -->
-  <line x1="50" y1="195" x2="180" y2="195" stroke="rgba(88, 166, 255, 0.3)" stroke-width="1"/>
-  <line x1="180" y1="195" x2="300" y2="195" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1"/>
+  <!-- Divider with glow fade -->
+  <line x1="50" y1="195" x2="200" y2="195" stroke="rgba(88, 166, 255, 0.35)" stroke-width="1"/>
+  <line x1="200" y1="195" x2="380" y2="195" stroke="rgba(88, 166, 255, 0.08)" stroke-width="0.5"/>
 
   <!-- Tags -->
   <text x="50" y="230" class="meta" xml:space="preserve">C++   //   JAVA   //   SYSTEM DESIGN   //   DSA</text>
 
-  <!-- Connection line from text area to orbital -->
-  <line x1="380" y1="140" x2="640" y2="140" stroke="rgba(88,166,255,0.04)" stroke-width="0.5" stroke-dasharray="3 8"/>
+  <!-- Subtle connection line from text to orbital -->
+  <line x1="400" y1="140" x2="640" y2="140" stroke="rgba(88,166,255,0.03)" stroke-width="0.5" stroke-dasharray="2 10"/>
+  <circle cx="640" cy="140" r="1" fill="#58a6ff" opacity="0.08"/>
 
-  <!-- 3D Orbital System (right side) -->
+  <!-- ═══════════════ 3D ORBITAL SYSTEM ═══════════════ -->
   <g transform="translate(780, 140)">
 
-    <!-- Ambient background glow -->
-    <circle cx="0" cy="0" r="130" fill="url(#ambient-glow)">
-      <animate attributeName="r" values="120;135;120" dur="6s" repeatCount="indefinite"/>
+    <!-- Deep ambient glow -->
+    <circle cx="0" cy="0" r="140" fill="url(#ambient-glow)">
+      <animate attributeName="r" values="130;145;130" dur="8s" repeatCount="indefinite"/>
     </circle>
 
-    <!-- Ring 1 — outermost, tilted flat, slow -->
+    <!-- Ring 1 — outermost, tilted flat, slow drift -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="50s" repeatCount="indefinite"/>
-      <ellipse cx="0" cy="0" rx="120" ry="30" stroke="rgba(88,166,255,0.1)" stroke-width="0.5" fill="none" stroke-dasharray="1 12" transform="rotate(-10)"/>
-      <circle cx="120" cy="0" r="1.2" fill="#58a6ff" opacity="0.5" transform="rotate(-10)"/>
-      <circle cx="-90" cy="0" r="0.8" fill="#ffffff" opacity="0.15" transform="rotate(-10)"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="55s" repeatCount="indefinite"/>
+      <ellipse cx="0" cy="0" rx="125" ry="28" stroke="rgba(88,166,255,0.08)" stroke-width="0.5" fill="none" stroke-dasharray="1 14" transform="rotate(-8)"/>
+      <ellipse cx="0" cy="0" rx="125" ry="28" stroke="rgba(88,166,255,0.04)" stroke-width="3" fill="none" stroke-dasharray="1 14" transform="rotate(-8)"/>
+      <circle cx="125" cy="0" r="1.5" fill="#58a6ff" opacity="0.4" transform="rotate(-8)">
+        <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="-80" cy="0" r="0.6" fill="#ffffff" opacity="0.12" transform="rotate(-8)"/>
     </g>
 
-    <!-- Ring 2 — wide, opposite direction -->
+    <!-- Ring 2 — wide, counter-rotate, tilted -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="35s" repeatCount="indefinite"/>
-      <ellipse cx="0" cy="0" rx="100" ry="45" stroke="rgba(88,166,255,0.12)" stroke-width="0.6" fill="none" transform="rotate(20)"/>
-      <circle cx="100" cy="0" r="1.8" fill="#58a6ff" opacity="0.6" transform="rotate(20)"/>
-      <circle cx="-100" cy="0" r="1" fill="#ffffff" opacity="0.2" transform="rotate(20)"/>
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="38s" repeatCount="indefinite"/>
+      <ellipse cx="0" cy="0" rx="100" ry="48" stroke="rgba(88,166,255,0.1)" stroke-width="0.6" fill="none" transform="rotate(22)"/>
+      <ellipse cx="0" cy="0" rx="100" ry="48" stroke="rgba(88,166,255,0.03)" stroke-width="4" fill="none" transform="rotate(22)"/>
+      <circle cx="100" cy="0" r="2" fill="#58a6ff" opacity="0.55" transform="rotate(22)">
+        <animate attributeName="opacity" values="0.4;0.7;0.4" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="-100" cy="0" r="1" fill="#ffffff" opacity="0.18" transform="rotate(22)"/>
+      <circle cx="50" cy="0" r="0.6" fill="#58a6ff" opacity="0.1" transform="rotate(22)"/>
     </g>
 
-    <!-- Ring 3 — mid, steeper tilt -->
+    <!-- Ring 3 — steep tilt, creates depth -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="22s" repeatCount="indefinite"/>
-      <ellipse cx="0" cy="0" rx="70" ry="55" stroke="rgba(255,255,255,0.06)" stroke-width="0.8" fill="none" stroke-dasharray="6 6" transform="rotate(-35)"/>
-      <circle cx="70" cy="0" r="2" fill="#ffffff" opacity="0.35" transform="rotate(-35)"/>
-      <circle cx="0" cy="55" r="1.5" fill="#58a6ff" opacity="0.25" transform="rotate(-35)"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite"/>
+      <ellipse cx="0" cy="0" rx="68" ry="58" stroke="rgba(255,255,255,0.05)" stroke-width="0.7" fill="none" stroke-dasharray="8 5" transform="rotate(-40)"/>
+      <ellipse cx="0" cy="0" rx="68" ry="58" stroke="rgba(88,166,255,0.02)" stroke-width="3" fill="none" stroke-dasharray="8 5" transform="rotate(-40)"/>
+      <circle cx="68" cy="0" r="2" fill="#ffffff" opacity="0.3" transform="rotate(-40)">
+        <animate attributeName="opacity" values="0.2;0.45;0.2" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="0" cy="58" r="1.2" fill="#58a6ff" opacity="0.2" transform="rotate(-40)"/>
     </g>
 
-    <!-- Ring 4 — inner tight orbit -->
+    <!-- Ring 4 — inner, circular, tighter -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="14s" repeatCount="indefinite"/>
-      <ellipse cx="0" cy="0" rx="42" ry="42" stroke="rgba(88,166,255,0.25)" stroke-width="0.5" fill="none" stroke-dasharray="3 5" transform="rotate(50)"/>
-      <circle cx="42" cy="0" r="2.2" fill="#58a6ff" opacity="0.7" transform="rotate(50)"/>
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="16s" repeatCount="indefinite"/>
+      <ellipse cx="0" cy="0" rx="38" ry="38" stroke="rgba(88,166,255,0.2)" stroke-width="0.5" fill="none" stroke-dasharray="3 4" transform="rotate(55)"/>
+      <ellipse cx="0" cy="0" rx="38" ry="38" stroke="rgba(88,166,255,0.05)" stroke-width="3" fill="none" stroke-dasharray="3 4" transform="rotate(55)"/>
+      <circle cx="38" cy="0" r="2.5" fill="#58a6ff" opacity="0.65" transform="rotate(55)">
+        <animate attributeName="opacity" values="0.5;0.8;0.5" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
     </g>
 
-    <!-- Core glow -->
-    <circle cx="0" cy="0" r="25" fill="url(#core-glow)">
-      <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+    <!-- Core outer glow -->
+    <circle cx="0" cy="0" r="28" fill="url(#core-glow)">
+      <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite"/>
     </circle>
 
-    <!-- Center core — outer ring -->
-    <circle cx="0" cy="0" r="9" fill="none" stroke="rgba(88,166,255,0.3)" stroke-width="0.8">
-      <animate attributeName="r" values="9;11;9" dur="4s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="4s" repeatCount="indefinite"/>
+    <!-- Core breathing ring -->
+    <circle cx="0" cy="0" r="12" fill="none" stroke="rgba(88,166,255,0.15)" stroke-width="0.5">
+      <animate attributeName="r" values="12;16;12" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.35;0.15" dur="4s" repeatCount="indefinite"/>
     </circle>
 
-    <!-- Center core — main -->
-    <circle cx="0" cy="0" r="7" fill="#58a6ff">
-      <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+    <!-- Center core -->
+    <circle cx="0" cy="0" r="8" fill="#58a6ff">
+      <animate attributeName="opacity" values="0.65;1;0.65" dur="2s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="0" cy="0" r="3" fill="#ffffff" opacity="0.9"/>
+    <circle cx="0" cy="0" r="4" fill="#ffffff" opacity="0.85"/>
+    <circle cx="0" cy="0" r="1.5" fill="#ffffff" opacity="1"/>
 
   </g>
 </svg>
