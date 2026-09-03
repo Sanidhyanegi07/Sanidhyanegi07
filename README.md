@@ -18,7 +18,9 @@
       <a href="https://github.com/Sanidhyanegi07"><img src="whoami.png" width="230" alt="whoami"/></a>
     </td>
     <td valign="middle">
-      Computer Science undergraduate who thinks in systems, not scripts. From low-level memory management in <code>C++</code> to fault-tolerant backends in <code>Java</code>, every line I write is deliberate. I obsess over algorithmic efficiency, clean abstractions, and building things that don't break under pressure—because understanding the full stack means owning the full problem.
+      <div style="margin-bottom: 20px; line-height: 1.5;">
+        Computer Science undergraduate who thinks in systems, not scripts. From low-level memory management in <code>C++</code> to fault-tolerant backends in <code>Java</code>, every line I write is deliberate. I obsess over algorithmic efficiency, clean abstractions, and building things that don't break under pressure—because understanding the full stack means owning the full problem.
+      </div>
     </td>
   </tr>
 </table>
@@ -68,10 +70,10 @@
 
 <div align="center" style="margin-top: 10px;">
   <a href="https://github.com/Sanidhyanegi07">
-    <img src="https://github-readme-stats.vercel.app/api?username=Sanidhyanegi07&show_icons=true&theme=dark&bg_color=020306&title_color=58a6ff&icon_color=58a6ff&text_color=ffffff&hide_border=true" alt="GitHub Stats" width="48%"/>
+    <img src="https://github-readme-stats.vercel.app/api?username=Sanidhyanegi07&show_icons=true&bg_color=020306&title_color=58a6ff&icon_color=58a6ff&text_color=ffffff&hide_border=true" alt="GitHub Stats" width="48%"/>
   </a>
   <a href="https://github.com/Sanidhyanegi07">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sanidhyanegi07&layout=compact&theme=dark&bg_color=020306&title_color=58a6ff&text_color=ffffff&hide_border=true" alt="Top Languages" width="48%"/>
+    <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Sanidhyanegi07&layout=compact&bg_color=020306&title_color=58a6ff&text_color=ffffff&hide_border=true" alt="Top Languages" width="48%"/>
   </a>
 </div>
 
