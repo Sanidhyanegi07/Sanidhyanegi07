@@ -68,6 +68,21 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+
+    <!-- Airborne Pathogen / Digital Contagion Filter -->
+    <filter id="airborne-flu" x="-50%" y="-50%" width="200%" height="200%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="4" result="noise">
+        <animate attributeName="baseFrequency" values="0.015; 0.035; 0.015" dur="12s" repeatCount="indefinite" />
+      </feTurbulence>
+      <!-- Scale 35 creates violent, erratic tendrils that look like a spreading disease -->
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="35" xChannelSelector="R" yChannelSelector="G" result="warped"/>
+      <!-- Soften the tendrils slightly to look airborne/gaseous -->
+      <feGaussianBlur in="warped" stdDeviation="1.5" result="soft-warped"/>
+      <feMerge>
+        <feMergeNode in="soft-warped"/>
+        <feMergeNode in="warped"/>
+      </feMerge>
+    </filter>
   </defs>
 
   <!-- ═══════════════ CANVAS CONTAINER ═══════════════ -->
@@ -117,8 +132,9 @@
       <!-- Cosmic Gas Glow -->
       <circle cx="0" cy="0" r="135" fill="url(#galaxy-glow)" opacity="0.3"/>
 
-      <!-- Global Tumble: The entire galaxy slowly rotates on the Z axis -->
-      <g>
+      <!-- Global Tumble: The entire mutated galaxy slowly rotates -->
+      <!-- The airborne-flu filter completely distorts the geometric shapes into organic, spreading viral tendrils -->
+      <g filter="url(#airborne-flu)">
         <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="180s" repeatCount="indefinite"/>
 
         <!-- ── PLANE 0° ── -->
