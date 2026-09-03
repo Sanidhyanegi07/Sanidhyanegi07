@@ -3,9 +3,9 @@
 </div>
 
 <div align="center" style="margin-top: 20px;">
-  <a href="https://github.com/Sanidhyanegi07?tab=followers"><img src="https://img.shields.io/github/followers/Sanidhyanegi07?style=flat-square&color=0d1117&labelColor=0d1117&logo=github&logoColor=58a6ff" alt="followers"/></a>
+  <a href="https://github.com/Sanidhyanegi07?tab=followers"><img src="https://img.shields.io/github/followers/Sanidhyanegi07?style=flat-square&color=020306&labelColor=020306&logo=github&logoColor=00f2fe" alt="followers"/></a>
   &nbsp;
-  <img src="https://komarev.com/ghpvc/?username=Sanidhyanegi07&label=SYS.VIEWS&style=flat-square&color=0d1117&labelColor=0d1117" alt="views"/>
+  <img src="https://komarev.com/ghpvc/?username=Sanidhyanegi07&label=SYS.VIEWS&style=flat-square&color=020306&labelColor=020306" alt="views"/>
 </div>
 
 
@@ -55,10 +55,10 @@
 
 | `ARCHITECTURE` | `DESCRIPTION` | `TECH` |
 | :--- | :--- | :--- |
-| [**Algorithmic Telemetry Log**](https://github.com/Sanidhyanegi07/neetcode-submissions) | Intensive algorithmic problem‑solving focused on optimal data structures and time/space complexity tradeoffs. | <img src="https://img.shields.io/badge/-Java-0d1117?style=flat-square&logo=openjdk&logoColor=58a6ff"/> <img src="https://img.shields.io/badge/-DSA-0d1117?style=flat-square&logo=leetcode&logoColor=58a6ff"/> |
-| [**ComplexCalc Core Engine**](https://github.com/Sanidhyanegi07/ComplexCalc) | Scientific calculator engine supporting dynamic expression parsing with cleanly decoupled business logic. | <img src="https://img.shields.io/badge/-C++-0d1117?style=flat-square&logo=c%2B%2B&logoColor=58a6ff"/> <img src="https://img.shields.io/badge/-Math-0d1117?style=flat-square&logo=wolframmathematica&logoColor=58a6ff"/> |
-| [**Academic Management System**](https://github.com/Sanidhyanegi07/Attendance-Management-System) | Enterprise-style application featuring strict role‑based access control and robust session management. | <img src="https://img.shields.io/badge/-C++-0d1117?style=flat-square&logo=c%2B%2B&logoColor=58a6ff"/> <img src="https://img.shields.io/badge/-OOP-0d1117?style=flat-square&logo=c%2B%2B&logoColor=58a6ff"/> |
-| [**Webathon / NIRVAN '26**](https://github.com/Sanidhyanegi07/webathon) | Modular and highly responsive frontend architecture built for a high-traffic college technical event. | <img src="https://img.shields.io/badge/-React-0d1117?style=flat-square&logo=react&logoColor=58a6ff"/> <img src="https://img.shields.io/badge/-Vite-0d1117?style=flat-square&logo=vite&logoColor=58a6ff"/> |
+| [**Algorithmic Telemetry Log**](https://github.com/Sanidhyanegi07/neetcode-submissions) | Intensive algorithmic problem‑solving focused on optimal data structures and time/space complexity tradeoffs. | <img src="https://img.shields.io/badge/-Java-020306?style=flat-square&logo=openjdk&logoColor=00f2fe"/> <img src="https://img.shields.io/badge/-DSA-020306?style=flat-square&logo=leetcode&logoColor=00f2fe"/> |
+| [**ComplexCalc Core Engine**](https://github.com/Sanidhyanegi07/ComplexCalc) | Scientific calculator engine supporting dynamic expression parsing with cleanly decoupled business logic. | <img src="https://img.shields.io/badge/-C++-020306?style=flat-square&logo=c%2B%2B&logoColor=00f2fe"/> <img src="https://img.shields.io/badge/-Math-020306?style=flat-square&logo=wolframmathematica&logoColor=00f2fe"/> |
+| [**Academic Management System**](https://github.com/Sanidhyanegi07/Attendance-Management-System) | Enterprise-style application featuring strict role‑based access control and robust session management. | <img src="https://img.shields.io/badge/-C++-020306?style=flat-square&logo=c%2B%2B&logoColor=00f2fe"/> <img src="https://img.shields.io/badge/-OOP-020306?style=flat-square&logo=c%2B%2B&logoColor=00f2fe"/> |
+| [**Webathon / NIRVAN '26**](https://github.com/Sanidhyanegi07/webathon) | Modular and highly responsive frontend architecture built for a high-traffic college technical event. | <img src="https://img.shields.io/badge/-React-020306?style=flat-square&logo=react&logoColor=00f2fe"/> <img src="https://img.shields.io/badge/-Vite-020306?style=flat-square&logo=vite&logoColor=00f2fe"/> |
 
 <br/>
 
@@ -66,16 +66,16 @@
 
 <div align="center" style="margin-top: 10px;">
   <a href="https://github.com/Sanidhyanegi07">
-    <img src="https://streak-stats.demolab.com?user=Sanidhyanegi07&theme=dark&hide_border=true&background=0d1117&stroke=0d1117&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&sideLabels=8b949e&currStreakNum=ffffff&sideNums=ffffff&dates=8b949e" alt="streak" width="97%"/>
+    <img src="https://streak-stats.demolab.com?user=Sanidhyanegi07&theme=dark&hide_border=true&background=020306&stroke=020306&ring=00f2fe&fire=00f2fe&currStreakLabel=00f2fe&sideLabels=8b949e&currStreakNum=ffffff&sideNums=ffffff&dates=8b949e" alt="streak" width="97%"/>
   </a>
 </div>
 
 <br/>
 
 <div align="center">
-  <a href="https://github.com/Sanidhyanegi07"><img src="https://img.shields.io/badge/GitHub-0d1117?style=for-the-badge&logo=github&logoColor=58a6ff" alt="GitHub"/></a>
+  <a href="https://github.com/Sanidhyanegi07"><img src="https://img.shields.io/badge/GitHub-020306?style=for-the-badge&logo=github&logoColor=00f2fe" alt="GitHub"/></a>
   &nbsp;
-  <a href="https://www.linkedin.com/in/sanidhya-negi-49aa8a35a/"><img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=58a6ff" alt="LinkedIn"/></a>
+  <a href="https://www.linkedin.com/in/sanidhya-negi-49aa8a35a/"><img src="https://img.shields.io/badge/LinkedIn-020306?style=for-the-badge&logo=linkedin&logoColor=00f2fe" alt="LinkedIn"/></a>
 </div>
 
 <br/>
