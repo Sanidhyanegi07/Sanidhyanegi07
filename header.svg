@@ -33,9 +33,6 @@
         font-weight: 700;
       }
       
-      @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
-      .cursor { animation: blink 1s step-end infinite; }
-      
       /* Guarantees 1px crisp lines even under 3D perspective scaling */
       .noscale { vector-effect: non-scaling-stroke; }
     </style>
@@ -104,7 +101,7 @@
         <!-- Identity -->
         <text x="0" y="85" class="name">Sanidhya Negi</text>
         <text x="2" y="125" class="role">
-          &gt; Systems Engineer<tspan class="cursor" fill="#58a6ff">_</tspan>
+          &gt; Systems Engineering -
         </text>
 
         <!-- Precision Divider -->

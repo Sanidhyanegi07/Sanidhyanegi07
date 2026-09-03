@@ -70,7 +70,7 @@
 
 <div align="center" style="margin-top: 15px;">
   <a href="https://github.com/Sanidhyanegi07">
-    <img height="150" src="https://github-readme-stats-anuraghazra1.vercel.app/api?username=Sanidhyanegi07&show_icons=true&bg_color=020306&title_color=58a6ff&icon_color=58a6ff&text_color=8b949e&hide_border=true&custom_title=SYS.METRICS" alt="GitHub Stats"/>
+    <img height="150" src="https://streak-stats.demolab.com/?user=Sanidhyanegi07&theme=dark&background=020306&ring=58a6ff&fire=58a6ff&currStreakNum=58a6ff&sideNums=58a6ff&currStreakLabel=8b949e&sideLabels=8b949e&dates=8b949e&hide_border=true" alt="GitHub Streak"/>
   </a>
   &nbsp;
   <a href="https://github.com/Sanidhyanegi07">
