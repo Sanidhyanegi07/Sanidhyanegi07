@@ -15,7 +15,9 @@
       <a href="https://github.com/Sanidhyanegi07"><img src="whoami.png" width="230" alt="whoami"/></a>
     </td>
     <td valign="top">
-      <b><code>&gt; ./whoami</code></b><br/><br/>
+      <a href="https://github.com/Sanidhyanegi07">
+        <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=00f2fe&background=02030600&center=false&vCenter=true&width=435&lines=%3E+.%2Fwhoami;Computer+Science+Undergraduate;Systems+Thinker;C%2B%2B+%26+Java+Developer" alt="Typing SVG" />
+      </a><br/>
       Computer Science undergraduate who thinks in systems, not scripts. From low-level memory management in <code>C++</code> to fault-tolerant backends in <code>Java</code>, every line I write is deliberate. I obsess over algorithmic efficiency, clean abstractions, and building things that don't break under pressure—because understanding the full stack means owning the full problem.
     </td>
   </tr>
@@ -27,26 +29,26 @@
 
 #### `LANGUAGES`
 <p>
-  <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"/>
-  <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++"/>
-  <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python"/>
-  <img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" alt="C"/>
+  <img src="https://img.shields.io/badge/Java-020306?style=for-the-badge&logo=openjdk&logoColor=00f2fe" alt="Java"/>
+  <img src="https://img.shields.io/badge/C++-020306?style=for-the-badge&logo=c%2B%2B&logoColor=00f2fe" alt="C++"/>
+  <img src="https://img.shields.io/badge/Python-020306?style=for-the-badge&logo=python&logoColor=00f2fe" alt="Python"/>
+  <img src="https://img.shields.io/badge/C-020306?style=for-the-badge&logo=c&logoColor=00f2fe" alt="C"/>
 </p>
 
 #### `FRONTEND`
 <p>
-  <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React"/>
-  <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript"/>
-  <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
-  <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
-  <img src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white" alt="Vite"/>
+  <img src="https://img.shields.io/badge/React-020306?style=for-the-badge&logo=react&logoColor=00f2fe" alt="React"/>
+  <img src="https://img.shields.io/badge/JavaScript-020306?style=for-the-badge&logo=javascript&logoColor=00f2fe" alt="JavaScript"/>
+  <img src="https://img.shields.io/badge/HTML5-020306?style=for-the-badge&logo=html5&logoColor=00f2fe" alt="HTML5"/>
+  <img src="https://img.shields.io/badge/CSS3-020306?style=for-the-badge&logo=css3&logoColor=00f2fe" alt="CSS3"/>
+  <img src="https://img.shields.io/badge/Vite-020306?style=for-the-badge&logo=vite&logoColor=00f2fe" alt="Vite"/>
 </p>
 
 #### `SYSTEMS`
 <p>
-  <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
-  <img src="https://img.shields.io/badge/CMake-%23008FBA.svg?style=for-the-badge&logo=cmake&logoColor=white" alt="CMake"/>
-  <img src="https://img.shields.io/badge/Qt-%23217346.svg?style=for-the-badge&logo=Qt&logoColor=white" alt="Qt"/>
+  <img src="https://img.shields.io/badge/Git-020306?style=for-the-badge&logo=git&logoColor=00f2fe" alt="Git"/>
+  <img src="https://img.shields.io/badge/CMake-020306?style=for-the-badge&logo=cmake&logoColor=00f2fe" alt="CMake"/>
+  <img src="https://img.shields.io/badge/Qt-020306?style=for-the-badge&logo=Qt&logoColor=00f2fe" alt="Qt"/>
 </p>
 
 <br/>
@@ -63,6 +65,15 @@
 <br/>
 
 ### `// SYSTEM_TELEMETRY`
+
+<div align="center" style="margin-top: 10px;">
+  <a href="https://github.com/Sanidhyanegi07">
+    <img src="https://github-readme-stats.vercel.app/api?username=Sanidhyanegi07&show_icons=true&theme=dark&bg_color=020306&title_color=00f2fe&icon_color=00f2fe&text_color=ffffff&hide_border=true" alt="GitHub Stats" width="48%"/>
+  </a>
+  <a href="https://github.com/Sanidhyanegi07">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sanidhyanegi07&layout=compact&theme=dark&bg_color=020306&title_color=00f2fe&text_color=ffffff&hide_border=true" alt="Top Languages" width="48%"/>
+  </a>
+</div>
 
 <div align="center" style="margin-top: 10px;">
   <a href="https://github.com/Sanidhyanegi07">
