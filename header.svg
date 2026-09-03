@@ -1,15 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" width="100%" height="100%">
   <defs>
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap');
+
       .name {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         font-size: 50px;
         font-weight: 800;
-        fill: #ffffff;
-        letter-spacing: -2.5px;
+        fill: #f0f6fc;
+        letter-spacing: -2px;
       }
       .role {
-        font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+        font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
         font-size: 13px;
         font-weight: 500;
         fill: #58a6ff;
@@ -17,199 +19,317 @@
         text-transform: uppercase;
       }
       .meta {
-        font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
-        font-size: 10.5px;
-        fill: #3b4048;
-        letter-spacing: 2px;
-      }
-      .accent-text {
-        fill: #58a6ff;
-        font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
-        font-size: 9px;
+        font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+        font-size: 10px;
+        font-weight: 500;
+        fill: #6e7681;
         letter-spacing: 2.5px;
       }
-      @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
-      .cursor { animation: blink 1s step-end infinite; }
+      .tag {
+        font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+        font-size: 9px;
+        font-weight: 500;
+        fill: #58a6ff;
+        letter-spacing: 2.5px;
+      }
+      @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+      .cursor { animation: blink 1.1s step-end infinite; }
     </style>
 
-    <!-- Background -->
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a0e17"/>
-      <stop offset="40%" stop-color="#080c14"/>
-      <stop offset="100%" stop-color="#060810"/>
+    <!-- Gaussian Blur Filters for True Optical Bloom -->
+    <filter id="glow-core" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="b1"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="b2"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="b3"/>
+      <feMerge>
+        <feMergeNode in="b3"/>
+        <feMergeNode in="b2"/>
+        <feMergeNode in="b1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="blur-subtle"><feGaussianBlur stdDeviation="1.2"/></filter>
+    <filter id="blur-med"><feGaussianBlur stdDeviation="3.5"/></filter>
+    <filter id="blur-wide"><feGaussianBlur stdDeviation="14"/></filter>
+    <filter id="blur-cosmic"><feGaussianBlur stdDeviation="32"/></filter>
+
+    <!-- Background Gradients -->
+    <linearGradient id="deep-space" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040711"/>
+      <stop offset="45%" stop-color="#060b17"/>
+      <stop offset="85%" stop-color="#081024"/>
+      <stop offset="100%" stop-color="#050814"/>
     </linearGradient>
 
-    <!-- Vignette overlay -->
-    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
-      <stop offset="0%" stop-color="transparent"/>
-      <stop offset="100%" stop-color="rgba(0,0,0,0.4)"/>
+    <!-- Cosmic Radial Illumination from Singularity -->
+    <radialGradient id="singularity-bloom" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.14"/>
+      <stop offset="35%" stop-color="#388bfd" stop-opacity="0.06"/>
+      <stop offset="70%" stop-color="#1f6feb" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Dot grid -->
-    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
-      <circle cx="12" cy="12" r="0.35" fill="rgba(88,166,255,0.035)"/>
+    <!-- Translucent Event Horizon Shader -->
+    <radialGradient id="translucent-void" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#030508" stop-opacity="0.82"/>
+      <stop offset="70%" stop-color="#050811" stop-opacity="0.75"/>
+      <stop offset="92%" stop-color="#0a1222" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0.12"/>
+    </radialGradient>
+
+    <!-- Accretion Disk Linear Color Flow -->
+    <linearGradient id="disk-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.05"/>
+      <stop offset="25%" stop-color="#58a6ff" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="75%" stop-color="#58a6ff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0.05"/>
+    </linearGradient>
+
+    <!-- Fine Starfield Pattern Tile for Texture Depth -->
+    <pattern id="micro-stars" width="80" height="80" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="18" r="0.25" fill="#ffffff" opacity="0.07"/>
+      <circle cx="56" cy="34" r="0.2" fill="#58a6ff" opacity="0.08"/>
+      <circle cx="32" cy="62" r="0.2" fill="#ffffff" opacity="0.05"/>
+      <circle cx="74" cy="71" r="0.3" fill="#58a6ff" opacity="0.06"/>
     </pattern>
-
-    <!-- Glows -->
-    <radialGradient id="sphere-glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.08"/>
-      <stop offset="60%" stop-color="#58a6ff" stop-opacity="0.02"/>
-      <stop offset="100%" stop-color="transparent"/>
-    </radialGradient>
-    <radialGradient id="core-glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.35"/>
-      <stop offset="40%" stop-color="#58a6ff" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="transparent"/>
-    </radialGradient>
-
-    <!-- Blur filters -->
-    <filter id="glow-sm"><feGaussianBlur stdDeviation="2"/></filter>
-    <filter id="glow-md"><feGaussianBlur stdDeviation="5"/></filter>
-    <filter id="glow-lg"><feGaussianBlur stdDeviation="12"/></filter>
   </defs>
 
-  <!-- ══════ BACKGROUND LAYERS ══════ -->
-  <rect width="100%" height="100%" fill="url(#bg)" rx="6"/>
-  <rect width="100%" height="100%" fill="url(#dots)" rx="6"/>
-  <rect width="100%" height="100%" fill="url(#vignette)" rx="6"/>
+  <!-- ═══════════════ CANVAS BASE ═══════════════ -->
+  <rect width="100%" height="100%" fill="url(#deep-space)" rx="8"/>
+  <rect width="100%" height="100%" fill="url(#micro-stars)" rx="8"/>
 
-  <!-- Ambient atmospheric glow behind the construct -->
-  <ellipse cx="770" cy="140" rx="180" ry="130" fill="#58a6ff" opacity="0.012" filter="url(#glow-lg)"/>
+  <!-- Cosmic Ambient Glow Behind Singularity -->
+  <circle cx="765" cy="138" r="160" fill="url(#singularity-bloom)" filter="url(#blur-cosmic)"/>
+  <circle cx="765" cy="138" r="90" fill="#58a6ff" opacity="0.04" filter="url(#blur-wide)"/>
 
-  <!-- ══════ TEXT CONTENT ══════ -->
+  <!-- ═══════════════ DENSE SPACE PARTICLE ENGINE ═══════════════ -->
 
-  <!-- Status line -->
-  <line x1="50" y1="48" x2="50" y2="60" stroke="#58a6ff" stroke-width="1.5" opacity="0.6"/>
-  <text x="62" y="57" class="accent-text">SYS.STATUS // ONLINE</text>
-
-  <!-- Name -->
-  <text x="50" y="128" class="name" fill="#58a6ff" opacity="0.03" filter="url(#glow-lg)">Sanidhya Negi</text>
-  <text x="50" y="128" class="name">Sanidhya Negi</text>
-
-  <!-- Role -->
-  <text x="52" y="160" class="role">&gt; Systems Engineer<tspan class="cursor" fill="#58a6ff">_</tspan></text>
-
-  <!-- Separator -->
-  <line x1="50" y1="182" x2="140" y2="182" stroke="#58a6ff" stroke-width="0.6" opacity="0.3"/>
-  <line x1="142" y1="182" x2="280" y2="182" stroke="#58a6ff" stroke-width="0.3" opacity="0.06"/>
-
-  <!-- Tags -->
-  <text x="50" y="213" class="meta" xml:space="preserve">C++  //  JAVA  //  SYSTEM DESIGN  //  DSA</text>
-
-  <!-- Data flow line connecting text → construct -->
-  <line x1="320" y1="140" x2="610" y2="140" stroke="#58a6ff" stroke-width="0.3" opacity="0.025" stroke-dasharray="1 8"/>
-
-  <!-- ══════ GEOMETRIC CONSTRUCT ══════ -->
-  <g transform="translate(770, 140)">
-
-    <!-- Background field -->
-    <circle cx="0" cy="0" r="130" fill="url(#sphere-glow)"/>
-
-    <!-- Wireframe sphere — longitude lines (ellipses at various rotations) -->
-    <!-- These create the illusion of a 3D wireframe globe -->
-
-    <!-- Equator (horizontal reference) -->
-    <ellipse cx="0" cy="0" rx="90" ry="12" fill="none" stroke="rgba(88,166,255,0.07)" stroke-width="0.4">
-      <animate attributeName="ry" values="12;14;12" dur="10s" repeatCount="indefinite"/>
-    </ellipse>
-
-    <!-- Longitude 0° — front-facing circle -->
-    <g>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="80s" repeatCount="indefinite"/>
-      <ellipse cx="0" cy="0" rx="90" ry="90" fill="none" stroke="rgba(88,166,255,0.05)" stroke-width="0.3"/>
-    </g>
-
-    <!-- Longitude 30° -->
-    <g>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="80s" repeatCount="indefinite"/>
-      <ellipse cx="0" cy="0" rx="45" ry="90" fill="none" stroke="rgba(88,166,255,0.06)" stroke-width="0.3" transform="rotate(0)"/>
-    </g>
-
-    <!-- Longitude 60° -->
-    <g>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="80s" repeatCount="indefinite"/>
-      <ellipse cx="0" cy="0" rx="78" ry="90" fill="none" stroke="rgba(88,166,255,0.04)" stroke-width="0.3" transform="rotate(0)"/>
-    </g>
-
-    <!-- Latitude lines -->
-    <ellipse cx="0" cy="-45" rx="78" ry="10" fill="none" stroke="rgba(88,166,255,0.04)" stroke-width="0.3"/>
-    <ellipse cx="0" cy="45" rx="78" ry="10" fill="none" stroke="rgba(88,166,255,0.04)" stroke-width="0.3"/>
-    <ellipse cx="0" cy="-70" rx="56" ry="7" fill="none" stroke="rgba(88,166,255,0.03)" stroke-width="0.3"/>
-    <ellipse cx="0" cy="70" rx="56" ry="7" fill="none" stroke="rgba(88,166,255,0.03)" stroke-width="0.3"/>
-
-    <!-- Rotating orbital arcs overlaid on sphere -->
-    <!-- Arc 1: outer, slow -->
-    <g>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="50s" repeatCount="indefinite"/>
-      <path d="M 105,0 A 105,105 0 0,1 0,105" fill="none" stroke="rgba(88,166,255,0.1)" stroke-width="0.5" stroke-linecap="round"/>
-      <path d="M -105,0 A 105,105 0 0,1 0,-105" fill="none" stroke="rgba(88,166,255,0.06)" stroke-width="0.4" stroke-linecap="round"/>
-      <circle cx="0" cy="105" r="1.5" fill="#58a6ff" opacity="0.3">
-        <animate attributeName="opacity" values="0.2;0.4;0.2" dur="3s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="0" cy="-105" r="1" fill="#ffffff" opacity="0.12"/>
-    </g>
-
-    <!-- Arc 2: mid, counter-rotate -->
-    <g>
-      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="35s" repeatCount="indefinite"/>
-      <path d="M 72,0 A 72,72 0 0,1 -36,62.4" fill="none" stroke="rgba(88,166,255,0.14)" stroke-width="0.5" stroke-linecap="round"/>
-      <path d="M -72,0 A 72,72 0 0,1 36,-62.4" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.4" stroke-linecap="round"/>
-      <circle cx="-36" cy="62.4" r="1.8" fill="#58a6ff" opacity="0.35">
-        <animate attributeName="opacity" values="0.25;0.5;0.25" dur="2.5s" repeatCount="indefinite"/>
-      </circle>
-    </g>
-
-    <!-- Arc 3: inner -->
-    <g>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite"/>
-      <path d="M 0,-48 A 48,48 0 0,1 48,0" fill="none" stroke="rgba(88,166,255,0.16)" stroke-width="0.5" stroke-linecap="round"/>
-      <circle cx="48" cy="0" r="1.5" fill="#ffffff" opacity="0.2">
-        <animate attributeName="opacity" values="0.12;0.3;0.12" dur="2s" repeatCount="indefinite"/>
-      </circle>
-    </g>
-
-    <!-- Arc 4: tight inner -->
-    <g>
-      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="16s" repeatCount="indefinite"/>
-      <path d="M 28,0 A 28,28 0 0,1 -14,24.2" fill="none" stroke="rgba(88,166,255,0.2)" stroke-width="0.4" stroke-linecap="round"/>
-      <circle cx="-14" cy="24.2" r="1.5" fill="#58a6ff" opacity="0.45">
-        <animate attributeName="opacity" values="0.3;0.6;0.3" dur="1.8s" repeatCount="indefinite"/>
-      </circle>
-    </g>
-
-    <!-- Surface nodes — scattered on the wireframe sphere -->
-    <circle cx="60" cy="-65" r="0.8" fill="#58a6ff" opacity="0.1"><animate attributeName="opacity" values="0.06;0.15;0.06" dur="5s" repeatCount="indefinite"/></circle>
-    <circle cx="-75" cy="30" r="0.7" fill="#ffffff" opacity="0.07"/>
-    <circle cx="40" cy="75" r="0.8" fill="#58a6ff" opacity="0.08"><animate attributeName="opacity" values="0.04;0.12;0.04" dur="6s" repeatCount="indefinite"/></circle>
-    <circle cx="-50" cy="-60" r="0.6" fill="#ffffff" opacity="0.05"/>
-    <circle cx="80" cy="20" r="0.7" fill="#58a6ff" opacity="0.06"><animate attributeName="opacity" values="0.04;0.1;0.04" dur="7s" repeatCount="indefinite"/></circle>
-    <circle cx="-30" cy="80" r="0.6" fill="#58a6ff" opacity="0.07"/>
-
-    <!-- Cross-hair precision markers -->
-    <line x1="-14" y1="0" x2="-6" y2="0" stroke="rgba(88,166,255,0.12)" stroke-width="0.4"/>
-    <line x1="6" y1="0" x2="14" y2="0" stroke="rgba(88,166,255,0.12)" stroke-width="0.4"/>
-    <line x1="0" y1="-14" x2="0" y2="-6" stroke="rgba(88,166,255,0.12)" stroke-width="0.4"/>
-    <line x1="0" y1="6" x2="0" y2="14" stroke="rgba(88,166,255,0.12)" stroke-width="0.4"/>
-
-    <!-- Core glow layers -->
-    <circle cx="0" cy="0" r="20" fill="url(#core-glow)" filter="url(#glow-sm)">
-      <animate attributeName="opacity" values="0.5;0.8;0.5" dur="4s" repeatCount="indefinite"/>
-    </circle>
-
-    <!-- Core breathing ring -->
-    <circle cx="0" cy="0" r="5" fill="none" stroke="rgba(88,166,255,0.12)" stroke-width="0.4">
-      <animate attributeName="r" values="5;7;5" dur="4s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.1;0.2;0.1" dur="4s" repeatCount="indefinite"/>
-    </circle>
-
-    <!-- Center core -->
-    <circle cx="0" cy="0" r="4" fill="#58a6ff">
-      <animate attributeName="opacity" values="0.7;1;0.7" dur="2.5s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="0" cy="0" r="1.8" fill="#ffffff" opacity="0.9"/>
-
+  <!-- Layer 0: Ultra-fine Stardust Dust Particles (Static Micro-Field) -->
+  <g opacity="0.75">
+    <circle cx="22" cy="38" r="0.3" fill="#fff" opacity="0.25"/>
+    <circle cx="45" cy="195" r="0.25" fill="#58a6ff" opacity="0.35"/>
+    <circle cx="85" cy="85" r="0.2" fill="#fff" opacity="0.2"/>
+    <circle cx="112" cy="245" r="0.35" fill="#fff" opacity="0.3"/>
+    <circle cx="140" cy="160" r="0.2" fill="#58a6ff" opacity="0.3"/>
+    <circle cx="178" cy="42" r="0.25" fill="#fff" opacity="0.25"/>
+    <circle cx="205" cy="210" r="0.3" fill="#fff" opacity="0.2"/>
+    <circle cx="235" cy="98" r="0.2" fill="#58a6ff" opacity="0.35"/>
+    <circle cx="268" cy="180" r="0.25" fill="#fff" opacity="0.25"/>
+    <circle cx="295" cy="35" r="0.35" fill="#fff" opacity="0.4"/>
+    <circle cx="328" cy="235" r="0.2" fill="#58a6ff" opacity="0.3"/>
+    <circle cx="365" cy="115" r="0.25" fill="#fff" opacity="0.25"/>
+    <circle cx="395" cy="260" r="0.3" fill="#fff" opacity="0.3"/>
+    <circle cx="420" cy="75" r="0.2" fill="#58a6ff" opacity="0.4"/>
+    <circle cx="452" cy="185" r="0.25" fill="#fff" opacity="0.25"/>
+    <circle cx="488" cy="48" r="0.3" fill="#fff" opacity="0.3"/>
+    <circle cx="515" cy="225" r="0.2" fill="#58a6ff" opacity="0.3"/>
+    <circle cx="542" cy="130" r="0.25" fill="#fff" opacity="0.35"/>
+    <circle cx="578" cy="25" r="0.35" fill="#fff" opacity="0.25"/>
+    <circle cx="605" cy="245" r="0.2" fill="#58a6ff" opacity="0.3"/>
+    <circle cx="632" cy="85" r="0.25" fill="#fff" opacity="0.4"/>
+    <circle cx="660" cy="190" r="0.3" fill="#fff" opacity="0.25"/>
+    <circle cx="692" cy="55" r="0.2" fill="#58a6ff" opacity="0.35"/>
+    <circle cx="718" cy="265" r="0.3" fill="#fff" opacity="0.3"/>
+    <circle cx="820" cy="38" r="0.25" fill="#fff" opacity="0.35"/>
+    <circle cx="855" cy="240" r="0.35" fill="#58a6ff" opacity="0.3"/>
+    <circle cx="890" cy="72" r="0.2" fill="#fff" opacity="0.25"/>
+    <circle cx="925" cy="215" r="0.3" fill="#fff" opacity="0.4"/>
+    <circle cx="955" cy="110" r="0.25" fill="#58a6ff" opacity="0.3"/>
+    <circle cx="978" cy="185" r="0.3" fill="#fff" opacity="0.35"/>
   </g>
 
-  <!-- Bottom-right subtle coordinates -->
-  <text x="920" y="265" class="accent-text" opacity="0.08" text-anchor="end">v2.0</text>
+  <!-- Layer 1: Distant Parallax Drift (Deep Cosmic Field) -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 2,1.5; -1,2; 0,0" dur="42s" repeatCount="indefinite"/>
+    <circle cx="35" cy="115" r="0.4" fill="#fff" opacity="0.25"/>
+    <circle cx="95" cy="32" r="0.45" fill="#58a6ff" opacity="0.35"/>
+    <circle cx="160" cy="235" r="0.4" fill="#fff" opacity="0.3"/>
+    <circle cx="225" cy="75" r="0.5" fill="#fff" opacity="0.2"/>
+    <circle cx="280" cy="155" r="0.35" fill="#58a6ff" opacity="0.4"/>
+    <circle cx="345" cy="25" r="0.45" fill="#fff" opacity="0.3"/>
+    <circle cx="410" cy="140" r="0.4" fill="#fff" opacity="0.25"/>
+    <circle cx="475" cy="248" r="0.5" fill="#58a6ff" opacity="0.35"/>
+    <circle cx="530" cy="65" r="0.4" fill="#fff" opacity="0.3"/>
+    <circle cx="590" cy="175" r="0.45" fill="#fff" opacity="0.25"/>
+    <circle cx="650" cy="30" r="0.4" fill="#58a6ff" opacity="0.35"/>
+    <circle cx="705" cy="230" r="0.5" fill="#fff" opacity="0.25"/>
+    <circle cx="830" cy="85" r="0.45" fill="#fff" opacity="0.3"/>
+    <circle cx="885" cy="260" r="0.4" fill="#58a6ff" opacity="0.4"/>
+    <circle cx="935" cy="45" r="0.5" fill="#fff" opacity="0.35"/>
+    <circle cx="968" cy="145" r="0.35" fill="#fff" opacity="0.25"/>
+  </g>
+
+  <!-- Layer 2: Midground Parallax Drift (Floating Stars) -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0; -3,2; 2,-1.5; 0,0" dur="28s" repeatCount="indefinite"/>
+    <circle cx="68" cy="62" r="0.6" fill="#fff" opacity="0.4"/>
+    <circle cx="135" cy="190" r="0.55" fill="#58a6ff" opacity="0.45"/>
+    <circle cx="215" cy="130" r="0.6" fill="#fff" opacity="0.35"/>
+    <circle cx="310" cy="215" r="0.55" fill="#58a6ff" opacity="0.4"/>
+    <circle cx="380" cy="45" r="0.65" fill="#fff" opacity="0.45"/>
+    <circle cx="465" cy="165" r="0.5" fill="#fff" opacity="0.35"/>
+    <circle cx="545" cy="210" r="0.6" fill="#58a6ff" opacity="0.4"/>
+    <circle cx="625" cy="120" r="0.55" fill="#fff" opacity="0.45"/>
+    <circle cx="845" cy="160" r="0.6" fill="#58a6ff" opacity="0.4"/>
+    <circle cx="915" cy="115" r="0.65" fill="#fff" opacity="0.35"/>
+    <circle cx="960" cy="235" r="0.5" fill="#58a6ff" opacity="0.4"/>
+  </g>
+
+  <!-- Layer 3: Pulsing / Twinkling Luminary Stars -->
+  <circle cx="150" cy="50" r="0.85" fill="#ffffff">
+    <animate attributeName="opacity" values="0.2;0.8;0.2" dur="4.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="280" cy="250" r="0.8" fill="#58a6ff">
+    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="5.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="440" cy="28" r="0.9" fill="#ffffff">
+    <animate attributeName="opacity" values="0.15;0.75;0.15" dur="3.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="610" cy="255" r="0.85" fill="#58a6ff">
+    <animate attributeName="opacity" values="0.25;0.85;0.25" dur="6.1s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="875" cy="40" r="0.9" fill="#ffffff">
+    <animate attributeName="opacity" values="0.3;0.95;0.3" dur="4.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="945" cy="180" r="0.75" fill="#58a6ff">
+    <animate attributeName="opacity" values="0.2;0.7;0.2" dur="5.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ═══════════════ THE BLACK HOLE: MASTER UI VISUAL ═══════════════ -->
+  <g transform="translate(765, 138)">
+
+    <!-- ── 7 SPACETIME LENSING LINES (60% Background + 40% Theme Blend) ── -->
+    <!-- Curved geodesic lines graduating smoothly from very short to slightly longer -->
+    <!-- Line 1: Inner-top (Shortest) -->
+    <path d="M -30,16 Q 0,11 30,16" fill="none" stroke="#233a59" stroke-width="0.65" opacity="0.65"/>
+    <!-- Line 2: Inner-bottom -->
+    <path d="M -42,-20 Q 0,-14 42,-20" fill="none" stroke="#1c2f48" stroke-width="0.6" opacity="0.6"/>
+    <!-- Line 3: Mid-top -->
+    <path d="M -54,26 Q 0,17 54,26" fill="none" stroke="#274468" stroke-width="0.55" opacity="0.55"/>
+    <!-- Line 4: Mid-bottom -->
+    <path d="M -66,-30 Q 0,-21 66,-30" fill="none" stroke="#233a59" stroke-width="0.5" opacity="0.5"/>
+    <!-- Line 5: Outer-top -->
+    <path d="M -78,36 Q 0,24 78,36" fill="none" stroke="#1c2f48" stroke-width="0.45" opacity="0.45"/>
+    <!-- Line 6: Outer-bottom -->
+    <path d="M -92,-42 Q 0,-29 92,-42" fill="none" stroke="#274468" stroke-width="0.4" opacity="0.4"/>
+    <!-- Line 7: Outermost (Longest, still disciplined and short) -->
+    <path d="M -106,48 Q 0,33 106,48" fill="none" stroke="#233a59" stroke-width="0.35" opacity="0.35"/>
+
+    <!-- ── VERTICAL LENSED HALO (Backside of Accretion Disk Warped by Gravity) ── -->
+    <!-- Outer Bloom -->
+    <ellipse cx="0" cy="0" rx="29" ry="96" fill="none" stroke="#58a6ff" stroke-width="8" opacity="0.04" filter="url(#blur-med)"/>
+    <!-- Primary Warped Ring -->
+    <ellipse cx="0" cy="0" rx="27" ry="92" fill="none" stroke="#58a6ff" stroke-width="1.8" opacity="0.22" filter="url(#blur-subtle)"/>
+    <!-- Crisp High-Energy Lensed Core -->
+    <ellipse cx="0" cy="0" rx="25.5" ry="89" fill="none" stroke="#c9d1d9" stroke-width="0.7" opacity="0.45"/>
+    <!-- Secondary Ghost Ring (Double Image from Extreme Gravitational Shearing) -->
+    <ellipse cx="0" cy="0" rx="31" ry="103" fill="none" stroke="#58a6ff" stroke-width="0.35" opacity="0.15"/>
+
+    <!-- ── ACCRETION DISK (Primary Relativistic Inflow Plane) ── -->
+    <!-- Massive Soft Heat Glow -->
+    <ellipse cx="0" cy="0" rx="146" ry="15" fill="none" stroke="#58a6ff" stroke-width="22" opacity="0.035" filter="url(#blur-wide)"/>
+    <!-- Moderate Radial Flow -->
+    <ellipse cx="0" cy="0" rx="138" ry="12" fill="none" stroke="#388bfd" stroke-width="9" opacity="0.08" filter="url(#blur-med)"/>
+    <!-- Relativistic Core Disk Stream -->
+    <ellipse cx="0" cy="0" rx="130" ry="8" fill="none" stroke="url(#disk-gradient)" stroke-width="2.5" opacity="0.4" filter="url(#glow-core)"/>
+    <!-- Crisp Outer Shearing Lip -->
+    <ellipse cx="0" cy="0" rx="127" ry="6" fill="none" stroke="#58a6ff" stroke-width="0.8" opacity="0.5"/>
+    <!-- Doppler Asymmetry Beam: Approaching Matter on Left is Hotter/Brighter -->
+    <path d="M -127,0 A 127,6 0 0,1 0,-6" fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.35" filter="url(#blur-subtle)"/>
+    <!-- Hot Inner Disk Boundary (ISCO: Innermost Stable Circular Orbit) -->
+    <ellipse cx="0" cy="0" rx="46" ry="4" fill="none" stroke="#58a6ff" stroke-width="0.8" opacity="0.45"/>
+    <ellipse cx="0" cy="0" rx="34" ry="3" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.6"/>
+
+    <!-- ── PHOTON SPHERE (The Critical Optical Horizon) ── -->
+    <!-- Soft Radiant Halo -->
+    <circle cx="0" cy="0" r="29" fill="none" stroke="#58a6ff" stroke-width="6" opacity="0.06" filter="url(#blur-med)"/>
+    <!-- Intense Photon Ring -->
+    <circle cx="0" cy="0" r="27.5" fill="none" stroke="#c9d1d9" stroke-width="0.9" opacity="0.45">
+      <animate attributeName="opacity" values="0.35;0.6;0.35" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Secondary Sub-Photon Ring -->
+    <circle cx="0" cy="0" r="24.5" fill="none" stroke="#58a6ff" stroke-width="0.4" opacity="0.3"/>
+
+    <!-- ── TRANSLUCENT EVENT HORIZON (The Abyssal Core) ── -->
+    <!-- Translucent Core with Deep Gravitational Darkness -->
+    <circle cx="0" cy="0" r="22.5" fill="url(#translucent-void)"/>
+    <!-- Razor Edge Where Spacetime Metric Dies -->
+    <circle cx="0" cy="0" r="22.5" fill="none" stroke="#58a6ff" stroke-width="0.5" opacity="0.2">
+      <animate attributeName="opacity" values="0.12;0.28;0.12" dur="4.8s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Inner Mystery Shimmer -->
+    <circle cx="0" cy="0" r="17" fill="none" stroke="#388bfd" stroke-width="0.3" opacity="0.08">
+      <animate attributeName="opacity" values="0.04;0.14;0.04" dur="6s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- ── RELATIVISTIC ORBITING MATTER (Dynamic Accretion Clusters) ── -->
+    <!-- Matter Node Stream A (Outer Rapid Stream) -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite"/>
+      <circle cx="82" cy="0" r="2.2" fill="#58a6ff" opacity="0.8" filter="url(#blur-subtle)">
+        <animate attributeName="opacity" values="0.5;0.9;0.5" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="82" cy="0" r="0.9" fill="#ffffff" opacity="0.95"/>
+      <circle cx="-112" cy="0" r="1.3" fill="#ffffff" opacity="0.35"/>
+      <circle cx="52" cy="0" r="0.9" fill="#58a6ff" opacity="0.3"/>
+      <circle cx="-42" cy="0" r="0.7" fill="#ffffff" opacity="0.2"/>
+    </g>
+
+    <!-- Matter Node Stream B (Counter-Angled High Energy Clump) -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="180" to="540" dur="17s" repeatCount="indefinite"/>
+      <circle cx="98" cy="0" r="1.9" fill="#ffffff" opacity="0.7" filter="url(#blur-subtle)">
+        <animate attributeName="opacity" values="0.4;0.85;0.4" dur="2.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="98" cy="0" r="0.8" fill="#58a6ff" opacity="0.9"/>
+      <circle cx="-68" cy="0" r="1.1" fill="#58a6ff" opacity="0.3"/>
+      <circle cx="122" cy="0" r="0.75" fill="#ffffff" opacity="0.25"/>
+    </g>
+
+    <!-- Matter Node Stream C (Deep Gravity Trapped Dust Cluster) -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="90" to="450" dur="32s" repeatCount="indefinite"/>
+      <circle cx="118" cy="0" r="1.3" fill="#58a6ff" opacity="0.45"/>
+      <circle cx="-88" cy="0" r="0.8" fill="#ffffff" opacity="0.3"/>
+      <circle cx="62" cy="0" r="1.4" fill="#58a6ff" opacity="0.6">
+        <animate attributeName="opacity" values="0.35;0.75;0.35" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Matter Node Stream D (Fast Inner Infall Track) -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="270" to="630" dur="13s" repeatCount="indefinite"/>
+      <circle cx="58" cy="0" r="1.5" fill="#58a6ff" opacity="0.7"/>
+      <circle cx="58" cy="0" r="0.6" fill="#ffffff" opacity="0.9"/>
+      <circle cx="-34" cy="0" r="0.7" fill="#58a6ff" opacity="0.35"/>
+    </g>
+
+  </g> <!-- End of Black Hole group -->
+
+  <!-- ═══════════════ LEFT INTERFACE: SLEEK ENGINEERING UI ═══════════════ -->
+
+  <!-- Top Telemetry Status Beacon -->
+  <g transform="translate(48, 44)">
+    <rect x="0" y="0" width="168" height="20" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="0.8" opacity="0.85"/>
+    <circle cx="11" cy="10" r="3.2" fill="#58a6ff">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="11" cy="10" r="6.5" fill="#58a6ff" opacity="0.15" filter="url(#blur-subtle)"/>
+    <text x="22" y="13" class="tag">SYS.STATUS // ONLINE</text>
+  </g>
+
+  <!-- Developer Identity: Headline & Role -->
+  <text x="48" y="122" class="name">Sanidhya Negi</text>
+  <text x="49" y="154" class="role">&gt; Systems Engineer<tspan class="cursor" fill="#58a6ff">_</tspan></text>
+
+  <!-- Technical Divider Line with Smooth Energy Taper -->
+  <line x1="49" y1="175" x2="160" y2="175" stroke="#58a6ff" stroke-width="0.8" opacity="0.35"/>
+  <line x1="160" y1="175" x2="310" y2="175" stroke="#388bfd" stroke-width="0.4" opacity="0.12"/>
+  <line x1="310" y1="175" x2="380" y2="175" stroke="#58a6ff" stroke-width="0.2" opacity="0.03" stroke-dasharray="2 4"/>
+
+  <!-- Core Competency Metadata -->
+  <text x="49" y="204" class="meta" xml:space="preserve">C++  //  JAVA  //  SYSTEM DESIGN  //  DSA</text>
+
 </svg>
