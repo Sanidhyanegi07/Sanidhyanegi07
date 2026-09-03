@@ -59,7 +59,7 @@
 
     <!-- Glowing Core Filter -->
     <filter id="neon-glow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -117,128 +117,111 @@
     <!-- Tags -->
     <text x="50" y="226" class="meta" xml:space="preserve">C++   <tspan fill="#58a6ff">//</tspan>   JAVA   <tspan fill="#58a6ff">//</tspan>   SYSTEM DESIGN   <tspan fill="#58a6ff">//</tspan>   DSA</text>
 
-    <!-- ═══════════════ RIGHT: 3D MULTI-AXIS ORBITAL SYSTEM WITH SOLAR CORE ═══════════════ -->
-    <!-- Every orbit has: (1) Solid 3D Ring, (2) Active Moving Axis Line, (3) Moving Particle. Center is a glowing Sun. -->
+    <!-- ═══════════════ RIGHT: 100% IN-MOTION 3D ORBITAL SYSTEM ═══════════════ -->
+    <!-- ZERO STATIC ELEMENTS: Every ring, every axis, and every particle is in continuous motion -->
     <g transform="translate(770, 140)">
 
-      <!-- ── LEVEL 1: OUTER 3D ORBIT & ROTATING AXIS (Diameter = 220px, 32s Clockwise) ── -->
+      <!-- ── LEVEL 1: OUTER SYSTEM (Diameter = 220px, 32s Clockwise Rotation) ── -->
       <g>
-        <!-- Solid 3D Ring (No Transparency) -->
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="32s" repeatCount="indefinite"/>
+        <!-- Ring Track In Motion -->
         <ellipse cx="0" cy="0" rx="110" ry="38" fill="none" stroke="#58a6ff" stroke-width="1.4"/>
-        <!-- Moving Diameter Axis Line with Particle -->
-        <g>
-          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="32s" repeatCount="indefinite"/>
-          <!-- Bold Visible Axis Line Through Center -->
-          <line x1="-110" y1="0" x2="110" y2="0" stroke="#ffffff" stroke-width="1.5" filter="url(#neon-glow)"/>
-          <!-- Particle on Axis Tip -->
-          <circle cx="110" cy="0" r="2.8" fill="#ffffff" filter="url(#neon-glow)"/>
-          <circle cx="-110" cy="0" r="2.2" fill="#58a6ff"/>
-          <!-- Axis Terminal Ticks -->
-          <line x1="110" y1="-4" x2="110" y2="4" stroke="#ffffff" stroke-width="1.5"/>
-          <line x1="-110" y1="-4" x2="-110" y2="4" stroke="#58a6ff" stroke-width="1.5"/>
-        </g>
+        <!-- Axis Line In Motion -->
+        <line x1="-110" y1="0" x2="110" y2="0" stroke="#ffffff" stroke-width="1.5" filter="url(#neon-glow)"/>
+        <!-- Terminal Particles In Motion -->
+        <circle cx="110" cy="0" r="3.0" fill="#ffffff" filter="url(#neon-glow)"/>
+        <circle cx="-110" cy="0" r="2.2" fill="#58a6ff"/>
+        <!-- Axis Terminal Ticks -->
+        <line x1="110" y1="-4" x2="110" y2="4" stroke="#ffffff" stroke-width="1.5"/>
+        <line x1="-110" y1="-4" x2="-110" y2="4" stroke="#58a6ff" stroke-width="1.5"/>
       </g>
 
-      <!-- ── LEVEL 2: MID-OUTER 3D ORBIT & ROTATING AXIS (Diameter = 180px, Tilted -18°, 24s Counter-Clockwise) ── -->
-      <g transform="rotate(-18)">
-        <!-- Solid 3D Ring -->
-        <ellipse cx="0" cy="0" rx="90" ry="30" fill="none" stroke="#38bdf8" stroke-width="1.4"/>
-        <!-- Moving Diameter Axis Line with Particle -->
-        <g>
-          <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="24s" repeatCount="indefinite"/>
-          <!-- Bold Visible Axis Line Through Center -->
-          <line x1="-90" y1="0" x2="90" y2="0" stroke="#38bdf8" stroke-width="1.5"/>
-          <!-- Particle on Axis Tip -->
-          <circle cx="-90" cy="0" r="2.6" fill="#ffffff" filter="url(#neon-glow)"/>
-          <circle cx="90" cy="0" r="2.2" fill="#38bdf8"/>
-          <!-- Axis Terminal Ticks -->
-          <line x1="-90" y1="-3.5" x2="-90" y2="3.5" stroke="#ffffff" stroke-width="1.5"/>
-          <line x1="90" y1="-3.5" x2="90" y2="3.5" stroke="#38bdf8" stroke-width="1.5"/>
-        </g>
-      </g>
-
-      <!-- ── LEVEL 3: MID 3D ORBIT & ROTATING AXIS (Diameter = 144px, Tilted +22°, 17s Clockwise) ── -->
-      <g transform="rotate(22)">
-        <!-- Solid 3D Ring -->
-        <ellipse cx="0" cy="0" rx="72" ry="24" fill="none" stroke="#79c0ff" stroke-width="1.5"/>
-        <!-- Moving Diameter Axis Line with Particle -->
-        <g>
-          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="17s" repeatCount="indefinite"/>
-          <!-- Bold Visible Axis Line Through Center -->
-          <line x1="-72" y1="0" x2="72" y2="0" stroke="#ffffff" stroke-width="1.5"/>
-          <!-- Particle on Axis Tip -->
-          <circle cx="72" cy="0" r="2.6" fill="#ffffff" filter="url(#neon-glow)"/>
-          <circle cx="-72" cy="0" r="2.0" fill="#79c0ff"/>
-          <!-- Axis Terminal Ticks -->
-          <line x1="72" y1="-3.5" x2="72" y2="3.5" stroke="#ffffff" stroke-width="1.5"/>
-          <line x1="-72" y1="-3.5" x2="-72" y2="3.5" stroke="#79c0ff" stroke-width="1.5"/>
-        </g>
-      </g>
-
-      <!-- ── LEVEL 4: INNER 3D ORBIT & ROTATING AXIS (Diameter = 108px, Tilted -10°, 11s Counter-Clockwise) ── -->
-      <g transform="rotate(-10)">
-        <!-- Solid 3D Ring -->
-        <ellipse cx="0" cy="0" rx="54" ry="18" fill="none" stroke="#a5d6ff" stroke-width="1.6"/>
-        <!-- Moving Diameter Axis Line with Particle -->
-        <g>
-          <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="11s" repeatCount="indefinite"/>
-          <!-- Bold Visible Axis Line Through Center -->
-          <line x1="-54" y1="0" x2="54" y2="0" stroke="#a5d6ff" stroke-width="1.6"/>
-          <!-- Particle on Axis Tip -->
-          <circle cx="-54" cy="0" r="2.5" fill="#ffffff" filter="url(#neon-glow)"/>
-          <circle cx="54" cy="0" r="2.0" fill="#58a6ff"/>
-          <!-- Axis Terminal Ticks -->
-          <line x1="-54" y1="-3" x2="-54" y2="3" stroke="#ffffff" stroke-width="1.5"/>
-          <line x1="54" y1="-3" x2="54" y2="3" stroke="#a5d6ff" stroke-width="1.5"/>
-        </g>
-      </g>
-
-      <!-- ── LEVEL 5: THROAT 3D ORBIT & ROTATING AXIS (Diameter = 72px, Tilted +8°, 7s Clockwise) ── -->
-      <g transform="rotate(8)">
-        <!-- Solid 3D Ring -->
-        <ellipse cx="0" cy="0" rx="36" ry="12" fill="none" stroke="#ffffff" stroke-width="1.8"/>
-        <!-- Moving Diameter Axis Line with Particle -->
-        <g>
-          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="7s" repeatCount="indefinite"/>
-          <!-- Bold Visible Axis Line Through Center -->
-          <line x1="-36" y1="0" x2="36" y2="0" stroke="#ffffff" stroke-width="1.8"/>
-          <!-- Particle on Axis Tip -->
-          <circle cx="36" cy="0" r="2.4" fill="#ffffff" filter="url(#neon-glow)"/>
-          <circle cx="-36" cy="0" r="2.0" fill="#58a6ff"/>
-        </g>
-      </g>
-
-      <!-- ── LEVEL 6: RAPID CORE AXIS (Diameter = 44px, 4s Counter-Clockwise) ── -->
-      <g transform="rotate(-30)">
-        <g>
-          <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="4s" repeatCount="indefinite"/>
-          <line x1="-22" y1="0" x2="22" y2="0" stroke="#ffffff" stroke-width="2.0"/>
-          <circle cx="22" cy="0" r="2.2" fill="#ffffff" filter="url(#neon-glow)"/>
-          <circle cx="-22" cy="0" r="1.8" fill="#ffffff"/>
-        </g>
-      </g>
-
-      <!-- ═══════════════ THE CENTRAL GLOWING STAR (LIKE A MINI SUN) ═══════════════ -->
+      <!-- ── LEVEL 2: MID-OUTER SYSTEM (Diameter = 180px, 24s Counter-Clockwise Rotation) ── -->
       <g>
-        <!-- Outer Solar Flare Rays (Pulsing & Rotating Sunbeam Spikes) -->
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="24s" repeatCount="indefinite"/>
+        <!-- Ring Track In Motion -->
+        <ellipse cx="0" cy="0" rx="90" ry="30" fill="none" stroke="#38bdf8" stroke-width="1.4"/>
+        <!-- Axis Line In Motion -->
+        <line x1="-90" y1="0" x2="90" y2="0" stroke="#38bdf8" stroke-width="1.5"/>
+        <!-- Terminal Particles In Motion -->
+        <circle cx="-90" cy="0" r="2.8" fill="#ffffff" filter="url(#neon-glow)"/>
+        <circle cx="90" cy="0" r="2.2" fill="#38bdf8"/>
+        <!-- Axis Terminal Ticks -->
+        <line x1="-90" y1="-3.5" x2="-90" y2="3.5" stroke="#ffffff" stroke-width="1.5"/>
+        <line x1="90" y1="-3.5" x2="90" y2="3.5" stroke="#38bdf8" stroke-width="1.5"/>
+      </g>
+
+      <!-- ── LEVEL 3: MID SYSTEM (Diameter = 144px, 17s Clockwise Rotation) ── -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="17s" repeatCount="indefinite"/>
+        <!-- Ring Track In Motion -->
+        <ellipse cx="0" cy="0" rx="72" ry="24" fill="none" stroke="#79c0ff" stroke-width="1.5"/>
+        <!-- Axis Line In Motion -->
+        <line x1="-72" y1="0" x2="72" y2="0" stroke="#ffffff" stroke-width="1.5"/>
+        <!-- Terminal Particles In Motion -->
+        <circle cx="72" cy="0" r="2.8" fill="#ffffff" filter="url(#neon-glow)"/>
+        <circle cx="-72" cy="0" r="2.2" fill="#79c0ff"/>
+        <!-- Axis Terminal Ticks -->
+        <line x1="72" y1="-3.5" x2="72" y2="3.5" stroke="#ffffff" stroke-width="1.5"/>
+        <line x1="-72" y1="-3.5" x2="-72" y2="3.5" stroke="#79c0ff" stroke-width="1.5"/>
+      </g>
+
+      <!-- ── LEVEL 4: INNER SYSTEM (Diameter = 108px, 11s Counter-Clockwise Rotation) ── -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="11s" repeatCount="indefinite"/>
+        <!-- Ring Track In Motion -->
+        <ellipse cx="0" cy="0" rx="54" ry="18" fill="none" stroke="#a5d6ff" stroke-width="1.6"/>
+        <!-- Axis Line In Motion -->
+        <line x1="-54" y1="0" x2="54" y2="0" stroke="#a5d6ff" stroke-width="1.6"/>
+        <!-- Terminal Particles In Motion -->
+        <circle cx="-54" cy="0" r="2.6" fill="#ffffff" filter="url(#neon-glow)"/>
+        <circle cx="54" cy="0" r="2.0" fill="#58a6ff"/>
+        <!-- Axis Terminal Ticks -->
+        <line x1="-54" y1="-3" x2="-54" y2="3" stroke="#ffffff" stroke-width="1.5"/>
+        <line x1="54" y1="-3" x2="54" y2="3" stroke="#a5d6ff" stroke-width="1.5"/>
+      </g>
+
+      <!-- ── LEVEL 5: THROAT SYSTEM (Diameter = 72px, 7s Clockwise Rotation) ── -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="7s" repeatCount="indefinite"/>
+        <!-- Ring Track In Motion -->
+        <ellipse cx="0" cy="0" rx="36" ry="12" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+        <!-- Axis Line In Motion -->
+        <line x1="-36" y1="0" x2="36" y2="0" stroke="#ffffff" stroke-width="1.8"/>
+        <!-- Terminal Particles In Motion -->
+        <circle cx="36" cy="0" r="2.5" fill="#ffffff" filter="url(#neon-glow)"/>
+        <circle cx="-36" cy="0" r="2.0" fill="#58a6ff"/>
+      </g>
+
+      <!-- ── LEVEL 6: RAPID CORE AXIS (Diameter = 44px, 4s Counter-Clockwise Rotation) ── -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="4s" repeatCount="indefinite"/>
+        <line x1="-22" y1="0" x2="22" y2="0" stroke="#ffffff" stroke-width="2.0"/>
+        <circle cx="22" cy="0" r="2.2" fill="#ffffff" filter="url(#neon-glow)"/>
+        <circle cx="-22" cy="0" r="1.8" fill="#ffffff"/>
+      </g>
+
+      <!-- ═══════════════ THE CENTRAL GLOWING SUN / STAR ═══════════════ -->
+      <g>
+        <!-- Rotating 8-Point Solar Flare Rays In Continuous Motion (20s) -->
         <g>
           <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
           <!-- 4-Point Primary Solar Rays -->
-          <path d="M 0,-14 Q 0,0 14,0 Q 0,0 0,14 Q 0,0 -14,0 Q 0,0 0,-14" fill="#ffffff" opacity="0.9" filter="url(#neon-glow)"/>
+          <path d="M 0,-15 Q 0,0 15,0 Q 0,0 0,15 Q 0,0 -15,0 Q 0,0 0,-15" fill="#ffffff" opacity="0.9" filter="url(#neon-glow)"/>
           <!-- 4-Point Secondary Solar Rays (45° offset) -->
           <path d="M 0,-10 Q 0,0 10,0 Q 0,0 0,10 Q 0,0 -10,0 Q 0,0 0,-10" fill="#79c0ff" opacity="0.8" transform="rotate(45)" filter="url(#neon-glow)"/>
         </g>
 
-        <!-- Solar Corona (Luminous Stellar Glow) -->
-        <circle cx="0" cy="0" r="8" fill="url(#sun-core-glow)">
-          <animate attributeName="r" values="7;9.5;7" dur="2.4s" repeatCount="indefinite"/>
+        <!-- Pulsing Solar Corona -->
+        <circle cx="0" cy="0" r="8.5" fill="url(#sun-core-glow)">
+          <animate attributeName="r" values="7.5;10;7.5" dur="2.4s" repeatCount="indefinite"/>
         </circle>
 
-        <!-- Incandescent Stellar Core (White Hot) -->
-        <circle cx="0" cy="0" r="4.2" fill="#ffffff" filter="url(#neon-glow)">
-          <animate attributeName="r" values="3.8;4.8;3.8" dur="2.4s" repeatCount="indefinite"/>
+        <!-- Incandescent White-Hot Stellar Core -->
+        <circle cx="0" cy="0" r="4.5" fill="#ffffff" filter="url(#neon-glow)">
+          <animate attributeName="r" values="4;5.2;4" dur="2.4s" repeatCount="indefinite"/>
         </circle>
-        <circle cx="0" cy="0" r="2.2" fill="#ffffff"/>
+        <circle cx="0" cy="0" r="2.4" fill="#ffffff"/>
       </g>
 
     </g> <!-- End of Right Construct -->
