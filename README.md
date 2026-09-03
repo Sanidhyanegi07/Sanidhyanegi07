@@ -15,7 +15,7 @@
 <table>
   <tr>
     <td width="230" align="center" valign="middle">
-      <a href="https://github.com/Sanidhyanegi07"><img src="whoami.png" width="230" alt="whoami"/></a>
+      <a href="https://github.com/Sanidhyanegi07"><img src="whoami.png" width="220" alt="whoami"/></a>
     </td>
     <td valign="middle">
       <div style="margin-bottom: 20px; line-height: 1.5;">
