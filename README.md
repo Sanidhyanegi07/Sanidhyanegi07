@@ -8,23 +8,15 @@
   <img src="https://komarev.com/ghpvc/?username=Sanidhyanegi07&label=SYS.VIEWS&style=flat-square&color=0d1117&labelColor=0d1117" alt="views"/>
 </div>
 
-<br/>
 
 <table>
   <tr>
-    <td width="260" align="center" valign="top">
-      <a href="https://github.com/Sanidhyanegi07">
-        <img src="whoami.png" width="230" alt="whoami"/>
-      </a>
+    <td width="250" align="center" valign="top">
+      <a href="https://github.com/Sanidhyanegi07"><img src="whoami.png" width="230" alt="whoami"/></a>
     </td>
     <td valign="top">
-      <h3><code>&gt; ./whoami</code></h3>
-      <p>
-        Computer Science undergraduate who thinks in systems, not scripts. I don't just write code—I architect solutions. From low-level memory management in <code>C++</code> to designing fault-tolerant backends in <code>Java</code>, every line I write is deliberate.
-      </p>
-      <p>
-        I obsess over algorithmic efficiency, clean abstractions, and building things that don't break under pressure. Currently deep into data structures, system design, and frontend engineering—because understanding the full stack means owning the full problem.
-      </p>
+      <b><code>&gt; ./whoami</code></b><br/><br/>
+      Computer Science undergraduate who thinks in systems, not scripts. From low-level memory management in <code>C++</code> to fault-tolerant backends in <code>Java</code>, every line I write is deliberate. I obsess over algorithmic efficiency, clean abstractions, and building things that don't break under pressure—because understanding the full stack means owning the full problem.
     </td>
   </tr>
 </table>
