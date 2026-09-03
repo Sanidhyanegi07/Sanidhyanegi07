@@ -5,12 +5,17 @@
       .role { font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; font-size: 14px; font-weight: 500; fill: #58a6ff; letter-spacing: 4px; text-transform: uppercase; }
       .meta { font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; font-size: 11px; fill: #555555; letter-spacing: 1.5px; }
       .accent-text { fill: #58a6ff; font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; font-size: 10px; letter-spacing: 1px; }
-      
+
       @keyframes blink {
         0%, 100% { opacity: 1; }
         50% { opacity: 0; }
       }
       .cursor { animation: blink 1s step-end infinite; }
+
+      @keyframes pulse-glow {
+        0%, 100% { opacity: 0.15; }
+        50% { opacity: 0.3; }
+      }
     </style>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#020202"/>
@@ -19,8 +24,17 @@
     </linearGradient>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.02)" stroke-width="0.5"/>
-      <circle cx="40" cy="40" r="1" fill="rgba(255,255,255,0.05)"/>
+      <circle cx="40" cy="40" r="0.6" fill="rgba(255,255,255,0.04)"/>
     </pattern>
+    <radialGradient id="core-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.4"/>
+      <stop offset="60%" stop-color="#58a6ff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ambient-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </radialGradient>
   </defs>
 
   <!-- Background -->
@@ -33,7 +47,7 @@
 
   <!-- Name & Role -->
   <text x="50" y="130" class="name">Sanidhya Negi</text>
-  
+
   <text x="52" y="165" class="role">
     &gt; Systems Engineer<tspan class="cursor" fill="#58a6ff">_</tspan>
   </text>
@@ -45,35 +59,64 @@
   <!-- Tags -->
   <text x="50" y="230" class="meta" xml:space="preserve">C++   //   JAVA   //   SYSTEM DESIGN   //   DSA</text>
 
-  <!-- Floating Orbital Core (right side) -->
+  <!-- Connection line from text area to orbital -->
+  <line x1="380" y1="140" x2="640" y2="140" stroke="rgba(88,166,255,0.04)" stroke-width="0.5" stroke-dasharray="3 8"/>
+
+  <!-- 3D Orbital System (right side) -->
   <g transform="translate(780, 140)">
-    
-    <!-- Outer dashed ring -->
+
+    <!-- Ambient background glow -->
+    <circle cx="0" cy="0" r="130" fill="url(#ambient-glow)">
+      <animate attributeName="r" values="120;135;120" dur="6s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Ring 1 — outermost, tilted flat, slow -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="40s" repeatCount="indefinite"/>
-      <ellipse cx="0" cy="0" rx="110" ry="35" stroke="rgba(88,166,255,0.15)" stroke-width="0.5" fill="none" stroke-dasharray="2 10"/>
-      <circle cx="110" cy="0" r="1.5" fill="#58a6ff" opacity="0.6"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="50s" repeatCount="indefinite"/>
+      <ellipse cx="0" cy="0" rx="120" ry="30" stroke="rgba(88,166,255,0.1)" stroke-width="0.5" fill="none" stroke-dasharray="1 12" transform="rotate(-10)"/>
+      <circle cx="120" cy="0" r="1.2" fill="#58a6ff" opacity="0.5" transform="rotate(-10)"/>
+      <circle cx="-90" cy="0" r="0.8" fill="#ffffff" opacity="0.15" transform="rotate(-10)"/>
     </g>
 
-    <!-- Mid solid ring -->
+    <!-- Ring 2 — wide, opposite direction -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="25s" repeatCount="indefinite"/>
-      <ellipse cx="0" cy="0" rx="70" ry="20" stroke="rgba(255,255,255,0.05)" stroke-width="1" fill="none"/>
-      <circle cx="70" cy="0" r="2" fill="#ffffff" opacity="0.4"/>
-      <circle cx="-70" cy="0" r="2" fill="#58a6ff" opacity="0.3"/>
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="35s" repeatCount="indefinite"/>
+      <ellipse cx="0" cy="0" rx="100" ry="45" stroke="rgba(88,166,255,0.12)" stroke-width="0.6" fill="none" transform="rotate(20)"/>
+      <circle cx="100" cy="0" r="1.8" fill="#58a6ff" opacity="0.6" transform="rotate(20)"/>
+      <circle cx="-100" cy="0" r="1" fill="#ffffff" opacity="0.2" transform="rotate(20)"/>
     </g>
 
-    <!-- Inner active ring -->
+    <!-- Ring 3 — mid, steeper tilt -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="15s" repeatCount="indefinite"/>
-      <ellipse cx="0" cy="0" rx="35" ry="35" stroke="rgba(88,166,255,0.3)" stroke-width="0.5" fill="none" stroke-dasharray="4 4" transform="rotate(25)"/>
-      <circle cx="35" cy="0" r="2.5" fill="#58a6ff" transform="rotate(25)"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="22s" repeatCount="indefinite"/>
+      <ellipse cx="0" cy="0" rx="70" ry="55" stroke="rgba(255,255,255,0.06)" stroke-width="0.8" fill="none" stroke-dasharray="6 6" transform="rotate(-35)"/>
+      <circle cx="70" cy="0" r="2" fill="#ffffff" opacity="0.35" transform="rotate(-35)"/>
+      <circle cx="0" cy="55" r="1.5" fill="#58a6ff" opacity="0.25" transform="rotate(-35)"/>
     </g>
 
-    <!-- Center Core -->
+    <!-- Ring 4 — inner tight orbit -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="14s" repeatCount="indefinite"/>
+      <ellipse cx="0" cy="0" rx="42" ry="42" stroke="rgba(88,166,255,0.25)" stroke-width="0.5" fill="none" stroke-dasharray="3 5" transform="rotate(50)"/>
+      <circle cx="42" cy="0" r="2.2" fill="#58a6ff" opacity="0.7" transform="rotate(50)"/>
+    </g>
+
+    <!-- Core glow -->
+    <circle cx="0" cy="0" r="25" fill="url(#core-glow)">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Center core — outer ring -->
+    <circle cx="0" cy="0" r="9" fill="none" stroke="rgba(88,166,255,0.3)" stroke-width="0.8">
+      <animate attributeName="r" values="9;11;9" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="4s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Center core — main -->
     <circle cx="0" cy="0" r="7" fill="#58a6ff">
       <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
     </circle>
     <circle cx="0" cy="0" r="3" fill="#ffffff" opacity="0.9"/>
+
   </g>
 </svg>
