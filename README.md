@@ -59,17 +59,17 @@
 
 | `ARCHITECTURE` | `DESCRIPTION` | `TECH` |
 | :--- | :--- | :--- |
-| [**Algorithmic Telemetry Log**](https://github.com/Sanidhyanegi07/neetcode-submissions) | Intensive algorithmic problem‑solving focused on optimal data structures and time/space complexity tradeoffs. | <img src="https://img.shields.io/badge/-Java-020306?style=flat-square&logo=openjdk"/> <img src="https://img.shields.io/badge/-DSA-020306?style=flat-square&logo=leetcode"/> |
-| [**ComplexCalc Core Engine**](https://github.com/Sanidhyanegi07/ComplexCalc) | Scientific calculator engine supporting dynamic expression parsing with cleanly decoupled business logic. | <img src="https://img.shields.io/badge/-C++-020306?style=flat-square&logo=c%2B%2B"/> <img src="https://img.shields.io/badge/-Math-020306?style=flat-square&logo=wolframmathematica"/> |
-| [**Academic Management System**](https://github.com/Sanidhyanegi07/Attendance-Management-System) | Enterprise-style application featuring strict role‑based access control and robust session management. | <img src="https://img.shields.io/badge/-C++-020306?style=flat-square&logo=c%2B%2B"/> <img src="https://img.shields.io/badge/-OOP-020306?style=flat-square&logo=c%2B%2B"/> |
-| [**Webathon / NIRVAN '26**](https://github.com/Sanidhyanegi07/webathon) | Modular and highly responsive frontend architecture built for a high-traffic college technical event. | <img src="https://img.shields.io/badge/-React-020306?style=flat-square&logo=react"/> <img src="https://img.shields.io/badge/-Vite-020306?style=flat-square&logo=vite"/> |
+| [**Algorithmic Telemetry Log**](https://github.com/Sanidhyanegi07/neetcode-submissions) | Intensive algorithmic problem‑solving focused on optimal data structures and time/space complexity tradeoffs. | <img src="https://img.shields.io/badge/Java-020306?style=flat-square&logo=openjdk"/> <img src="https://img.shields.io/badge/DSA-020306?style=flat-square&logo=leetcode"/> |
+| [**ComplexCalc Core Engine**](https://github.com/Sanidhyanegi07/ComplexCalc) | Scientific calculator engine supporting dynamic expression parsing with cleanly decoupled business logic. | <img src="https://img.shields.io/badge/C++-020306?style=flat-square&logo=c%2B%2B"/> <img src="https://img.shields.io/badge/Math-020306?style=flat-square&logo=wolframmathematica"/> |
+| [**Academic Management System**](https://github.com/Sanidhyanegi07/Attendance-Management-System) | Enterprise-style application featuring strict role‑based access control and robust session management. | <img src="https://img.shields.io/badge/C++-020306?style=flat-square&logo=c%2B%2B"/> <img src="https://img.shields.io/badge/OOP-020306?style=flat-square&logo=c%2B%2B"/> |
+| [**Webathon / NIRVAN '26**](https://github.com/Sanidhyanegi07/webathon) | Modular and highly responsive frontend architecture built for a high-traffic college technical event. | <img src="https://img.shields.io/badge/React-020306?style=flat-square&logo=react"/> <img src="https://img.shields.io/badge/Vite-020306?style=flat-square&logo=vite"/> |
 
 <br/>
 
 ### `// SYSTEM_TELEMETRY`
 
 <div align="center" style="margin-top: 15px;">
-  <a href="https://github.com/Sanidhyanegi07">
+  <a href="https://ghchart.rshah.org/58a6ff/Sanidhyanegi07">
     <img height="150" src="https://streak-stats.demolab.com/?user=Sanidhyanegi07&theme=dark&background=020306&ring=58a6ff&fire=58a6ff&currStreakNum=58a6ff&sideNums=58a6ff&currStreakLabel=8b949e&sideLabels=8b949e&dates=8b949e&hide_border=true" alt="GitHub Streak"/>
   </a>
   &nbsp;
