@@ -189,33 +189,7 @@
 
       </g> <!-- End Global Tumble Group -->
 
-      <!-- ════════ RANDOM VIRAL CORE (GITHUB SAFE) ════════ -->
-      <!-- A chaotic, randomly shifting organic center using pure layered geometry -->
-      <!-- We achieve the "random organic disease" look by tumbling complex biological curves, avoiding buggy SVG filters entirely to prevent rendering issues on GitHub proxy -->
-      <g>
-        
-        <!-- Pulsing uneven biological fluid shape -->
-        <path d="M 0,-15 C 10,-20 20,-5 15,10 C 10,20 -10,25 -15,10 C -25,-5 -15,-20 0,-15 Z" fill="#ffffff" opacity="0.15">
-          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0.1;0.4;0.1" dur="3s" repeatCount="indefinite"/>
-          <animate attributeName="transform" type="scale" values="1;1.3;1" dur="2.5s" repeatCount="indefinite" additive="sum"/>
-        </path>
-
-        <path d="M 0,-10 C 12,-12 15,5 8,12 C 2,18 -12,12 -10,0 C -8,-8 -5,-8 0,-10 Z" fill="#ffffff" opacity="0.3">
-          <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="3s" repeatCount="indefinite"/>
-        </path>
-        
-        <!-- Outer chaotic tendrils / network -->
-        <g>
-          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/>
-          <!-- Jagged, non-circular spreading tendrils -->
-          <path d="M -22,0 L -12,8 L 0,22 L 8,12 L 22,0 L 12,-8 L 0,-22 L -8,-12 Z" fill="none" stroke="#58a6ff" stroke-width="1.5" stroke-dasharray="4 8 12 4"/>
-          <path d="M -16,-16 L -5,-5 L 16,16 M -16,16 L -5,5 L 16,-16" stroke="#89c3ff" stroke-width="2" stroke-dasharray="2 6"/>
-          <!-- Erratic viral orbit -->
-          <path d="M -18,0 A 18 12 0 1 1 18,0 A 18 12 0 1 1 -18,0" fill="none" stroke="#1f6feb" stroke-width="2" stroke-dasharray="8 6"/>
-        </g>
-        
-      </g>
+      <!-- Center is intentionally left empty as a pure, clean singularity void -->
 
     </g> <!-- End Right Construct -->
 
