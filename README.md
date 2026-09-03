@@ -15,9 +15,7 @@
       <a href="https://github.com/Sanidhyanegi07"><img src="whoami.png" width="230" alt="whoami"/></a>
     </td>
     <td valign="top">
-      <a href="https://github.com/Sanidhyanegi07">
-        <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=00f2fe&background=02030600&center=false&vCenter=true&width=435&lines=%3E+.%2Fwhoami;Computer+Science+Undergraduate;Systems+Thinker;C%2B%2B+%26+Java+Developer" alt="Typing SVG" />
-      </a><br/>
+      <b><code style="color: #00f2fe;">&gt; ./whoami</code></b><br/>
       Computer Science undergraduate who thinks in systems, not scripts. From low-level memory management in <code>C++</code> to fault-tolerant backends in <code>Java</code>, every line I write is deliberate. I obsess over algorithmic efficiency, clean abstractions, and building things that don't break under pressure—because understanding the full stack means owning the full problem.
     </td>
   </tr>
