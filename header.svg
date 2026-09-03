@@ -1,159 +1,215 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" width="100%" height="100%">
   <defs>
     <style>
-      .name { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 48px; font-weight: 800; fill: #ffffff; letter-spacing: -2px; }
-      .role { font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; font-size: 14px; font-weight: 500; fill: #58a6ff; letter-spacing: 4px; text-transform: uppercase; }
-      .meta { font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; font-size: 11px; fill: #484f58; letter-spacing: 1.5px; }
-      .accent-text { fill: #58a6ff; font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; font-size: 10px; letter-spacing: 1px; }
-
+      .name {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        font-size: 50px;
+        font-weight: 800;
+        fill: #ffffff;
+        letter-spacing: -2.5px;
+      }
+      .role {
+        font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+        font-size: 13px;
+        font-weight: 500;
+        fill: #58a6ff;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+      }
+      .meta {
+        font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+        font-size: 10.5px;
+        fill: #3b4048;
+        letter-spacing: 2px;
+      }
+      .accent-text {
+        fill: #58a6ff;
+        font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+        font-size: 9px;
+        letter-spacing: 2.5px;
+      }
       @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
       .cursor { animation: blink 1s step-end infinite; }
     </style>
 
+    <!-- Background -->
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#010409"/>
-      <stop offset="100%" stop-color="#060a10"/>
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="40%" stop-color="#080c14"/>
+      <stop offset="100%" stop-color="#060810"/>
     </linearGradient>
 
-    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
-      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(88,166,255,0.018)" stroke-width="0.5"/>
+    <!-- Vignette overlay -->
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0.4)"/>
+    </radialGradient>
+
+    <!-- Dot grid -->
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.35" fill="rgba(88,166,255,0.035)"/>
     </pattern>
 
+    <!-- Glows -->
+    <radialGradient id="sphere-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.08"/>
+      <stop offset="60%" stop-color="#58a6ff" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
     <radialGradient id="core-glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.25"/>
-      <stop offset="50%" stop-color="#58a6ff" stop-opacity="0.05"/>
-      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.35"/>
+      <stop offset="40%" stop-color="#58a6ff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="transparent"/>
     </radialGradient>
 
-    <radialGradient id="field-glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.04"/>
-      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
-    </radialGradient>
-
-    <filter id="soft-glow">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-
-    <filter id="wide-glow">
-      <feGaussianBlur stdDeviation="8"/>
-    </filter>
+    <!-- Blur filters -->
+    <filter id="glow-sm"><feGaussianBlur stdDeviation="2"/></filter>
+    <filter id="glow-md"><feGaussianBlur stdDeviation="5"/></filter>
+    <filter id="glow-lg"><feGaussianBlur stdDeviation="12"/></filter>
   </defs>
 
-  <!-- Background -->
-  <rect width="100%" height="100%" fill="url(#bg)" rx="8"/>
-  <rect width="100%" height="100%" fill="url(#grid)" rx="8"/>
+  <!-- ══════ BACKGROUND LAYERS ══════ -->
+  <rect width="100%" height="100%" fill="url(#bg)" rx="6"/>
+  <rect width="100%" height="100%" fill="url(#dots)" rx="6"/>
+  <rect width="100%" height="100%" fill="url(#vignette)" rx="6"/>
 
-  <!-- Sparse floating particles -->
-  <circle cx="180" cy="30" r="0.5" fill="#58a6ff" opacity="0.08"><animate attributeName="opacity" values="0.04;0.12;0.04" dur="6s" repeatCount="indefinite"/></circle>
-  <circle cx="420" cy="255" r="0.4" fill="#ffffff" opacity="0.05"><animate attributeName="opacity" values="0.03;0.08;0.03" dur="8s" repeatCount="indefinite"/></circle>
-  <circle cx="600" cy="25" r="0.4" fill="#58a6ff" opacity="0.06"><animate attributeName="opacity" values="0.03;0.1;0.03" dur="7s" repeatCount="indefinite"/></circle>
-  <circle cx="350" cy="45" r="0.3" fill="#ffffff" opacity="0.04"><animate attributeName="opacity" values="0.02;0.07;0.02" dur="9s" repeatCount="indefinite"/></circle>
+  <!-- Ambient atmospheric glow behind the construct -->
+  <ellipse cx="770" cy="140" rx="180" ry="130" fill="#58a6ff" opacity="0.012" filter="url(#glow-lg)"/>
 
-  <!-- Left accent -->
-  <rect x="50" y="45" width="2" height="12" fill="#58a6ff" opacity="0.7"/>
-  <text x="65" y="55" class="accent-text" letter-spacing="2px">SYS.STATUS // ONLINE</text>
+  <!-- ══════ TEXT CONTENT ══════ -->
+
+  <!-- Status line -->
+  <line x1="50" y1="48" x2="50" y2="60" stroke="#58a6ff" stroke-width="1.5" opacity="0.6"/>
+  <text x="62" y="57" class="accent-text">SYS.STATUS // ONLINE</text>
 
   <!-- Name -->
-  <text x="50" y="130" class="name" fill="#58a6ff" opacity="0.04" filter="url(#wide-glow)">Sanidhya Negi</text>
-  <text x="50" y="130" class="name">Sanidhya Negi</text>
+  <text x="50" y="128" class="name" fill="#58a6ff" opacity="0.03" filter="url(#glow-lg)">Sanidhya Negi</text>
+  <text x="50" y="128" class="name">Sanidhya Negi</text>
 
   <!-- Role -->
-  <text x="52" y="165" class="role">&gt; Systems Engineer<tspan class="cursor" fill="#58a6ff">_</tspan></text>
+  <text x="52" y="160" class="role">&gt; Systems Engineer<tspan class="cursor" fill="#58a6ff">_</tspan></text>
 
-  <!-- Divider -->
-  <line x1="50" y1="192" x2="190" y2="192" stroke="rgba(88,166,255,0.25)" stroke-width="0.8"/>
-  <line x1="190" y1="192" x2="350" y2="192" stroke="rgba(88,166,255,0.05)" stroke-width="0.5"/>
+  <!-- Separator -->
+  <line x1="50" y1="182" x2="140" y2="182" stroke="#58a6ff" stroke-width="0.6" opacity="0.3"/>
+  <line x1="142" y1="182" x2="280" y2="182" stroke="#58a6ff" stroke-width="0.3" opacity="0.06"/>
 
   <!-- Tags -->
-  <text x="50" y="225" class="meta" xml:space="preserve">C++   //   JAVA   //   SYSTEM DESIGN   //   DSA</text>
+  <text x="50" y="213" class="meta" xml:space="preserve">C++  //  JAVA  //  SYSTEM DESIGN  //  DSA</text>
 
-  <!-- ════════ GEOMETRIC CONSTRUCT ════════ -->
+  <!-- Data flow line connecting text → construct -->
+  <line x1="320" y1="140" x2="610" y2="140" stroke="#58a6ff" stroke-width="0.3" opacity="0.025" stroke-dasharray="1 8"/>
+
+  <!-- ══════ GEOMETRIC CONSTRUCT ══════ -->
   <g transform="translate(770, 140)">
 
-    <!-- Field background -->
-    <circle cx="0" cy="0" r="135" fill="url(#field-glow)"/>
+    <!-- Background field -->
+    <circle cx="0" cy="0" r="130" fill="url(#sphere-glow)"/>
 
-    <!-- Outer geodesic frame — static precision lines -->
-    <!-- Hexagonal wireframe layer 1 -->
-    <g opacity="0.06">
-      <polygon points="0,-105 91,-52.5 91,52.5 0,105 -91,52.5 -91,-52.5" fill="none" stroke="#58a6ff" stroke-width="0.4"/>
-    </g>
-    <g opacity="0.04">
-      <polygon points="0,-85 73.6,-42.5 73.6,42.5 0,85 -73.6,42.5 -73.6,-42.5" fill="none" stroke="#ffffff" stroke-width="0.3"/>
-    </g>
+    <!-- Wireframe sphere — longitude lines (ellipses at various rotations) -->
+    <!-- These create the illusion of a 3D wireframe globe -->
 
-    <!-- Rotating arc segments — precise, partial, not full circles -->
-    <!-- Arc layer 1: outer -->
+    <!-- Equator (horizontal reference) -->
+    <ellipse cx="0" cy="0" rx="90" ry="12" fill="none" stroke="rgba(88,166,255,0.07)" stroke-width="0.4">
+      <animate attributeName="ry" values="12;14;12" dur="10s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Longitude 0° — front-facing circle -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="60s" repeatCount="indefinite"/>
-      <path d="M 95,0 A 95,95 0 0,1 47.5,82.3" fill="none" stroke="rgba(88,166,255,0.12)" stroke-width="0.6" stroke-linecap="round"/>
-      <path d="M -95,0 A 95,95 0 0,1 -47.5,-82.3" fill="none" stroke="rgba(88,166,255,0.08)" stroke-width="0.6" stroke-linecap="round"/>
-      <circle cx="95" cy="0" r="1.5" fill="#58a6ff" opacity="0.35"/>
-      <circle cx="-47.5" cy="-82.3" r="1" fill="#58a6ff" opacity="0.2"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="80s" repeatCount="indefinite"/>
+      <ellipse cx="0" cy="0" rx="90" ry="90" fill="none" stroke="rgba(88,166,255,0.05)" stroke-width="0.3"/>
     </g>
 
-    <!-- Arc layer 2: mid, counter-rotate -->
+    <!-- Longitude 30° -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="42s" repeatCount="indefinite"/>
-      <path d="M 0,-72 A 72,72 0 0,1 72,0" fill="none" stroke="rgba(88,166,255,0.15)" stroke-width="0.7" stroke-linecap="round"/>
-      <path d="M 0,72 A 72,72 0 0,1 -72,0" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="0.5" stroke-linecap="round"/>
-      <circle cx="72" cy="0" r="1.8" fill="#58a6ff" opacity="0.4">
-        <animate attributeName="opacity" values="0.3;0.5;0.3" dur="3s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="80s" repeatCount="indefinite"/>
+      <ellipse cx="0" cy="0" rx="45" ry="90" fill="none" stroke="rgba(88,166,255,0.06)" stroke-width="0.3" transform="rotate(0)"/>
+    </g>
+
+    <!-- Longitude 60° -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="80s" repeatCount="indefinite"/>
+      <ellipse cx="0" cy="0" rx="78" ry="90" fill="none" stroke="rgba(88,166,255,0.04)" stroke-width="0.3" transform="rotate(0)"/>
+    </g>
+
+    <!-- Latitude lines -->
+    <ellipse cx="0" cy="-45" rx="78" ry="10" fill="none" stroke="rgba(88,166,255,0.04)" stroke-width="0.3"/>
+    <ellipse cx="0" cy="45" rx="78" ry="10" fill="none" stroke="rgba(88,166,255,0.04)" stroke-width="0.3"/>
+    <ellipse cx="0" cy="-70" rx="56" ry="7" fill="none" stroke="rgba(88,166,255,0.03)" stroke-width="0.3"/>
+    <ellipse cx="0" cy="70" rx="56" ry="7" fill="none" stroke="rgba(88,166,255,0.03)" stroke-width="0.3"/>
+
+    <!-- Rotating orbital arcs overlaid on sphere -->
+    <!-- Arc 1: outer, slow -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="50s" repeatCount="indefinite"/>
+      <path d="M 105,0 A 105,105 0 0,1 0,105" fill="none" stroke="rgba(88,166,255,0.1)" stroke-width="0.5" stroke-linecap="round"/>
+      <path d="M -105,0 A 105,105 0 0,1 0,-105" fill="none" stroke="rgba(88,166,255,0.06)" stroke-width="0.4" stroke-linecap="round"/>
+      <circle cx="0" cy="105" r="1.5" fill="#58a6ff" opacity="0.3">
+        <animate attributeName="opacity" values="0.2;0.4;0.2" dur="3s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="-72" cy="0" r="1.2" fill="#ffffff" opacity="0.15"/>
+      <circle cx="0" cy="-105" r="1" fill="#ffffff" opacity="0.12"/>
     </g>
 
-    <!-- Arc layer 3: inner -->
+    <!-- Arc 2: mid, counter-rotate -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="28s" repeatCount="indefinite"/>
-      <path d="M 50,0 A 50,50 0 0,1 -25,43.3" fill="none" stroke="rgba(88,166,255,0.18)" stroke-width="0.6" stroke-linecap="round"/>
-      <path d="M -50,0 A 50,50 0 0,1 25,-43.3" fill="none" stroke="rgba(88,166,255,0.1)" stroke-width="0.5" stroke-linecap="round"/>
-      <circle cx="-25" cy="43.3" r="1.5" fill="#ffffff" opacity="0.25">
-        <animate attributeName="opacity" values="0.15;0.35;0.15" dur="2.5s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="35s" repeatCount="indefinite"/>
+      <path d="M 72,0 A 72,72 0 0,1 -36,62.4" fill="none" stroke="rgba(88,166,255,0.14)" stroke-width="0.5" stroke-linecap="round"/>
+      <path d="M -72,0 A 72,72 0 0,1 36,-62.4" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.4" stroke-linecap="round"/>
+      <circle cx="-36" cy="62.4" r="1.8" fill="#58a6ff" opacity="0.35">
+        <animate attributeName="opacity" values="0.25;0.5;0.25" dur="2.5s" repeatCount="indefinite"/>
       </circle>
     </g>
 
-    <!-- Arc layer 4: tight, fast -->
+    <!-- Arc 3: inner -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="18s" repeatCount="indefinite"/>
-      <path d="M 30,0 A 30,30 0 0,1 0,30" fill="none" stroke="rgba(88,166,255,0.22)" stroke-width="0.5" stroke-linecap="round"/>
-      <path d="M -30,0 A 30,30 0 0,1 0,-30" fill="none" stroke="rgba(88,166,255,0.12)" stroke-width="0.5" stroke-linecap="round"/>
-      <circle cx="0" cy="30" r="1.8" fill="#58a6ff" opacity="0.5">
-        <animate attributeName="opacity" values="0.35;0.65;0.35" dur="2s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite"/>
+      <path d="M 0,-48 A 48,48 0 0,1 48,0" fill="none" stroke="rgba(88,166,255,0.16)" stroke-width="0.5" stroke-linecap="round"/>
+      <circle cx="48" cy="0" r="1.5" fill="#ffffff" opacity="0.2">
+        <animate attributeName="opacity" values="0.12;0.3;0.12" dur="2s" repeatCount="indefinite"/>
       </circle>
     </g>
 
-    <!-- Connection nodes on hexagon vertices -->
-    <circle cx="0" cy="-105" r="1" fill="#58a6ff" opacity="0.1"><animate attributeName="opacity" values="0.06;0.15;0.06" dur="4s" repeatCount="indefinite"/></circle>
-    <circle cx="91" cy="-52.5" r="0.8" fill="#58a6ff" opacity="0.08"><animate attributeName="opacity" values="0.04;0.12;0.04" dur="5s" repeatCount="indefinite"/></circle>
-    <circle cx="91" cy="52.5" r="0.8" fill="#ffffff" opacity="0.06"/>
-    <circle cx="0" cy="105" r="1" fill="#58a6ff" opacity="0.08"><animate attributeName="opacity" values="0.05;0.12;0.05" dur="6s" repeatCount="indefinite"/></circle>
-    <circle cx="-91" cy="52.5" r="0.8" fill="#ffffff" opacity="0.05"/>
-    <circle cx="-91" cy="-52.5" r="0.8" fill="#58a6ff" opacity="0.07"/>
+    <!-- Arc 4: tight inner -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="16s" repeatCount="indefinite"/>
+      <path d="M 28,0 A 28,28 0 0,1 -14,24.2" fill="none" stroke="rgba(88,166,255,0.2)" stroke-width="0.4" stroke-linecap="round"/>
+      <circle cx="-14" cy="24.2" r="1.5" fill="#58a6ff" opacity="0.45">
+        <animate attributeName="opacity" values="0.3;0.6;0.3" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+    </g>
 
-    <!-- Cross-hair precision lines through center -->
-    <line x1="-18" y1="0" x2="-8" y2="0" stroke="rgba(88,166,255,0.15)" stroke-width="0.4"/>
-    <line x1="8" y1="0" x2="18" y2="0" stroke="rgba(88,166,255,0.15)" stroke-width="0.4"/>
-    <line x1="0" y1="-18" x2="0" y2="-8" stroke="rgba(88,166,255,0.15)" stroke-width="0.4"/>
-    <line x1="0" y1="8" x2="0" y2="18" stroke="rgba(88,166,255,0.15)" stroke-width="0.4"/>
+    <!-- Surface nodes — scattered on the wireframe sphere -->
+    <circle cx="60" cy="-65" r="0.8" fill="#58a6ff" opacity="0.1"><animate attributeName="opacity" values="0.06;0.15;0.06" dur="5s" repeatCount="indefinite"/></circle>
+    <circle cx="-75" cy="30" r="0.7" fill="#ffffff" opacity="0.07"/>
+    <circle cx="40" cy="75" r="0.8" fill="#58a6ff" opacity="0.08"><animate attributeName="opacity" values="0.04;0.12;0.04" dur="6s" repeatCount="indefinite"/></circle>
+    <circle cx="-50" cy="-60" r="0.6" fill="#ffffff" opacity="0.05"/>
+    <circle cx="80" cy="20" r="0.7" fill="#58a6ff" opacity="0.06"><animate attributeName="opacity" values="0.04;0.1;0.04" dur="7s" repeatCount="indefinite"/></circle>
+    <circle cx="-30" cy="80" r="0.6" fill="#58a6ff" opacity="0.07"/>
 
-    <!-- Core glow -->
-    <circle cx="0" cy="0" r="22" fill="url(#core-glow)">
-      <animate attributeName="opacity" values="0.6;1;0.6" dur="4s" repeatCount="indefinite"/>
+    <!-- Cross-hair precision markers -->
+    <line x1="-14" y1="0" x2="-6" y2="0" stroke="rgba(88,166,255,0.12)" stroke-width="0.4"/>
+    <line x1="6" y1="0" x2="14" y2="0" stroke="rgba(88,166,255,0.12)" stroke-width="0.4"/>
+    <line x1="0" y1="-14" x2="0" y2="-6" stroke="rgba(88,166,255,0.12)" stroke-width="0.4"/>
+    <line x1="0" y1="6" x2="0" y2="14" stroke="rgba(88,166,255,0.12)" stroke-width="0.4"/>
+
+    <!-- Core glow layers -->
+    <circle cx="0" cy="0" r="20" fill="url(#core-glow)" filter="url(#glow-sm)">
+      <animate attributeName="opacity" values="0.5;0.8;0.5" dur="4s" repeatCount="indefinite"/>
     </circle>
 
-    <!-- Core ring -->
-    <circle cx="0" cy="0" r="6" fill="none" stroke="rgba(88,166,255,0.2)" stroke-width="0.5">
-      <animate attributeName="r" values="6;8;6" dur="4s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.15;0.3;0.15" dur="4s" repeatCount="indefinite"/>
+    <!-- Core breathing ring -->
+    <circle cx="0" cy="0" r="5" fill="none" stroke="rgba(88,166,255,0.12)" stroke-width="0.4">
+      <animate attributeName="r" values="5;7;5" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.2;0.1" dur="4s" repeatCount="indefinite"/>
     </circle>
 
-    <!-- Center -->
-    <circle cx="0" cy="0" r="4.5" fill="#58a6ff">
+    <!-- Center core -->
+    <circle cx="0" cy="0" r="4" fill="#58a6ff">
       <animate attributeName="opacity" values="0.7;1;0.7" dur="2.5s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="0" cy="0" r="2" fill="#ffffff" opacity="0.9"/>
+    <circle cx="0" cy="0" r="1.8" fill="#ffffff" opacity="0.9"/>
 
   </g>
+
+  <!-- Bottom-right subtle coordinates -->
+  <text x="920" y="265" class="accent-text" opacity="0.08" text-anchor="end">v2.0</text>
 </svg>
