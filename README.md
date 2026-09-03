@@ -6,23 +6,6 @@
   <a href="https://github.com/Sanidhyanegi07?tab=followers"><img src="https://img.shields.io/github/followers/Sanidhyanegi07?style=flat-square&color=020306&labelColor=020306&logo=github&logoColor=58a6ff" alt="followers"/></a>
   &nbsp;
   <img src="https://komarev.com/ghpvc/?username=Sanidhyanegi07&label=SYS.VIEWS&style=flat-square&color=020306&labelColor=020306" alt="views"/>
-  &nbsp;
-  <a href="https://github.com/Sanidhyanegi07"><img src="https://img.shields.io/badge/SYS.COMMITS-GitHub_Stats-020306?style=flat-square&logo=github&logoColor=58a6ff" alt="commits"/></a>
-</div>
-
-<div align="center" style="margin-top: 10px;">
-  <a href="https://github.com/Sanidhyanegi07">
-    <img src="https://streak-stats.demolab.com?user=Sanidhyanegi07&theme=dark&hide_border=true&background=020306&stroke=020306&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&sideLabels=8b949e&currStreakNum=ffffff&sideNums=ffffff&dates=8b949e" alt="streak" width="97%"/>
-  </a>
-</div>
-
-<div align="center" style="margin-top: 10px;">
-  <a href="https://github.com/Sanidhyanegi07">
-    <img src="https://github-readme-stats.vercel.app/api?username=Sanidhyanegi07&show_icons=true&theme=dark&bg_color=020306&title_color=58a6ff&icon_color=58a6ff&text_color=ffffff&hide_border=true" alt="GitHub Stats" width="48%"/>
-  </a>
-  <a href="https://github.com/Sanidhyanegi07">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sanidhyanegi07&layout=compact&theme=dark&bg_color=020306&title_color=58a6ff&text_color=ffffff&hide_border=true" alt="Top Languages" width="48%"/>
-  </a>
 </div>
 
 <br/>
@@ -78,6 +61,25 @@
 | [**ComplexCalc Core Engine**](https://github.com/Sanidhyanegi07/ComplexCalc) | Scientific calculator engine supporting dynamic expression parsing with cleanly decoupled business logic. | <img src="https://img.shields.io/badge/-C++-020306?style=flat-square&logo=c%2B%2B"/> <img src="https://img.shields.io/badge/-Math-020306?style=flat-square&logo=wolframmathematica"/> |
 | [**Academic Management System**](https://github.com/Sanidhyanegi07/Attendance-Management-System) | Enterprise-style application featuring strict role‑based access control and robust session management. | <img src="https://img.shields.io/badge/-C++-020306?style=flat-square&logo=c%2B%2B"/> <img src="https://img.shields.io/badge/-OOP-020306?style=flat-square&logo=c%2B%2B"/> |
 | [**Webathon / NIRVAN '26**](https://github.com/Sanidhyanegi07/webathon) | Modular and highly responsive frontend architecture built for a high-traffic college technical event. | <img src="https://img.shields.io/badge/-React-020306?style=flat-square&logo=react"/> <img src="https://img.shields.io/badge/-Vite-020306?style=flat-square&logo=vite"/> |
+
+<br/>
+
+### `// SYSTEM_TELEMETRY`
+
+<div align="center" style="margin-top: 10px;">
+  <a href="https://github.com/Sanidhyanegi07">
+    <img src="https://github-readme-stats.vercel.app/api?username=Sanidhyanegi07&show_icons=true&theme=dark&bg_color=020306&title_color=58a6ff&icon_color=58a6ff&text_color=ffffff&hide_border=true" alt="GitHub Stats" width="48%"/>
+  </a>
+  <a href="https://github.com/Sanidhyanegi07">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sanidhyanegi07&layout=compact&theme=dark&bg_color=020306&title_color=58a6ff&text_color=ffffff&hide_border=true" alt="Top Languages" width="48%"/>
+  </a>
+</div>
+
+<div align="center" style="margin-top: 10px;">
+  <a href="https://github.com/Sanidhyanegi07">
+    <img src="https://streak-stats.demolab.com?user=Sanidhyanegi07&theme=dark&hide_border=true&background=020306&stroke=020306&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&sideLabels=8b949e&currStreakNum=ffffff&sideNums=ffffff&dates=8b949e" alt="streak" width="97%"/>
+  </a>
+</div>
 
 <br/>
 
