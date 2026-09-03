@@ -215,10 +215,6 @@
           <path d="M -18,0 A 18 12 0 1 1 18,0 A 18 12 0 1 1 -18,0" fill="none" stroke="#1f6feb" stroke-width="2" stroke-dasharray="8 6"/>
         </g>
         
-        <!-- Absolute volatile core -->
-        <circle cx="0" cy="0" r="4" fill="#ffffff">
-          <animate attributeName="r" values="3;5;3" dur="0.5s" repeatCount="indefinite"/>
-        </circle>
       </g>
 
     </g> <!-- End Right Construct -->
