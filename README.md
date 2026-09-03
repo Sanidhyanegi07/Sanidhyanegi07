@@ -14,7 +14,7 @@
 
 <table>
   <tr>
-    <td width="250" align="center" valign="middle">
+    <td width="240" align="center" valign="middle">
       <a href="https://github.com/Sanidhyanegi07"><img src="whoami.png" width="230" alt="whoami"/></a>
     </td>
     <td valign="middle">
