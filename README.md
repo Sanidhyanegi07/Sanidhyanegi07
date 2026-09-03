@@ -14,8 +14,13 @@
 
 <table width="100%">
   <tr>
+<<<<<<< HEAD
     <td width="260" align="center" valign="middle">
       <a href="https://github.com/Sanidhyanegi07"><img src="whoami.png" width="240" alt="whoami"/></a>
+=======
+    <td width="230" align="center" valign="middle">
+      <a href="https://github.com/Sanidhyanegi07"><img src="whoami.png" width="220" alt="whoami"/></a>
+>>>>>>> 112581922987ee42cf43152821666a6f55ccb592
     </td>
     <td valign="middle">
       <p style="margin: 0; line-height: 1.6;">
