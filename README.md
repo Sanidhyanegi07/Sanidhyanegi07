@@ -69,7 +69,7 @@
 ### `// SYSTEM TELEMETRY`
 
 <div align="center" style="margin-top: 15px;">
-  <a href="https://github.com/Sanidhyanegi07"><img height="150" src="https://streak-stats.demolab.com/?user=Sanidhyanegi07&theme=dark&background=020306&ring=58a6ff&fire=58a6ff&currStreakNum=58a6ff&sideNums=58a6ff&currStreakLabel=8b949e&sideLabels=8b949e&dates=8b949e&hide_border=true&cache=1725450000" alt="GitHub Streak"/></a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/Sanidhyanegi07"><img height="150" src="https://github-readme-stats-anuraghazra1.vercel.app/api/top-langs?username=Sanidhyanegi07&layout=compact&bg_color=020306&title_color=58a6ff&text_color=8b949e&hide_border=true&custom_title=SYS.LANGUAGES&cache=1725450000" alt="Top Languages"/></a>
+  <a href="https://github.com/Sanidhyanegi07"><img height="150" src="https://streak-stats.demolab.com/?user=Sanidhyanegi07&theme=dark&background=020306&ring=58a6ff&fire=58a6ff&currStreakNum=58a6ff&sideNums=58a6ff&currStreakLabel=8b949e&sideLabels=8b949e&dates=8b949e&hide_border=true&cache=1788535965" alt="GitHub Streak"/></a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/Sanidhyanegi07"><img height="150" src="https://github-readme-stats-anuraghazra1.vercel.app/api/top-langs?username=Sanidhyanegi07&layout=compact&bg_color=020306&title_color=58a6ff&text_color=8b949e&hide_border=true&custom_title=SYS.LANGUAGES&cache=1788535965" alt="Top Languages"/></a>
 </div>
 
 
