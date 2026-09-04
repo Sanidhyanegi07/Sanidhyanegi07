@@ -20,11 +20,7 @@ jobs:
           TIMESTAMP=$(date +%s)
           
           # Update the cache buster in README.md
-<<<<<<< HEAD
           sed -i "s/cache=[0-9]*/cache=${TIMESTAMP}/g" README.md
-=======
-          sed -i "s/&cache=[0-9]*/\&cache=${TIMESTAMP}/g" README.md
->>>>>>> 83db2af55022fcd4493d3c64c79583b897342b2a
           
           # Check if anything changed
           if git diff --quiet; then
