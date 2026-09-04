@@ -1,0 +1,34 @@
+name: Update Stats Cache Buster
+
+on:
+  schedule:
+    # Runs every 6 hours to keep stats fresh
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update cache buster timestamp
+        run: |
+          # Get current timestamp
+          TIMESTAMP=$(date +%s)
+          
+          # Update the cache buster in README.md
+          sed -i "s/cache=[0-9]*/cache=${TIMESTAMP}/g" README.md
+          
+          # Check if anything changed
+          if git diff --quiet; then
+            echo "No changes to commit"
+          else
+            git config --local user.email "github-actions[bot]@users.noreply.github.com"
+            git config --local user.name "github-actions[bot]"
+            git add README.md
+            git commit -m "chore: refresh stats cache [skip ci]"
+            git push
+          fi
