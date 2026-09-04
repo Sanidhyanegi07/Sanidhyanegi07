@@ -77,6 +77,16 @@
   </a>
 </div>
 
+<div align="center" style="margin-top: 10px;">
+  <a href="https://github.com/Sanidhyanegi07">
+    <img width="100%" src="https://github-readme-stats-anuraghazra1.vercel.app/api?username=Sanidhyanegi07&show_icons=true&bg_color=020306&title_color=58a6ff&text_color=8b949e&icon_color=58a6ff&hide_border=true&count_private=true&custom_title=SYS.STATS&cache=1725450000" alt="GitHub Stats"/>
+  </a>
+</div>
+
+<div align="center" style="margin-top: 10px;">
+  <img src="https://raw.githubusercontent.com/Sanidhyanegi07/Sanidhyanegi07/output/github-contribution-grid-snake-dark.svg" alt="snake animation"/>
+</div>
+
 <br/>
 
 <div align="center">
