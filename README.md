@@ -60,7 +60,7 @@
 | `ARCHITECTURE` | `DESCRIPTION` | `TECH` |
 | :--- | :--- | :--- |
 | [**GeoRescueX**](https://github.com/Sanidhyanegi07/SIH2026-BuildForIndia_2.0) | Offline-first disaster resilience and emergency response platform featuring multi-hop BLE mesh networking, local A* routing, and deferred cloud sync. | <img src="https://img.shields.io/badge/Kotlin-020306?style=flat-square&logo=kotlin"/> <img src="https://img.shields.io/badge/Android-020306?style=flat-square&logo=android"/> |
-| [**Academic Management System**](https://github.com/Sanidhyanegi07/Attendance-Management-System) | Enterprise-style application featuring strict role‑based access control and robust session management. | <img src="https://img.shields.io/badge/C++-020306?style=flat-square&logo=c%2B%2B"/> <img src="https://img.shields.io/badge/OOP-020306?style=flat-square&logo=c%2B%2B"/> |
+| [**Academic Management System**](https://github.com/Sanidhyanegi07/Attendance-Management-System) | Enterprise-style application featuring strict role-based access control and robust session management. | <img src="https://img.shields.io/badge/C++-020306?style=flat-square&logo=c%2B%2B"/> <img src="https://img.shields.io/badge/OOP-020306?style=flat-square&logo=c%2B%2B"/> |
 | [**Webathon / NIRVAN '26**](https://github.com/Sanidhyanegi07/webathon) | Modular and highly responsive frontend architecture built for a high-traffic college technical event. | <img src="https://img.shields.io/badge/React-020306?style=flat-square&logo=react"/> <img src="https://img.shields.io/badge/Vite-020306?style=flat-square&logo=vite"/> |
 
 <br/>
@@ -70,7 +70,6 @@
 <div align="center" style="margin-top: 15px;">
   <a href="https://github.com/Sanidhyanegi07"><img height="150" src="https://streak-stats.demolab.com/?user=Sanidhyanegi07&theme=dark&background=020306&ring=58a6ff&fire=58a6ff&currStreakNum=58a6ff&sideNums=58a6ff&currStreakLabel=8b949e&sideLabels=8b949e&dates=8b949e&hide_border=true&cache=1790026254" alt="GitHub Streak"/></a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/Sanidhyanegi07"><img height="150" src="https://github-readme-stats-anuraghazra1.vercel.app/api/top-langs?username=Sanidhyanegi07&layout=compact&bg_color=020306&title_color=58a6ff&text_color=8b949e&hide_border=true&custom_title=SYS.LANGUAGES&cache=1790026254" alt="Top Languages"/></a>
 </div>
-
 
 <br/>
 
@@ -83,5 +82,5 @@
 <br/>
 
 <div align="center">
-  <sub><i>“Anxiety is a feeling one gets when one challenges themselves.” — 100 meters</i></sub>
+  <sub><i>“Simplicity is prerequisite for reliability.” — Edsger W. Dijkstra</i></sub>
 </div>
