@@ -3,9 +3,9 @@
 </div>
 
 <div align="center" style="margin-top: 20px;">
-  <a href="https://github.com/Sanidhyanegi07?tab=followers"><img src="https://img.shields.io/github/followers/Sanidhyanegi07?style=flat-square&color=020306&labelColor=020306&logo=github&logoColor=58a6ff" alt="followers"/></a>
+  <a href="https://github.com/Sanidhyanegi07?tab=followers"><img src="https://img.shields.io/github/followers/Sanidhyanegi07?style=flat-square&color=020306&labelColor=020306&logo=github&logoColor=58a6ff" alt="GitHub followers"/></a>
   &nbsp;
-  <img src="https://komarev.com/ghpvc/?username=Sanidhyanegi07&label=SYS.VIEWS&style=flat-square&color=020306&labelColor=020306" alt="views"/>
+  <img src="https://komarev.com/ghpvc/?username=Sanidhyanegi07&label=SYS.VIEWS&style=flat-square&color=020306&labelColor=020306" alt="Profile views"/>
 </div>
 
 <br/>
@@ -36,30 +36,69 @@
   <img src="https://img.shields.io/badge/Problem_Solving-020306?style=for-the-badge&logo=hackerrank&logoColor=00EA64" alt="Problem Solving"/>
 </p>
 
-#### `TECH STACK`
+#### `LANGUAGES`
 
 <div align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=kotlin,react,java,cpp,python,android,javascript,qt,cmake,firebase,sqlite,git&perline=6" alt="Kotlin, React, Java, C++, Python, Android, JavaScript, Qt, CMake, Firebase, SQLite and Git" />
-  </a>
+  <img src="https://skillicons.dev/icons?i=kotlin,java,cpp,python,javascript&perline=5" alt="Kotlin, Java, C++, Python, JavaScript"/>
+</div>
+
+#### `FRAMEWORKS & PLATFORMS`
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=android,react,qt,firebase,sqlite&perline=5" alt="Android, React, Qt, Firebase, SQLite"/>
+</div>
+
+#### `TOOLS & WORKFLOW`
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=git,github,cmake,vscode,figma&perline=5" alt="Git, GitHub, CMake, VS Code, Figma"/>
 </div>
 
 <br/>
 
 ### `// ENGINEERING_WORK`
 
-| `PROJECT` | `WHAT I BUILT` | `VERIFIED STACK` |
-| :--- | :--- | :--- |
-| [**GeoRescueX**](https://github.com/Sanidhyanegi07/SIH2026-BuildForIndia_2.0) | Offline-first Android disaster-resilience platform with GPS-based emergency workflows, regional offline A* routing, location sharing, and SOS support. | Kotlin · Android · SQLite · Firebase |
-| [**Attendance Management System**](https://github.com/Sanidhyanegi07/Attendance-Management-System) | Desktop attendance platform with Admin, Teacher, and Student portals, role-based access control, attendance tracking, and reporting. | C++ · Qt · SQLite · CMake |
-| [**Webathon / NIRVAN '26**](https://github.com/Sanidhyanegi07/webathon) | Responsive festival platform with event discovery, schedules, registration flows, Google authentication, and Firestore persistence. | React · JavaScript · Firebase |
+> Selected projects showcasing practical problem-solving, product thinking, and verified implementation experience.
+
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">PROJECT</th>
+      <th align="left">WHAT I BUILT</th>
+      <th align="left">VERIFIED STACK</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td valign="top"><a href="https://github.com/Sanidhyanegi07/SIH2026-BuildForIndia_2.0"><strong>GeoRescueX</strong></a></td>
+      <td valign="top">Offline-first Android disaster-resilience platform with GPS-based emergency workflows, regional offline A* routing, and reliable access to critical information during network outages.</td>
+      <td valign="top">
+        <img src="https://skillicons.dev/icons?i=kotlin,android,sqlite&perline=3" alt="Kotlin, Android, SQLite"/>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top"><a href="https://github.com/Sanidhyanegi07/Attendance-Management-System"><strong>Attendance Management System</strong></a></td>
+      <td valign="top">Desktop attendance platform with Admin, Teacher, and Student portals, role-based access control, attendance tracking, and streamlined academic workflows.</td>
+      <td valign="top">
+        <img src="https://skillicons.dev/icons?i=java,qt,sqlite&perline=3" alt="Java, Qt, SQLite"/>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top"><a href="https://github.com/Sanidhyanegi07/webathon"><strong>Webathon / NIRVAN '26</strong></a></td>
+      <td valign="top">Responsive festival platform with event discovery, schedules, registration flows, Google authentication, and persistent Firestore-backed data.</td>
+      <td valign="top">
+        <img src="https://skillicons.dev/icons?i=react,javascript,firebase&perline=3" alt="React, JavaScript, Firebase"/>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 <br/>
 
 ### `// SYSTEM_TELEMETRY`
 
 <div align="center" style="margin-top: 15px;">
-  <a href="https://github.com/Sanidhyanegi07"><img height="150" src="https://streak-stats.demolab.com/?user=Sanidhyanegi07&theme=dark&background=020306&ring=58a6ff&fire=58a6ff&currStreakNum=58a6ff&sideNums=58a6ff&currStreakLabel=58a6ff&sideLabels=58a6ff&dates=8b949e" alt="GitHub streak"/></a>
+  <a href="https://github.com/Sanidhyanegi07"><img height="150" src="https://streak-stats.demolab.com/?user=Sanidhyanegi07&theme=dark&background=020306&ring=58a6ff&fire=58a6ff&currStreakNum=58a6ff&sideNums=58a6ff&currStreakLabel=58a6ff&sideLabels=58a6ff&dates=58a6ff&hide_border=true" alt="GitHub streak"/></a>
 </div>
 
 <br/>
