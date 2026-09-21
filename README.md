@@ -19,7 +19,7 @@
     </td>
     <td valign="middle">
       <p style="margin: 0; line-height: 1.6;">
-        Computer Science undergraduate who thinks in systems, not scripts. From low-level memory management in <code>C++</code> to fault-tolerant backends in <code>Java</code>, every line I write is driven by reliability, performance, and problem-solving.
+        Computer Science undergraduate who thinks in systems, not scripts. From low-level memory management in <code>C++</code> to fault-tolerant backends in <code>Java</code>, every line I write is driven by curiosity, precision, and a desire to build useful software.
       </p>
     </td>
   </tr>
@@ -59,20 +59,21 @@
 
 | `ARCHITECTURE` | `DESCRIPTION` | `TECH` |
 | :--- | :--- | :--- |
-| [**Academic Management System**](https://github.com/Sanidhyanegi07/Attendance-Management-System) | Enterprise-style application featuring strict role-based access control and robust session management. | <img src="https://img.shields.io/badge/Qt-020306?style=for-the-badge&logo=qt" alt="Qt"/> |
-| [**GeoRescuX**](https://github.com/Sanidhyanegi07/SIH2026-BuildForIndia_2.0) | Offline-first disaster-response Android platform for SIH 2026, enabling SOS coordination, offline mapping, and emergency communication when networks fail. | <img src="https://img.shields.io/badge/Android-020306?style=for-the-badge&logo=android" alt="Android"/> |
-| [**Webathon / NIRVAN '26**](https://github.com/Sanidhyanegi07/webathon) | Modular and highly responsive frontend architecture built for a high-traffic college technical event. | <img src="https://img.shields.io/badge/React-020306?style=for-the-badge&logo=react" alt="React"/> |
+| [**ComplexCalc Core Engine**](https://github.com/Sanidhyanegi07/ComplexCalc) | Scientific calculator engine with expression parsing, complex-number mathematics, conversions, and a desktop GUI. | **C++17** · **Qt Widgets** · **CMake** · **Standard C++ Library** |
+| [**Academic Management System**](https://github.com/Sanidhyanegi07/Attendance-Management-System) | Desktop attendance platform with role-based access control, OTP attendance, medical exemptions, analytics, admit-card eligibility, audit logging, and local persistence. | **C++17** · **Qt 6 Widgets** · **CMake** · **SHA-256** · **Local JSON** |
+| [**GeoRescuX**](https://github.com/Sanidhyanegi07/SIH2026-BuildForIndia_2.0) | Offline-first disaster-response Android platform for SOS coordination, GPS intelligence, offline mapping, safe routing, BLE emergency relay, and deferred cloud sync. | **Kotlin** · **Android SDK** · **Jetpack** · **WorkManager** · **Firebase** · **OpenStreetMap** · **osmdroid** · **Mapsforge** · **BLE** |
+| [**Webathon / NIRVAN '26**](https://github.com/Sanidhyanegi07/webathon) | Responsive technical-festival platform with event filtering, dynamic scheduling, interactive modals, countdown mechanics, and SEO-friendly routing. | **React 18** · **JavaScript** · **Vite** · **Tailwind CSS** · **Firebase** |
 
 <br/>
 
 ### `// SYSTEM TELEMETRY`
 
 <div align="center" style="margin-top: 15px;">
-  <a href="https://github.com/Sanidhyanegi07"><img height="150" src="https://streak-stats.demolab.com/?user=Sanidhyanegi07&theme=dark&background=020306&ring=58a6ff&fire=58a6ff&currStreakNum=58a6ff&sideNums=58a6ff&currStreakLabel=58a6ff&border=020306" alt="streak-stats"/></a>
+  <a href="https://github.com/Sanidhyanegi07"><img height="150" src="https://streak-stats.demolab.com/?user=Sanidhyanegi07&theme=dark&background=020306&ring=58a6ff&fire=58a6ff&currStreakNum=58a6ff&sideNums=ffffff&currStreakLabel=58a6ff&sideLabels=ffffff&dates=ffffff" alt="GitHub streak"/></a>
 </div>
 
 <br/>
 
 <div align="center">
-  <sub><i>“Anxiety is a feeling one gets when one challenges themselves.” — 100 Meters </i></sub>
+  <sub><i>“Anxiety is a feeling one gets when one challenges themselves.” — 100 Meters</i></sub>
 </div>
