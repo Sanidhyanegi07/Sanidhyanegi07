@@ -4,6 +4,9 @@ on:
   schedule:
     # Runs every 6 hours to keep stats fresh
     - cron: '0 */6 * * *'
+  push:
+    paths:
+      - '.github/workflows/update-stats.yml'
   workflow_dispatch: # Allow manual trigger
 
 jobs:
@@ -14,14 +17,26 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Update cache buster timestamp
+      - name: Update cache buster timestamp and quote
         run: |
           # Get current timestamp
           TIMESTAMP=$(date +%s)
-          
-          # Update the cache buster in README.md
+
+          # Update the cache buster and profile quote in README.md
+          python - <<'PY'
+          from pathlib import Path
+
+          readme = Path("README.md")
+          content = readme.read_text()
+          old_quote = "“Simplicity is prerequisite for reliability.” — Edsger W. Dijkstra"
+          new_quote = "“Anxiety is a feeling one gets when one challenges themselves.”"
+
+          if old_quote in content:
+              content = content.replace(old_quote, new_quote, 1)
+          readme.write_text(content)
+          PY
           sed -i "s/cache=[0-9]*/cache=${TIMESTAMP}/g" README.md
-          
+
           # Check if anything changed
           if git diff --quiet; then
             echo "No changes to commit"
