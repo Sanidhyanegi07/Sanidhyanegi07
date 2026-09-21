@@ -9,41 +9,34 @@ on:
       - '.github/workflows/update-stats.yml'
   workflow_dispatch: # Allow manual trigger
 
+concurrency:
+  group: update-stats
+  cancel-in-progress: false
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - name: Check out repository
+        uses: actions/checkout@v4
 
-      - name: Update cache buster timestamp and quote
+      - name: Update stats cache buster
+        shell: bash
         run: |
-          # Get current timestamp
-          TIMESTAMP=$(date +%s)
+          set -euo pipefail
 
-          # Update the cache buster and profile quote in README.md
-          python - <<'PY'
-          from pathlib import Path
+          timestamp=$(date +%s)
+          sed -i "s/cache=[0-9]*/cache=${timestamp}/g" README.md
 
-          readme = Path("README.md")
-          content = readme.read_text()
-          old_quote = "“Simplicity is prerequisite for reliability.” — Edsger W. Dijkstra"
-          new_quote = "“Anxiety is a feeling one gets when one challenges themselves.”"
-
-          if old_quote in content:
-              content = content.replace(old_quote, new_quote, 1)
-          readme.write_text(content)
-          PY
-          sed -i "s/cache=[0-9]*/cache=${TIMESTAMP}/g" README.md
-
-          # Check if anything changed
-          if git diff --quiet; then
+          if git diff --quiet -- README.md; then
             echo "No changes to commit"
-          else
-            git config --local user.email "github-actions[bot]@users.noreply.github.com"
-            git config --local user.name "github-actions[bot]"
-            git add README.md
-            git commit -m "chore: refresh stats cache [skip ci]"
-            git push
+            exit 0
           fi
+
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add README.md
+          git commit -m "chore: refresh stats cache [skip ci]"
+          git push
