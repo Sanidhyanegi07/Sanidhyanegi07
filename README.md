@@ -59,7 +59,6 @@
 
 | `ARCHITECTURE` | `DESCRIPTION` | `TECH` |
 | :--- | :--- | :--- |
-| [**ComplexCalc Core Engine**](https://github.com/Sanidhyanegi07/ComplexCalc) | Scientific calculator engine supporting dynamic expression parsing with cleanly decoupled business logic. | <img src="https://img.shields.io/badge/C%2B%2B-020306?style=for-the-badge&logo=c%2B%2B" alt="C++"/> |
 | [**Academic Management System**](https://github.com/Sanidhyanegi07/Attendance-Management-System) | Enterprise-style application featuring strict role-based access control and robust session management. | <img src="https://img.shields.io/badge/Qt-020306?style=for-the-badge&logo=qt" alt="Qt"/> |
 | [**GeoRescuX**](https://github.com/Sanidhyanegi07/SIH2026-BuildForIndia_2.0) | Offline-first disaster-response Android platform for SIH 2026, enabling SOS coordination, offline mapping, and emergency communication when networks fail. | <img src="https://img.shields.io/badge/Android-020306?style=for-the-badge&logo=android" alt="Android"/> |
 | [**Webathon / NIRVAN '26**](https://github.com/Sanidhyanegi07/webathon) | Modular and highly responsive frontend architecture built for a high-traffic college technical event. | <img src="https://img.shields.io/badge/React-020306?style=for-the-badge&logo=react" alt="React"/> |
