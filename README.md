@@ -35,7 +35,7 @@
   <img src="https://img.shields.io/badge/JAVA-020306?style=for-the-badge&logo=openjdk&logoColor=ED8B00" alt="Java"/>
   <img src="https://img.shields.io/badge/C%2B%2B-020306?style=for-the-badge&logo=cplusplus&logoColor=659AD2" alt="C++"/>
   <img src="https://img.shields.io/badge/PYTHON-020306?style=for-the-badge&logo=python&logoColor=3776AB" alt="Python"/>
-  <img src="https://img.shields.io/badge/C-020306?style=for-the-badge&logo=c&logoColor=A8B9CC" alt="C"/>
+  <img src="https://img.shields.io/badge/C-020306?style=for-the-badge&logo=c&logoColor=A8B9CC" />
 </div>
 
 #### `FRONTEND`
