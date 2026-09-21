@@ -83,5 +83,5 @@
 <br/>
 
 <div align="center">
-  <sub><i>"Simplicity is prerequisite for reliability." — Edsger W. Dijkstra</i></sub>
+  <sub><i>“Anxiety is a feeling one gets when one challenges themselves.” — 100 meters</i></sub>
 </div>
