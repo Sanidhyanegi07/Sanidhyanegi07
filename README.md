@@ -59,7 +59,6 @@
 
 | `ARCHITECTURE` | `DESCRIPTION` | `TECH` |
 | :--- | :--- | :--- |
-| [**ComplexCalc Core Engine**](https://github.com/Sanidhyanegi07/ComplexCalc) | Scientific calculator engine with expression parsing, complex-number mathematics, conversions, and a desktop GUI. | **C++17** · **Qt Widgets** · **CMake** · **Standard C++ Library** |
 | [**Academic Management System**](https://github.com/Sanidhyanegi07/Attendance-Management-System) | Desktop attendance platform with role-based access control, OTP attendance, medical exemptions, analytics, admit-card eligibility, audit logging, and local persistence. | **C++17** · **Qt 6 Widgets** · **CMake** · **SHA-256** · **Local JSON** |
 | [**GeoRescuX**](https://github.com/Sanidhyanegi07/SIH2026-BuildForIndia_2.0) | Offline-first disaster-response Android platform for SOS coordination, GPS intelligence, offline mapping, safe routing, BLE emergency relay, and deferred cloud sync. | **Kotlin** · **Android SDK** · **Jetpack** · **WorkManager** · **Firebase** · **OpenStreetMap** · **osmdroid** · **Mapsforge** · **BLE** |
 | [**Webathon / NIRVAN '26**](https://github.com/Sanidhyanegi07/webathon) | Responsive technical-festival platform with event filtering, dynamic scheduling, interactive modals, countdown mechanics, and SEO-friendly routing. | **React 18** · **JavaScript** · **Vite** · **Tailwind CSS** · **Firebase** |
