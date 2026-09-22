@@ -44,7 +44,7 @@
       <sub><code>Sanidhya Negi</code></sub>
     </td>
     <td align="center" width="33%">
-      <a href="mailto:sanidhyanegi050107@gmail.com">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sanidhyanegi050107@gmail.com&su=Contact%20Sanidhya%20Negi&body=Hi%20Sanidhya%2C%0A%0A">
         <img src="https://img.shields.io/badge/EMAIL-020306?style=for-the-badge&logo=gmail&logoColor=58a6ff" alt="Email"/>
       </a>
       <br/>
