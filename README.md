@@ -31,15 +31,15 @@
 
 <p align="center">
   <a href="https://github.com/Sanidhyanegi07">
-    <img src="https://img.shields.io/badge/GITHUB-Sanidhya%20Negi-020306?style=flat-square&labelColor=020306&logo=github&logoColor=58a6ff" alt="GitHub"/>
+    <img src="https://img.shields.io/badge/GITHUB-Sanidhya%20Negi-020306?style=flat-square&labelColor=020306&logo=github&logoColor=ffffff" alt="GitHub"/>
   </a>
-  &nbsp;
+  <span>&nbsp;&nbsp;</span>
   <a href="https://www.linkedin.com/in/sanidhya-negi-49aa8a35a/">
-    <img src="https://img.shields.io/badge/LINKEDIN-Sanidhya%20Negi-020306?style=flat-square&labelColor=020306&logo=linkedin&logoColor=0A66C2" alt="LinkedIn"/>
+    <img src="https://img.shields.io/badge/LINKEDIN-Sanidhya%20Negi-020306?style=flat-square&labelColor=020306&logo=linkedin&logoColor=ffffff" alt="LinkedIn"/>
   </a>
-  &nbsp;
+  <span>&nbsp;&nbsp;</span>
   <a href="mailto:sanidhyanegi050107@gmail.com">
-    <img src="https://img.shields.io/badge/EMAIL-Contact%20Me-020306?style=flat-square&labelColor=020306&logo=gmail&logoColor=EA4335" alt="Email"/>
+    <img src="https://img.shields.io/badge/EMAIL-Contact%20Me-020306?style=flat-square&labelColor=020306&logo=gmail&logoColor=ffffff" alt="Email"/>
   </a>
 </p>
 
