@@ -75,5 +75,5 @@
 <br/>
 
 <div align="center">
-  <sub><i>“Anxiety is a feeling one gets when one challenges themselves.” — 100 Meters</i></sub>
+  <sub><i>“Anxiety is a feeling one gets when one challenges themselves.” — 100 Meters — 100 Meters</i></sub>
 </div>
