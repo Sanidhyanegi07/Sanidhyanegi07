@@ -2,20 +2,18 @@
   <img src="header.svg" width="100%" alt="Sanidhya Negi"/>
 </div>
 
-<div align="center" style="margin-top: 12px;">
+<div align="center" style="margin-top: 14px; margin-bottom: 24px;">
   <a href="https://github.com/Sanidhyanegi07?tab=followers"><img src="https://img.shields.io/github/followers/Sanidhyanegi07?style=flat-square&color=020306&labelColor=020306&logo=github&logoColor=58a6ff" alt="followers"/></a>
   &nbsp;
   <img src="https://komarev.com/ghpvc/?username=Sanidhyanegi07&label=SYS.VIEWS&style=flat-square&color=020306&labelColor=020306" alt="views"/>
 </div>
 
-<br/>
-
 ### `> ./whoami`
 
 <table width="100%">
   <tr>
-    <td width="230" align="center" valign="middle">
-      <a href="https://github.com/Sanidhyanegi07"><img src="whoami.png" width="230" alt="whoami"/></a>
+    <td width="220" align="center" valign="middle">
+      <a href="https://github.com/Sanidhyanegi07"><img src="whoami.png" width="220" alt="whoami"/></a>
     </td>
     <td valign="middle">
       <p style="margin: 0; line-height: 1.6;">
@@ -59,8 +57,8 @@
 
 ### `// CORE_STACK`
 
-#### `LANGUAGES`
 <p>
+  <code>LANGUAGES</code><br/>
   <img src="https://img.shields.io/badge/Java-020306?style=for-the-badge&logo=openjdk" alt="Java"/>
   <img src="https://img.shields.io/badge/C++-020306?style=for-the-badge&logo=c%2B%2B" alt="C++"/>
   <img src="https://img.shields.io/badge/Kotlin-020306?style=for-the-badge&logo=kotlin" alt="Kotlin"/>
@@ -68,22 +66,22 @@
   <img src="https://img.shields.io/badge/C-020306?style=for-the-badge&logo=c" alt="C"/>
 </p>
 
-#### `FRONTEND`
 <p>
-  <img src="https://img.shields.io/badge/React-020306?style=for-the-badge&logo=react" alt="React"/>
-  <img src="https://img.shields.io/badge/JavaScript-020306?style=for-the-badge&logo=javascript" alt="JavaScript"/>
-  <img src="https://img.shields.io/badge/HTML5-020306?style=for-the-badge&logo=html5" alt="HTML5"/>
-  <img src="https://img.shields.io/badge/CSS3-020306?style=for-the-badge&logo=css3" alt="CSS3"/>
-  <img src="https://img.shields.io/badge/Vite-020306?style=for-the-badge&logo=vite" alt="Vite"/>
+  <code>SYSTEMS &amp; PLATFORMS</code><br/>
+  <img src="https://img.shields.io/badge/Android-020306?style=for-the-badge&logo=android" alt="Android"/>
+  <img src="https://img.shields.io/badge/Qt-020306?style=for-the-badge&logo=Qt" alt="Qt"/>
+  <img src="https://img.shields.io/badge/CMake-020306?style=for-the-badge&logo=cmake" alt="CMake"/>
+  <img src="https://img.shields.io/badge/Git-020306?style=for-the-badge&logo=git" alt="Git"/>
+  <img src="https://img.shields.io/badge/Firebase-020306?style=for-the-badge&logo=firebase" alt="Firebase"/>
 </p>
 
-#### `SYSTEMS`
 <p>
-  <img src="https://img.shields.io/badge/Android-020306?style=for-the-badge&logo=android" alt="Android"/>
-  <img src="https://img.shields.io/badge/Firebase-020306?style=for-the-badge&logo=firebase" alt="Firebase"/>
-  <img src="https://img.shields.io/badge/Git-020306?style=for-the-badge&logo=git" alt="Git"/>
-  <img src="https://img.shields.io/badge/CMake-020306?style=for-the-badge&logo=cmake" alt="CMake"/>
-  <img src="https://img.shields.io/badge/Qt-020306?style=for-the-badge&logo=Qt" alt="Qt"/>
+  <code>WEB ARCHITECTURE</code><br/>
+  <img src="https://img.shields.io/badge/React-020306?style=for-the-badge&logo=react" alt="React"/>
+  <img src="https://img.shields.io/badge/JavaScript-020306?style=for-the-badge&logo=javascript" alt="JavaScript"/>
+  <img src="https://img.shields.io/badge/Vite-020306?style=for-the-badge&logo=vite" alt="Vite"/>
+  <img src="https://img.shields.io/badge/HTML5-020306?style=for-the-badge&logo=html5" alt="HTML5"/>
+  <img src="https://img.shields.io/badge/CSS3-020306?style=for-the-badge&logo=css3" alt="CSS3"/>
 </p>
 
 <br/>
@@ -99,14 +97,6 @@
 <br/>
 
 ### `// SYSTEM TELEMETRY`
-
-<div align="center">
-  <a href="https://github.com/Sanidhyanegi07">
-    <img src="https://streak-stats.demolab.com/?user=Sanidhyanegi07&theme=dark&background=020306&ring=58a6ff&fire=58a6ff&currStreakNum=58a6ff&sideNums=ffffff&currStreakLabel=58a6ff&sideLabels=8b949e&dates=8b949e&border=58a6ff&stroke=58a6ff&borderRadius=10" alt="GitHub Streak" height="155"/>
-  </a>
-</div>
-
-<br/>
 
 <div align="center">
   <picture>

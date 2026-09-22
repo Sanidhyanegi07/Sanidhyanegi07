@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Decorate Platane/snk snake SVG with dates, month labels, day labels,
-and an obsidian/cyan HUD systems telemetry container.
+Decorate Platane/snk snake SVG with clean dates, month labels, day labels,
+and a refined obsidian/cyan HUD systems telemetry container.
 
 Usage:
     python decorate-snake.py <path_to_dark_svg> [<path_to_light_svg>]
@@ -24,16 +24,16 @@ def decorate_snake_svg(svg_path: str, is_dark: bool = True):
     style_match = re.search(r"<style>([\s\S]*?)</style>", content)
     styles = style_match.group(1) if style_match else ""
 
-    # Enforce neon cyan snake and deep space blue/obsidian dots
+    # Refined, balanced palette (not oversaturated)
     if is_dark:
-        styles = re.sub(r"--cs:[^;]+;", "--cs:#58a6ff;", styles)
-        styles = re.sub(r"--c0:[^;]+;", "--c0:#161b22;", styles)
-        styles = re.sub(r"--c1:[^;]+;", "--c1:#0d2240;", styles)
-        styles = re.sub(r"--c2:[^;]+;", "--c2:#1158a0;", styles)
+        styles = re.sub(r"--cs:[^;]+;", "--cs:#79c0ff;", styles)
+        styles = re.sub(r"--c0:[^;]+;", "--c0:#10141a;", styles)
+        styles = re.sub(r"--c1:[^;]+;", "--c1:#0d2847;", styles)
+        styles = re.sub(r"--c2:[^;]+;", "--c2:#144b82;", styles)
         styles = re.sub(r"--c3:[^;]+;", "--c3:#1f6feb;", styles)
-        styles = re.sub(r"--c4:[^;]+;", "--c4:#58a6ff;", styles)
-        styles = re.sub(r"--ce:[^;]+;", "--ce:#161b22;", styles)
-        styles = re.sub(r"--cb:[^;]+;", "--cb:rgba(27,31,35,0.2);", styles)
+        styles = re.sub(r"--c4:[^;]+;", "--c4:#388bfd;", styles)
+        styles = re.sub(r"--ce:[^;]+;", "--ce:#10141a;", styles)
+        styles = re.sub(r"--cb:[^;]+;", "--cb:rgba(27,31,35,0.15);", styles)
 
     # Extract all rects from first <rect to the end before </svg>
     first_rect_idx = content.find("<rect")
@@ -46,8 +46,6 @@ def decorate_snake_svg(svg_path: str, is_dark: bool = True):
 
     # Calculate 53 weeks timeline
     now = datetime.now(timezone.utc)
-    # GitHub weekday: 0 = Sun, 1 = Mon, ..., 6 = Sat
-    # Python weekday(): 0 = Mon, ..., 6 = Sun
     gh_day = (now.weekday() + 1) % 7
     last_sunday = now - timedelta(days=gh_day)
     start_sunday = last_sunday - timedelta(weeks=52)
@@ -58,14 +56,14 @@ def decorate_snake_svg(svg_path: str, is_dark: bool = True):
     last_x = -100
 
     grid_offset_x = 52
-    grid_offset_y = 64
+    grid_offset_y = 60
 
     for w in range(53):
         d = start_sunday + timedelta(weeks=w)
         m = d.month - 1
         x = grid_offset_x + w * 16
         if m != prev_month:
-            if x - last_x >= 30:
+            if x - last_x >= 32:
                 month_labels.append({"x": x + 2, "month": month_names[m]})
                 last_x = x
                 prev_month = m
@@ -74,7 +72,7 @@ def decorate_snake_svg(svg_path: str, is_dark: bool = True):
     end_date_str = f"{month_names[now.month - 1].upper()} {now.year}"
 
     total_w = 956
-    total_h = 228
+    total_h = 222
     bg_color = "#020306" if is_dark else "#f6f8fa"
     border_color = "#58a6ff" if is_dark else "#0969da"
     header_color = "#58a6ff" if is_dark else "#0969da"
@@ -93,31 +91,25 @@ def decorate_snake_svg(svg_path: str, is_dark: bool = True):
     lines.append(f"      .hud-legend {{ font-family: 'JetBrains Mono', monospace; font-size: 9px; fill: {day_color}; }}")
     lines.append(f"      {styles}")
     lines.append("    </style>")
-    lines.append('    <filter id="neon-glow" x="-50%" y="-50%" width="200%" height="200%">')
-    lines.append('      <feGaussianBlur stdDeviation="2.5" result="blur"/>')
-    lines.append('      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>')
-    lines.append("    </filter>")
     lines.append("  </defs>")
     lines.append("")
     lines.append("  <!-- Obsidian Container -->")
-    lines.append(f'  <rect width="{total_w}" height="{total_h}" rx="12" fill="{bg_color}"/>')
-    lines.append(f'  <rect x="0.5" y="0.5" width="{total_w - 1}" height="{total_h - 1}" rx="12" fill="none" stroke="{border_color}" stroke-width="1" opacity="0.2"/>')
+    lines.append(f'  <rect width="{total_w}" height="{total_h}" rx="10" fill="{bg_color}"/>')
+    lines.append(f'  <rect x="0.5" y="0.5" width="{total_w - 1}" height="{total_h - 1}" rx="10" fill="none" stroke="{border_color}" stroke-width="1" opacity="0.15"/>')
     lines.append("")
     lines.append("  <!-- HUD Header -->")
-    lines.append('  <g transform="translate(24, 24)">')
-    lines.append('    <circle cx="4" cy="-3" r="3.5" fill="#58a6ff" filter="url(#neon-glow)">')
-    lines.append('      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>')
-    lines.append('    </circle>')
-    lines.append('    <text x="16" y="0" class="hud-title">&gt; SYS.TELEMETRY // CONTRIBUTION_STREAM</text>')
+    lines.append('  <g transform="translate(24, 22)">')
+    lines.append('    <circle cx="4" cy="-3" r="3" fill="#58a6ff" opacity="0.85"/>')
+    lines.append('    <text x="14" y="0" class="hud-title">&gt; SYS.TELEMETRY // CONTRIBUTION_STREAM</text>')
     lines.append(f'    <text x="{total_w - 48}" y="0" class="hud-dates" text-anchor="end">[ {start_date_str} — {end_date_str} ]</text>')
     lines.append("  </g>")
     lines.append("")
-    lines.append(f'  <line x1="24" y1="36" x2="{total_w - 24}" y2="36" stroke="{border_color}" stroke-width="1" opacity="0.15"/>')
+    lines.append(f'  <line x1="24" y1="33" x2="{total_w - 24}" y2="33" stroke="{border_color}" stroke-width="1" opacity="0.12"/>')
     lines.append("")
     lines.append("  <!-- Month Labels -->")
     lines.append('  <g id="month-labels">')
     for m in month_labels:
-        lines.append(f'    <text x="{m["x"]}" y="52" class="hud-month">{m["month"]}</text>')
+        lines.append(f'    <text x="{m["x"]}" y="48" class="hud-month">{m["month"]}</text>')
     lines.append("  </g>")
     lines.append("")
     lines.append("  <!-- Day Labels -->")
@@ -136,17 +128,17 @@ def decorate_snake_svg(svg_path: str, is_dark: bool = True):
     lines.append("  </g>")
     lines.append("")
     lines.append("  <!-- HUD Footer -->")
-    bottom_y = total_h - 16
+    bottom_y = total_h - 15
     lines.append(f'  <g transform="translate(24, {bottom_y})">')
-    lines.append('    <text x="0" y="0" class="hud-legend">&gt; SENSOR_STREAM: CONTINUOUS_EVALUATION // 24H_SYNC</text>')
-    lines.append(f'    <g transform="translate({total_w - 210}, -9)">')
-    lines.append('      <text x="-8" y="9" class="hud-legend" text-anchor="end">Less</text>')
-    lines.append('      <rect x="0" y="0" width="10" height="10" rx="2" fill="#161b22"/>')
-    lines.append('      <rect x="14" y="0" width="10" height="10" rx="2" fill="#0d2240"/>')
-    lines.append('      <rect x="28" y="0" width="10" height="10" rx="2" fill="#1158a0"/>')
-    lines.append('      <rect x="42" y="0" width="10" height="10" rx="2" fill="#1f6feb"/>')
-    lines.append('      <rect x="56" y="0" width="10" height="10" rx="2" fill="#58a6ff"/>')
-    lines.append('      <text x="74" y="9" class="hud-legend">More</text>')
+    lines.append('    <text x="0" y="0" class="hud-legend">&gt; SENSOR_STREAM: ACTIVE // 24H_SYNC</text>')
+    lines.append(f'    <g transform="translate({total_w - 200}, -8)">')
+    lines.append('      <text x="-8" y="8" class="hud-legend" text-anchor="end">Less</text>')
+    lines.append('      <rect x="0" y="0" width="9" height="9" rx="2" fill="#10141a"/>')
+    lines.append('      <rect x="13" y="0" width="9" height="9" rx="2" fill="#0d2847"/>')
+    lines.append('      <rect x="26" y="0" width="9" height="9" rx="2" fill="#144b82"/>')
+    lines.append('      <rect x="39" y="0" width="9" height="9" rx="2" fill="#1f6feb"/>')
+    lines.append('      <rect x="52" y="0" width="9" height="9" rx="2" fill="#388bfd"/>')
+    lines.append('      <text x="68" y="8" class="hud-legend">More</text>')
     lines.append("    </g>")
     lines.append("  </g>")
     lines.append("</svg>")
