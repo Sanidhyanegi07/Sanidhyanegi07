@@ -2,11 +2,6 @@
   <img src="header.svg" width="100%" alt="Sanidhya Negi"/>
 </div>
 
-<!-- TYPING SVG -->
-<div align="center" style="margin-top: 10px;">
-  <a href="https://github.com/Sanidhyanegi07"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=false&width=600&height=35&lines=%3E+Systems+Engineering_;%3E+C%2B%2B+%7C+Java+%7C+System+Design_;%3E+Building+Fault-Tolerant+Software_" alt="Typing SVG"/></a>
-</div>
-
 <div align="center" style="margin-top: 12px;">
   <a href="https://github.com/Sanidhyanegi07?tab=followers"><img src="https://img.shields.io/github/followers/Sanidhyanegi07?style=flat-square&color=020306&labelColor=020306&logo=github&logoColor=58a6ff" alt="followers"/></a>
   &nbsp;
