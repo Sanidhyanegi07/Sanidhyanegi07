@@ -136,5 +136,5 @@
 <br/>
 
 <div align="center">
-  <sub><i>"Anxiety is a feeling one gets when one challenges themselves." — 100 Meters</i></sub>
+  <sub><i>"Any fool can write code that a computer can understand. Good programmers write code that humans can understand." — Martin Fowler</i></sub>
 </div>
