@@ -34,8 +34,6 @@ jobs:
           from pathlib import Path
 
           quotes = [
-              '"Running the 100m faster than anyone else can solve almost anything." — Togashi (100 Meters)',
-              '"So this is my reality. Well then, if that\'s the case... it\'s time to escape reality!" — Togashi (100 Meters)',
               '"Even someone like me can taste victory once, huh?" — Komiya (100 Meters)',
               '"Until you know your own reality, you can\'t escape from it. Running away with your eyes open and standing still with them closed differ." — Kaidō (100 Meters)',
               '"Looking straight into reality is terrifying, you see." — Kaidō (100 Meters)',
