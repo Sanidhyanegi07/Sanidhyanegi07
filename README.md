@@ -126,5 +126,5 @@
 <br/>
 
 <div align="center">
-  <sub><i>"Running the 100m faster than anyone else can solve almost anything." — Togashi (100 Meters)</i></sub>
+  <sub><i>"When you give up, that's when the game is over." — Anzai-sensei (Slam Dunk)</i></sub>
 </div>
