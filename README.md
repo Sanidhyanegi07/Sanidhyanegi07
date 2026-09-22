@@ -30,16 +30,16 @@
 ### `// CONNECT`
 
 <p align="center">
-  <a href="https://github.com/Sanidhyanegi07" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/GITHUB-Sanidhya%20Negi-020306?style=flat-square&labelColor=020306&logo=github&logoColor=ffffff" alt="GitHub" style="vertical-align:middle; border:none;"/>
+  <a href="https://github.com/Sanidhyanegi07">
+    <img src="https://img.shields.io/badge/GITHUB-Sanidhya%20Negi-020306?style=flat-square&labelColor=020306&logo=github&logoColor=ffffff" alt="GitHub"/>
   </a>
-  <span>&nbsp;&nbsp;</span>
-  <a href="https://www.linkedin.com/in/sanidhya-negi-49aa8a35a/" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/LINKEDIN-Sanidhya%20Negi-020306?style=flat-square&labelColor=020306&logo=linkedin&logoColor=ffffff" alt="LinkedIn" style="vertical-align:middle; border:none;"/>
+  &nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/sanidhya-negi-49aa8a35a/">
+    <img src="https://img.shields.io/badge/LINKEDIN-Sanidhya%20Negi-020306?style=flat-square&labelColor=020306&logo=linkedin&logoColor=ffffff" alt="LinkedIn"/>
   </a>
-  <span>&nbsp;&nbsp;</span>
-  <a href="mailto:sanidhyanegi050107@gmail.com" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/EMAIL-Contact%20Me-020306?style=flat-square&labelColor=020306&logo=gmail&logoColor=ffffff" alt="Email" style="vertical-align:middle; border:none;"/>
+  &nbsp;&nbsp;
+  <a href="mailto:sanidhyanegi050107@gmail.com">
+    <img src="https://img.shields.io/badge/EMAIL-Contact%20Me-020306?style=flat-square&labelColor=020306&logo=gmail&logoColor=ffffff" alt="Email"/>
   </a>
 </p>
 
