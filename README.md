@@ -27,16 +27,6 @@
 
 <br/>
 
-### `// CURRENT_FOCUS`
-
-```
-🔭  Building GeoRescuX — offline-first disaster-response platform for SIH 2026
-🌱  Exploring distributed systems, cloud architecture & low-level optimizations
-⚡  Sharpening DSA skills & competitive programming fundamentals
-```
-
-<br/>
-
 ### `// CONNECT`
 
 <p align="center">
