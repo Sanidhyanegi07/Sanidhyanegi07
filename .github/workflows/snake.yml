@@ -1,8 +1,8 @@
-name: Generate Contribution Telemetry
+name: Generate Snake
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 */6 * * *'
   push:
     branches:
       - main
@@ -15,25 +15,13 @@ jobs:
       contents: write
     timeout-minutes: 10
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
       - name: Generate contribution snake
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-snake.svg?color_snake=#79c0ff&color_dots=#10141a,#0d2847,#144b82,#1f6feb,#388bfd
-            dist/github-snake-dark.svg?palette=github-dark&color_snake=#79c0ff&color_dots=#10141a,#0d2847,#144b82,#1f6feb,#388bfd
-
-      - name: Decorate snake with dates & HUD telemetry
-        run: |
-          python .github/scripts/decorate-snake.py dist/github-snake-dark.svg dist/github-snake.svg
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4

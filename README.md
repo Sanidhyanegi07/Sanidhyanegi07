@@ -98,11 +98,19 @@
 
 ### `// SYSTEM TELEMETRY`
 
+<!-- STREAK STATS -->
+<div align="center">
+  <a href="https://github.com/Sanidhyanegi07"><img height="150" src="https://streak-stats.demolab.com/?user=Sanidhyanegi07&theme=dark&background=020306&ring=58a6ff&fire=58a6ff&currStreakNum=58a6ff&sideNums=ffffff&currStreakLabel=58a6ff&sideLabels=ffffff&dates=ffffff&cache=1725450000" alt="GitHub streak"/></a>
+</div>
+
+<br/>
+
+<!-- CONTRIBUTION SNAKE -->
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sanidhyanegi07/Sanidhyanegi07/output/github-snake-dark.svg"/>
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sanidhyanegi07/Sanidhyanegi07/output/github-snake.svg"/>
-    <img alt="System Contribution Telemetry" src="https://raw.githubusercontent.com/Sanidhyanegi07/Sanidhyanegi07/output/github-snake-dark.svg" width="100%"/>
+    <img alt="Contribution Snake" src="https://raw.githubusercontent.com/Sanidhyanegi07/Sanidhyanegi07/output/github-snake.svg" width="100%"/>
   </picture>
 </div>
 
