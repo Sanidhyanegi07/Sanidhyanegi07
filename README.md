@@ -31,20 +31,16 @@
 
 <p align="center">
   <a href="https://github.com/Sanidhyanegi07">
-    <img src="https://img.shields.io/badge/GitHub-Sanidhya%20Negi-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+    <img src="https://img.shields.io/badge/GITHUB-Sanidhya%20Negi-020306?style=flat-square&labelColor=020306&logo=github&logoColor=58a6ff" alt="GitHub"/>
   </a>
-  &nbsp;&nbsp;
+  &nbsp;
   <a href="https://www.linkedin.com/in/sanidhya-negi-49aa8a35a/">
-    <img src="https://img.shields.io/badge/LinkedIn-Sanidhya%20Negi-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+    <img src="https://img.shields.io/badge/LINKEDIN-Sanidhya%20Negi-020306?style=flat-square&labelColor=020306&logo=linkedin&logoColor=0A66C2" alt="LinkedIn"/>
   </a>
-  &nbsp;&nbsp;
+  &nbsp;
   <a href="mailto:sanidhyanegi050107@gmail.com">
-    <img src="https://img.shields.io/badge/Email-sanidhyanegi050107%40gmail.com-444444?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email"/>
+    <img src="https://img.shields.io/badge/EMAIL-Contact%20Me-020306?style=flat-square&labelColor=020306&logo=gmail&logoColor=EA4335" alt="Email"/>
   </a>
-</p>
-
-<p align="center">
-  <sub>Open to building, collaborating, and solving meaningful engineering problems.</sub>
 </p>
 
 <br/>
