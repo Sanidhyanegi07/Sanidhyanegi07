@@ -19,7 +19,7 @@
     </td>
     <td valign="middle">
       <p style="margin: 0; line-height: 1.6;">
-        Computer Science undergraduate who thinks in systems, not scripts. From low-level memory management in <code>C++</code> to fault-tolerant backends in <code>Java</code>, every line I write is driven by curiosity, precision, and a desire to build useful software.
+       Computer Science undergraduate building reliable software that goes beyond the happy path. From low-level C++ and Android systems to Java backends, I enjoy solving complex engineering problems with clean architecture, performance, and precision. My projects focus on real-world challenges like offline-first systems, fault tolerance, networking, and scalable data. Always learning, debugging, and turning ideas into useful software.
       </p>
     </td>
   </tr>
