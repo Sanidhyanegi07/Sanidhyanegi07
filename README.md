@@ -2,7 +2,12 @@
   <img src="header.svg" width="100%" alt="Sanidhya Negi"/>
 </div>
 
-<div align="center" style="margin-top: 20px;">
+<!-- TYPING SVG -->
+<div align="center" style="margin-top: 10px;">
+  <a href="https://github.com/Sanidhyanegi07"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=false&width=600&height=35&lines=%3E+Systems+Engineering_;%3E+C%2B%2B+%7C+Java+%7C+System+Design_;%3E+Building+Fault-Tolerant+Software_" alt="Typing SVG"/></a>
+</div>
+
+<div align="center" style="margin-top: 12px;">
   <a href="https://github.com/Sanidhyanegi07?tab=followers"><img src="https://img.shields.io/github/followers/Sanidhyanegi07?style=flat-square&color=020306&labelColor=020306&logo=github&logoColor=58a6ff" alt="followers"/></a>
   &nbsp;
   <img src="https://komarev.com/ghpvc/?username=Sanidhyanegi07&label=SYS.VIEWS&style=flat-square&color=020306&labelColor=020306" alt="views"/>
@@ -24,6 +29,28 @@
     </td>
   </tr>
 </table>
+
+<br/>
+
+### `// CURRENT_FOCUS`
+
+```
+🔭  Building GeoRescuX — offline-first disaster-response platform for SIH 2026
+🌱  Exploring distributed systems, cloud architecture & low-level optimizations
+⚡  Sharpening DSA skills & competitive programming fundamentals
+```
+
+<br/>
+
+### `// CONNECT`
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/sanidhya-negi-49aa8a35a/"><img src="https://img.shields.io/badge/LinkedIn-020306?style=for-the-badge&logo=linkedin&logoColor=0A66C2" alt="LinkedIn"/></a>
+  &nbsp;
+  <a href="mailto:sanidhyanegi050107@gmail.com"><img src="https://img.shields.io/badge/Email-020306?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email"/></a>
+  &nbsp;
+  <a href="https://github.com/Sanidhyanegi07"><img src="https://img.shields.io/badge/GitHub-020306?style=for-the-badge&logo=github&logoColor=ffffff" alt="GitHub"/></a>
+</p>
 
 <br/>
 
@@ -57,22 +84,57 @@
 
 ### `// ENGINEERING_WORK`
 
-| `ARCHITECTURE` | `DESCRIPTION` | `TECH` |
-| :--- | :--- | :--- |
-| [**Academic Management System**](https://github.com/Sanidhyanegi07/Attendance-Management-System) | Desktop attendance platform with role-based access control, OTP attendance, medical exemptions, analytics, admit-card eligibility, audit logging, and local persistence. | **C++17** · **Qt 6 Widgets** · **CMake** · **SHA-256** · **Local JSON** |
-| [**GeoRescuX**](https://github.com/Sanidhyanegi07/SIH2026-BuildForIndia_2.0) | Offline-first disaster-response Android platform for SOS coordination, GPS intelligence, offline mapping, safe routing, BLE emergency relay, and deferred cloud sync. | **Kotlin** · **Android SDK** · **Jetpack** · **WorkManager** · **Firebase** · **OpenStreetMap** · **osmdroid** · **Mapsforge** · **BLE** |
-| [**Webathon / NIRVAN '26**](https://github.com/Sanidhyanegi07/webathon) | Responsive technical-festival platform with event filtering, dynamic scheduling, interactive modals, countdown mechanics, and SEO-friendly routing. | **React 18** · **JavaScript** · **Vite** · **Tailwind CSS** · **Firebase** |
+| `ARCHITECTURE` | `DESCRIPTION` | `TECH` | `STATUS` |
+| :--- | :--- | :--- | :---: |
+| [**Academic Management System**](https://github.com/Sanidhyanegi07/Attendance-Management-System) | Desktop attendance platform with role-based access control, OTP attendance, medical exemptions, analytics, admit-card eligibility, audit logging, and local persistence. | **C++17** · **Qt 6 Widgets** · **CMake** · **SHA-256** · **Local JSON** | 🟢 Active |
+| [**GeoRescuX**](https://github.com/Sanidhyanegi07/SIH2026-BuildForIndia_2.0) | Offline-first disaster-response Android platform for SOS coordination, GPS intelligence, offline mapping, safe routing, BLE emergency relay, and deferred cloud sync. | **Kotlin** · **Android SDK** · **Jetpack** · **WorkManager** · **Firebase** · **OpenStreetMap** · **osmdroid** · **Mapsforge** · **BLE** | 🟡 In Progress |
+| [**Webathon / NIRVAN '26**](https://github.com/Sanidhyanegi07/webathon) | Responsive technical-festival platform with event filtering, dynamic scheduling, interactive modals, countdown mechanics, and SEO-friendly routing. | **React 18** · **JavaScript** · **Vite** · **Tailwind CSS** · **Firebase** | 🟢 Active |
 
 <br/>
 
 ### `// SYSTEM TELEMETRY`
 
-<div align="center" style="margin-top: 15px;">
+<!-- GITHUB TROPHIES -->
+<div align="center">
+  <a href="https://github.com/Sanidhyanegi07"><img src="https://github-profile-trophy.vercel.app/?username=Sanidhyanegi07&theme=darkhub&no-bg=true&no-frame=true&column=7&margin-w=10" alt="GitHub Trophies"/></a>
+</div>
+
+<br/>
+
+<!-- STATS CARDS -->
+<div align="center">
+  <a href="https://github.com/Sanidhyanegi07"><img height="160" src="https://github-readme-stats.vercel.app/api?username=Sanidhyanegi07&show_icons=true&theme=github_dark&bg_color=020306&title_color=58a6ff&icon_color=58a6ff&text_color=ffffff&border_color=0d1117&hide_border=false&count_private=true" alt="GitHub Stats"/></a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/Sanidhyanegi07"><img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sanidhyanegi07&layout=compact&theme=github_dark&bg_color=020306&title_color=58a6ff&text_color=ffffff&border_color=0d1117&hide_border=false&langs_count=8" alt="Top Languages"/></a>
+</div>
+
+<br/>
+
+<!-- STREAK STATS -->
+<div align="center">
   <a href="https://github.com/Sanidhyanegi07"><img height="150" src="https://streak-stats.demolab.com/?user=Sanidhyanegi07&theme=dark&background=020306&ring=58a6ff&fire=58a6ff&currStreakNum=58a6ff&sideNums=ffffff&currStreakLabel=58a6ff&sideLabels=ffffff&dates=ffffff" alt="GitHub streak"/></a>
 </div>
 
 <br/>
 
+<!-- ACTIVITY GRAPH -->
 <div align="center">
-  <sub><i>“Anxiety is a feeling one gets when one challenges themselves.” — 100 Meters — 100 Meters</i></sub>
+  <a href="https://github.com/Sanidhyanegi07"><img src="https://github-readme-activity-graph.vercel.app/graph?username=Sanidhyanegi07&bg_color=020306&color=58a6ff&line=58a6ff&point=ffffff&area_color=1f6feb&area=true&hide_border=true" alt="Activity Graph"/></a>
+</div>
+
+<br/>
+
+<!-- CONTRIBUTION SNAKE -->
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sanidhyanegi07/Sanidhyanegi07/output/github-snake-dark.svg"/>
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sanidhyanegi07/Sanidhyanegi07/output/github-snake.svg"/>
+    <img alt="Contribution Snake" src="https://raw.githubusercontent.com/Sanidhyanegi07/Sanidhyanegi07/output/github-snake.svg" width="100%"/>
+  </picture>
+</div>
+
+<br/>
+
+<div align="center">
+  <sub><i>"Anxiety is a feeling one gets when one challenges themselves." — 100 Meters</i></sub>
 </div>

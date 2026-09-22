@@ -22,32 +22,40 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Refresh README quote and stats cache
+      - name: Rotate quote and bust stats cache
         shell: bash
         run: |
           set -euo pipefail
 
           timestamp=$(date +%s)
-          python - <<'PY'
+
+          python3 - <<'PY'
+          import random
           from pathlib import Path
+
+          quotes = [
+              '"Anxiety is a feeling one gets when one challenges themselves." — 100 Meters',
+              '"Simplicity is prerequisite for reliability." — Edsger W. Dijkstra',
+              '"First, solve the problem. Then, write the code." — John Johnson',
+              '"Talk is cheap. Show me the code." — Linus Torvalds',
+              '"Any fool can write code that a computer can understand. Good programmers write code that humans can understand." — Martin Fowler',
+              '"The most disastrous thing that you can ever learn is your first programming language." — Alan Kay',
+          ]
 
           readme = Path("README.md")
           content = readme.read_text(encoding="utf-8")
 
-          old_quotes = (
-              "“Simplicity is prerequisite for reliability.” — Edsger W. Dijkstra",
-              "“Anxiety is a feeling one gets when one challenges themselves.”",
-          )
-          new_quote = "“Anxiety is a feeling one gets when one challenges themselves.” — 100 Meters"
-
-          for old_quote in old_quotes:
-              if old_quote in content:
-                  content = content.replace(old_quote, new_quote, 1)
+          # Find and replace the current quote
+          for q in quotes:
+              if q in content:
+                  new_quote = random.choice([x for x in quotes if x != q])
+                  content = content.replace(q, new_quote, 1)
                   break
 
           readme.write_text(content, encoding="utf-8")
           PY
 
+          # Bust image caches
           sed -i "s/cache=[0-9]*/cache=${timestamp}/g" README.md
 
           if git diff --quiet -- README.md; then
@@ -58,5 +66,5 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
           git add README.md
-          git commit -m "docs: polish profile README [skip ci]"
+          git commit -m "docs: rotate quote & refresh stats [skip ci]"
           git push
