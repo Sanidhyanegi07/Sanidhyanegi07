@@ -30,11 +30,21 @@
 ### `// CONNECT`
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/sanidhya-negi-49aa8a35a/"><img src="https://img.shields.io/badge/LinkedIn-020306?style=for-the-badge&logo=linkedin&logoColor=0A66C2" alt="LinkedIn"/></a>
-  &nbsp;
-  <a href="mailto:sanidhyanegi050107@gmail.com"><img src="https://img.shields.io/badge/Email-020306?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email"/></a>
-  &nbsp;
-  <a href="https://github.com/Sanidhyanegi07"><img src="https://img.shields.io/badge/GitHub-020306?style=for-the-badge&logo=github&logoColor=ffffff" alt="GitHub"/></a>
+  <a href="https://github.com/Sanidhyanegi07">
+    <img src="https://img.shields.io/badge/GitHub-Sanidhyanegi07-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/sanidhya-negi-49aa8a35a/">
+    <img src="https://img.shields.io/badge/LinkedIn-Sanidhya%20Negi-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  &nbsp;&nbsp;
+  <a href="mailto:sanidhyanegi050107@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Contact%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Sanidhyanegi07&style=for-the-badge&color=0A66C2&label=PROFILE+VIEWS" alt="Profile Views"/>
 </p>
 
 <br/>
