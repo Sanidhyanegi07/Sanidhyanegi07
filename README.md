@@ -105,17 +105,6 @@
 
 <br/>
 
-<!-- CONTRIBUTION SNAKE -->
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sanidhyanegi07/Sanidhyanegi07/output/github-snake-dark.svg?cache=1725450000"/>
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sanidhyanegi07/Sanidhyanegi07/output/github-snake.svg?cache=1725450000"/>
-    <img alt="Contribution Snake" src="https://raw.githubusercontent.com/Sanidhyanegi07/Sanidhyanegi07/output/github-snake.svg?cache=1725450000" width="100%"/>
-  </picture>
-</div>
-
-<br/>
-
 <div align="center">
   <sub><i>"When you give up, that's when the game is over." — Anzai-sensei (Slam Dunk)</i></sub>
 </div>
