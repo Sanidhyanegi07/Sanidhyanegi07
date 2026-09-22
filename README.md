@@ -43,10 +43,6 @@
   </a>
 </p>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Sanidhyanegi07&style=for-the-badge&color=0A66C2&label=PROFILE+VIEWS" alt="Profile Views"/>
-</p>
-
 <br/>
 
 ### `// CORE_STACK`
