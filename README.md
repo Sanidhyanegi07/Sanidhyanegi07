@@ -19,7 +19,7 @@
     </td>
     <td valign="middle">
       <p style="margin: 0; line-height: 1.6;">
-       Computer Science undergraduate who thinks in systems, not scripts—building software that is reliable, efficient, and built for the real world. I work across C++, Java, Android, and backend systems, with a focus on clean architecture, fault tolerance, networking, and performance. I enjoy turning complex problems into practical, scalable solutions, from offline-first applications to resilient distributed systems. Always learning, debugging, and building with purpose.
+       Computer Science undergraduate who thinks in systems, not scripts—building software that is reliable, efficient, and built for the real world. I work across <code>C++<code>, Java, Android, and backend systems, with a focus on clean architecture, fault tolerance, networking, and performance. I enjoy turning complex problems into practical, scalable solutions, from offline-first applications to resilient distributed systems. Always learning, debugging, and building with purpose.
       </p>
     </td>
   </tr>
