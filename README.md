@@ -19,7 +19,7 @@
     </td>
     <td valign="middle">
       <p style="margin: 0; line-height: 1.6;">
-       Computer Science undergraduate building reliable software that goes beyond the happy path. From low-level C++ and Android systems to Java backends, I enjoy solving complex engineering problems with clean architecture, performance, and precision. My projects focus on real-world challenges like offline-first systems, fault tolerance, networking, and scalable data. Always learning, debugging, and turning ideas into useful software.
+       Computer Science undergraduate who thinks in systems, not scripts—building software that is reliable, efficient, and built for the real world. I work across C++, Java, Android, and backend systems, with a focus on clean architecture, fault tolerance, networking, and performance. I enjoy turning complex problems into practical, scalable solutions, from offline-first applications to resilient distributed systems. Always learning, debugging, and building with purpose.
       </p>
     </td>
   </tr>
