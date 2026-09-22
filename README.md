@@ -85,32 +85,9 @@
 
 ### `// SYSTEM TELEMETRY`
 
-<!-- GITHUB TROPHIES -->
-<div align="center">
-  <a href="https://github.com/Sanidhyanegi07"><img src="https://github-profile-trophy.vercel.app/?username=Sanidhyanegi07&theme=darkhub&no-bg=true&no-frame=true&column=7&margin-w=10" alt="GitHub Trophies"/></a>
-</div>
-
-<br/>
-
-<!-- STATS CARDS -->
-<div align="center">
-  <a href="https://github.com/Sanidhyanegi07"><img height="160" src="https://github-readme-stats.vercel.app/api?username=Sanidhyanegi07&show_icons=true&theme=github_dark&bg_color=020306&title_color=58a6ff&icon_color=58a6ff&text_color=ffffff&border_color=0d1117&hide_border=false&count_private=true" alt="GitHub Stats"/></a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/Sanidhyanegi07"><img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sanidhyanegi07&layout=compact&theme=github_dark&bg_color=020306&title_color=58a6ff&text_color=ffffff&border_color=0d1117&hide_border=false&langs_count=8" alt="Top Languages"/></a>
-</div>
-
-<br/>
-
 <!-- STREAK STATS -->
 <div align="center">
   <a href="https://github.com/Sanidhyanegi07"><img height="150" src="https://streak-stats.demolab.com/?user=Sanidhyanegi07&theme=dark&background=020306&ring=58a6ff&fire=58a6ff&currStreakNum=58a6ff&sideNums=ffffff&currStreakLabel=58a6ff&sideLabels=ffffff&dates=ffffff" alt="GitHub streak"/></a>
-</div>
-
-<br/>
-
-<!-- ACTIVITY GRAPH -->
-<div align="center">
-  <a href="https://github.com/Sanidhyanegi07"><img src="https://github-readme-activity-graph.vercel.app/graph?username=Sanidhyanegi07&bg_color=020306&color=58a6ff&line=58a6ff&point=ffffff&area_color=1f6feb&area=true&hide_border=true" alt="Activity Graph"/></a>
 </div>
 
 <br/>
