@@ -34,12 +34,21 @@ jobs:
           from pathlib import Path
 
           quotes = [
+              '"Running the 100m faster than anyone else can solve almost anything." — Togashi (100 Meters)',
+              '"So this is my reality. Well then, if that\'s the case... it\'s time to escape reality!" — Togashi (100 Meters)',
+              '"Even someone like me can taste victory once, huh?" — Komiya (100 Meters)',
+              '"Until you know your own reality, you can\'t escape from it. Running away with your eyes open and standing still with them closed differ." — Kaidō (100 Meters)',
+              '"Looking straight into reality is terrifying, you see." — Kaidō (100 Meters)',
               '"Anxiety is a feeling one gets when one challenges themselves." — 100 Meters',
-              '"Simplicity is prerequisite for reliability." — Edsger W. Dijkstra',
-              '"First, solve the problem. Then, write the code." — John Johnson',
-              '"Talk is cheap. Show me the code." — Linus Torvalds',
-              '"Any fool can write code that a computer can understand. Good programmers write code that humans can understand." — Martin Fowler',
-              '"The most disastrous thing that you can ever learn is your first programming language." — Alan Kay',
+              '"Talent is something you bloom, instinct is something you polish." — Oikawa Tōru (Haikyū!!)',
+              '"The last ones standing are the ones who trained the hardest." — Haikyū!!',
+              '"Do you need a reason to not want to lose?" — Hinata Shōyō (Haikyū!!)',
+              '"A person grows when they\'re pushed to their limit." — Run with the Wind',
+              '"Hard work is worthless for those that don\'t believe in themselves." — Naruto Uzumaki',
+              '"A lesson without pain is meaningless. You can\'t gain something without sacrificing something in return." — Edward Elric (FMA)',
+              '"If you don\'t like your destiny, don\'t accept it. Instead, have the courage to change it." — Naruto Uzumaki',
+              '"When you give up, that\'s when the game is over." — Anzai-sensei (Slam Dunk)',
+              '"The only one who can beat me is me." — Aomine Daiki (Kuroko\'s Basketball)',
           ]
 
           readme = Path("README.md")

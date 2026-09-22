@@ -63,6 +63,7 @@
 <p>
   <img src="https://img.shields.io/badge/Java-020306?style=for-the-badge&logo=openjdk" alt="Java"/>
   <img src="https://img.shields.io/badge/C++-020306?style=for-the-badge&logo=c%2B%2B" alt="C++"/>
+  <img src="https://img.shields.io/badge/Kotlin-020306?style=for-the-badge&logo=kotlin" alt="Kotlin"/>
   <img src="https://img.shields.io/badge/Python-020306?style=for-the-badge&logo=python" alt="Python"/>
   <img src="https://img.shields.io/badge/C-020306?style=for-the-badge&logo=c" alt="C"/>
 </p>
@@ -78,6 +79,8 @@
 
 #### `SYSTEMS`
 <p>
+  <img src="https://img.shields.io/badge/Android-020306?style=for-the-badge&logo=android" alt="Android"/>
+  <img src="https://img.shields.io/badge/Firebase-020306?style=for-the-badge&logo=firebase" alt="Firebase"/>
   <img src="https://img.shields.io/badge/Git-020306?style=for-the-badge&logo=git" alt="Git"/>
   <img src="https://img.shields.io/badge/CMake-020306?style=for-the-badge&logo=cmake" alt="CMake"/>
   <img src="https://img.shields.io/badge/Qt-020306?style=for-the-badge&logo=Qt" alt="Qt"/>
@@ -123,5 +126,5 @@
 <br/>
 
 <div align="center">
-  <sub><i>"Any fool can write code that a computer can understand. Good programmers write code that humans can understand." — Martin Fowler</i></sub>
+  <sub><i>"Running the 100m faster than anyone else can solve almost anything." — Togashi (100 Meters)</i></sub>
 </div>

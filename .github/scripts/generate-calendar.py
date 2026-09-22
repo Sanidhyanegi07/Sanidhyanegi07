@@ -30,10 +30,10 @@ MONTH_LABEL_COLOR = "#c9d1d9"
 # Contribution level colors (0 = no contributions → 4 = max)
 LEVEL_COLORS = [
     "#161b22",   # Level 0 — empty
-    "#0e4429",   # Level 1 — low
-    "#006d32",   # Level 2 — medium
-    "#26a641",   # Level 3 — high
-    "#39d353",   # Level 4 — max
+    "#0d2240",   # Level 1 — low
+    "#1158a0",   # Level 2 — medium
+    "#1f6feb",   # Level 3 — high
+    "#58a6ff",   # Level 4 — max
 ]
 
 CELL_SIZE = 13
