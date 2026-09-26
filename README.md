@@ -100,11 +100,11 @@
 
 <!-- STREAK STATS -->
 <div align="center">
-  <a href="https://github.com/Sanidhyanegi07"><img height="150" src="https://streak-stats.demolab.com/?user=Sanidhyanegi07&theme=dark&background=020306&ring=58a6ff&fire=58a6ff&currStreakNum=58a6ff&sideNums=ffffff&currStreakLabel=58a6ff&sideLabels=ffffff&dates=ffffff&cache=1790369824" alt="GitHub streak"/></a>
+  <a href="https://github.com/Sanidhyanegi07"><img height="150" src="https://streak-stats.demolab.com/?user=Sanidhyanegi07&theme=dark&background=020306&ring=58a6ff&fire=58a6ff&currStreakNum=58a6ff&sideNums=ffffff&currStreakLabel=58a6ff&sideLabels=ffffff&dates=ffffff&cache=1790391214" alt="GitHub streak"/></a>
 </div>
 
 <br/>
 
 <div align="center">
-  <sub><i>"Do you need a reason to not want to lose?" — Hinata Shōyō (Haikyū!!)</i></sub>
+  <sub><i>"Hard work is worthless for those that don't believe in themselves." — Naruto Uzumaki</i></sub>
 </div>
