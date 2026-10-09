@@ -100,11 +100,11 @@
 
 <!-- STREAK STATS -->
 <div align="center">
-  <a href="https://github.com/Sanidhyanegi07"><img height="150" src="https://streak-stats.demolab.com/?user=Sanidhyanegi07&theme=dark&background=020306&ring=58a6ff&fire=58a6ff&currStreakNum=58a6ff&sideNums=ffffff&currStreakLabel=58a6ff&sideLabels=ffffff&dates=ffffff&cache=1791548566" alt="GitHub streak"/></a>
+  <a href="https://github.com/Sanidhyanegi07"><img height="150" src="https://streak-stats.demolab.com/?user=Sanidhyanegi07&theme=dark&background=020306&ring=58a6ff&fire=58a6ff&currStreakNum=58a6ff&sideNums=ffffff&currStreakLabel=58a6ff&sideLabels=ffffff&dates=ffffff&cache=1791583496" alt="GitHub streak"/></a>
 </div>
 
 <br/>
 
 <div align="center">
-  <sub><i>"If you don't like your destiny, don't accept it. Instead, have the courage to change it." — Naruto Uzumaki</i></sub>
+  <sub><i>"Looking straight into reality is terrifying, you see." — Kaidō (100 Meters)</i></sub>
 </div>
