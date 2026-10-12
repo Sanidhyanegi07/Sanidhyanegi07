@@ -106,5 +106,5 @@
 <br/>
 
 <div align="center">
-  <sub><i>"Even someone like me can taste victory once, huh?" — Komiya (100 Meters)</i></sub>
+  <sub><i>"The hardest race is the one against the person you were yesterday."</i></sub>
 </div>

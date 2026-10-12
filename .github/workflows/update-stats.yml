@@ -2,7 +2,7 @@ name: Update Stats Cache Buster
 
 on:
   schedule:
-    # Runs every 6 hours to keep stats fresh
+    # Runs every 6 hours to keep stats fresh & rotate quote
     - cron: '0 */6 * * *'
   push:
     paths:
@@ -21,57 +21,73 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
       - name: Rotate quote and bust stats cache
         shell: bash
         run: |
           set -euo pipefail
 
-          timestamp=$(date +%s)
-
           python3 - <<'PY'
           import random
+          import re
+          import time
           from pathlib import Path
 
           quotes = [
-              '"Even someone like me can taste victory once, huh?" — Komiya (100 Meters)',
-              '"Until you know your own reality, you can\'t escape from it. Running away with your eyes open and standing still with them closed differ." — Kaidō (100 Meters)',
-              '"Looking straight into reality is terrifying, you see." — Kaidō (100 Meters)',
-              '"Anxiety is a feeling one gets when one challenges themselves." — 100 Meters',
-              '"Talent is something you bloom, instinct is something you polish." — Oikawa Tōru (Haikyū!!)',
-              '"The last ones standing are the ones who trained the hardest." — Haikyū!!',
-              '"Do you need a reason to not want to lose?" — Hinata Shōyō (Haikyū!!)',
-              '"A person grows when they\'re pushed to their limit." — Run with the Wind',
-              '"Hard work is worthless for those that don\'t believe in themselves." — Naruto Uzumaki',
-              '"A lesson without pain is meaningless. You can\'t gain something without sacrificing something in return." — Edward Elric (FMA)',
-              '"If you don\'t like your destiny, don\'t accept it. Instead, have the courage to change it." — Naruto Uzumaki',
-              '"When you give up, that\'s when the game is over." — Anzai-sensei (Slam Dunk)',
-              '"The only one who can beat me is me." — Aomine Daiki (Kuroko\'s Basketball)',
+              '"The hardest race is the one against the person you were yesterday."',
+              '"Sometimes, understanding yourself is harder than defeating anyone else."',
+              '"You don’t need to be the best. You need to know why you keep going."',
+              '"The fear of finding your limits is often greater than the limits themselves."',
+              '"Not everyone who runs is trying to win. Some are trying to understand themselves."',
+              '"Talent may give you a head start, but it cannot decide where you finish."',
+              '"There is a difference between giving up and realizing you are chasing the wrong thing."',
+              '"Growth begins when excuses stop making sense."',
+              '"You can run from reality, but you cannot outrun what you refuse to understand."',
+              '"Maybe the point was never to win, but to discover how far you could go."',
+              '"The more seriously you chase something, the more you discover about yourself."',
+              '"Being afraid doesn’t mean you’re weak. Sometimes, it means you finally have something to lose."',
+              '"Comparison can turn another person’s greatest strength into your deepest insecurity."',
+              '"Some races are measured in seconds. Others take a lifetime to understand."',
+              '"The outcome is uncertain. The effort is yours."',
+              '"Rejection is an event, not a definition of who you are."',
+              '"You can prepare for a moment for years and still meet a version of yourself you never expected."',
+              '"There is no finish line where you finally become enough."',
+              '"Your pace is not proof of your potential. Some things take longer to become visible."',
+              '"Sometimes, the truth you avoid is the very thing that could set you free."',
+              '"Winning tells you what you achieved. Losing can reveal what truly mattered to you."',
+              '"A life built to impress others can leave you a stranger to yourself."',
+              '"The pursuit of perfection can make you forget why you started in the first place."',
+              '"Struggle does not promise success, but it can change the way you understand failure."',
+              '"Growing up sometimes means letting go of goals that no longer belong to you."'
           ]
 
-          readme = Path("README.md")
-          content = readme.read_text(encoding="utf-8")
+          readme_path = Path("README.md")
+          content = readme_path.read_text(encoding="utf-8")
 
-          # Find and replace the current quote
-          for q in quotes:
-              if q in content:
-                  new_quote = random.choice([x for x in quotes if x != q])
-                  content = content.replace(q, new_quote, 1)
-                  break
+          # Rotate quote
+          def replace_quote(match):
+              current = match.group(1)
+              choices = [q for q in quotes if q != current]
+              return f'<sub><i>{random.choice(choices)}</i></sub>'
 
-          readme.write_text(content, encoding="utf-8")
+          content = re.sub(r'<sub><i>(.*?)</i></sub>', replace_quote, content, count=1)
+
+          # Bust stats cache timestamp
+          timestamp = int(time.time())
+          content = re.sub(r'cache=\d+', f'cache={timestamp}', content)
+
+          readme_path.write_text(content, encoding="utf-8")
           PY
-
-          # Bust image caches
-          sed -i "s/cache=[0-9]*/cache=${timestamp}/g" README.md
 
           if git diff --quiet -- README.md; then
             echo "No changes to commit"
             exit 0
           fi
 
-          git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
           git commit -m "docs: rotate quote & refresh stats [skip ci]"
           git push
