@@ -1,11 +1,11 @@
 <div align="center">
-  <img src="header.svg" width="100%" alt="Sanidhya Negi"/>
+  <img src="header.svg?v=2" width="100%" alt="Sanidhya Negi"/>
 </div>
 
 <div align="center" style="margin-top: 14px; margin-bottom: 24px;">
   <a href="https://github.com/Sanidhyanegi07?tab=followers"><img src="https://img.shields.io/github/followers/Sanidhyanegi07?style=flat-square&color=020306&labelColor=020306&logo=github&logoColor=58a6ff" alt="followers"/></a>
   &nbsp;
-  <img src="https://komarev.com/ghpvc/?username=Sanidhyanegi07&label=SYS.VIEWS&style=flat-square&color=020306&labelColor=020306" alt="views"/>
+  <img src="https://api.visitorbadge.io/api/visitors?path=Sanidhyanegi07&label=SYS.VIEWS&labelColor=%23020306&countColor=%23020306&style=flat-square" alt="views"/>
 </div>
 
 ### `> ./whoami`
