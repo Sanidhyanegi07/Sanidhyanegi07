@@ -5,7 +5,7 @@
 <div align="center" style="margin-top: 14px; margin-bottom: 24px;">
   <a href="https://github.com/Sanidhyanegi07?tab=followers"><img src="https://img.shields.io/github/followers/Sanidhyanegi07?style=flat-square&color=020306&labelColor=020306&logo=github&logoColor=58a6ff" alt="followers"/></a>
   &nbsp;
-  <a href="https://github.com/Sanidhyanegi07"><img src="telemetry.svg" height="20" alt="live" style="vertical-align: middle;"/><img src="https://api.visitorbadge.io/api/visitors?path=Sanidhyanegi07&label=SYS.VIEWS&labelColor=%23020306&countColor=%23020306&style=flat-square" height="20" alt="views" style="vertical-align: middle;"/></a>
+  <a href="https://github.com/Sanidhyanegi07"><img src="https://api.visitorbadge.io/api/visitors?path=Sanidhyanegi07&label=views&labelColor=%23020306&countColor=%23020306&style=flat-square" alt="views"/></a>
 </div>
 
 ### `> ./whoami`
