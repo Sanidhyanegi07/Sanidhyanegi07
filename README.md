@@ -100,11 +100,11 @@
 
 <!-- STREAK STATS -->
 <div align="center">
-  <a href="https://github.com/Sanidhyanegi07"><img height="150" src="https://streak-stats.demolab.com/?user=Sanidhyanegi07&theme=dark&background=020306&ring=58a6ff&fire=58a6ff&currStreakNum=58a6ff&sideNums=ffffff&currStreakLabel=58a6ff&sideLabels=ffffff&dates=ffffff&cache=1792686249" alt="GitHub streak"/></a>
+  <a href="https://github.com/Sanidhyanegi07"><img height="150" src="https://streak-stats.demolab.com/?user=Sanidhyanegi07&theme=dark&background=020306&ring=58a6ff&fire=58a6ff&currStreakNum=58a6ff&sideNums=ffffff&currStreakLabel=58a6ff&sideLabels=ffffff&dates=ffffff&cache=1792702996" alt="GitHub streak"/></a>
 </div>
 
 <br/>
 
 <div align="center">
-  <sub><i>"Sometimes, understanding yourself is harder than defeating anyone else."</i></sub>
+  <sub><i>"Your pace is not proof of your potential. Some things take longer to become visible."</i></sub>
 </div>
