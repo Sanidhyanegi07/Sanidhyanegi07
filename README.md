@@ -100,11 +100,11 @@
 
 <!-- STREAK STATS -->
 <div align="center">
-  <a href="https://github.com/Sanidhyanegi07"><img height="150" src="https://streak-stats.demolab.com/?user=Sanidhyanegi07&theme=dark&background=020306&ring=58a6ff&fire=58a6ff&currStreakNum=58a6ff&sideNums=ffffff&currStreakLabel=58a6ff&sideLabels=ffffff&dates=ffffff&cache=1793275401" alt="GitHub streak"/></a>
+  <a href="https://github.com/Sanidhyanegi07"><img height="150" src="https://streak-stats.demolab.com/?user=Sanidhyanegi07&theme=dark&background=020306&ring=58a6ff&fire=58a6ff&currStreakNum=58a6ff&sideNums=ffffff&currStreakLabel=58a6ff&sideLabels=ffffff&dates=ffffff&cache=1793312135" alt="GitHub streak"/></a>
 </div>
 
 <br/>
 
 <div align="center">
-  <sub><i>"A life built to impress others can leave you a stranger to yourself."</i></sub>
+  <sub><i>"Comparison can turn another person’s greatest strength into your deepest insecurity."</i></sub>
 </div>
