@@ -100,11 +100,11 @@
 
 <!-- STREAK STATS -->
 <div align="center">
-  <a href="https://github.com/Sanidhyanegi07"><img height="150" src="https://streak-stats.demolab.com/?user=Sanidhyanegi07&theme=dark&background=020306&ring=58a6ff&fire=58a6ff&currStreakNum=58a6ff&sideNums=ffffff&currStreakLabel=58a6ff&sideLabels=ffffff&dates=ffffff&cache=1794196641" alt="GitHub streak"/></a>
+  <a href="https://github.com/Sanidhyanegi07"><img height="150" src="https://streak-stats.demolab.com/?user=Sanidhyanegi07&theme=dark&background=020306&ring=58a6ff&fire=58a6ff&currStreakNum=58a6ff&sideNums=ffffff&currStreakLabel=58a6ff&sideLabels=ffffff&dates=ffffff&cache=1794235852" alt="GitHub streak"/></a>
 </div>
 
 <br/>
 
 <div align="center">
-  <sub><i>"Sometimes, the truth you avoid is the very thing that could set you free."</i></sub>
+  <sub><i>"The hardest race is the one against the person you were yesterday."</i></sub>
 </div>
